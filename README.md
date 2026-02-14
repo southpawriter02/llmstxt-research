@@ -77,7 +77,7 @@ The paper covers four analytical threads: the inference gap (nobody reads it at 
 
 The first controlled empirical study (to our knowledge) measuring whether llms.txt-curated content reduces context collapse in LLM responses. For a corpus of 30–50 websites that maintain both llms.txt and HTML documentation, we generate paired content — raw HTML processed through a standard text pipeline (Condition A) versus llms.txt-linked clean Markdown (Condition B) — and test whether the cleaner input produces measurably different results across multiple local LLMs.
 
-Metrics include factual accuracy (scored against researcher-authored gold-standard answers), hallucination rate, completeness, citation fidelity, and token efficiency. The study uses a two-phase approach: data collection runs in C# via [LlmsTxtKit](https://github.com/YOUR_USERNAME/LlmsTxtKit) on local hardware, while data analysis runs in a Colab-compatible Jupyter notebook that anyone can execute against the published raw data.
+Metrics include factual accuracy (scored against researcher-authored gold-standard answers), hallucination rate, completeness, citation fidelity, and token efficiency. The study uses a two-phase approach: data collection runs in C# via [LlmsTxtKit](https://github.com/southpawriter02/LlmsTxtKit) on local hardware, while data analysis runs in a Colab-compatible Jupyter notebook that anyone can execute against the published raw data.
 
 This study is valuable regardless of outcome. If llms.txt Markdown significantly outperforms HTML-derived text, that's the strongest evidence yet for the standard's practical value. If the difference is negligible, that validates the position that modern LLMs parse HTML effectively and that llms.txt adds marginal benefit. Both outcomes are useful, and both redirect the community's effort toward strategies that actually work.
 
@@ -108,11 +108,11 @@ Eight posts published over the course of the initiative, each serving dual purpo
 
 ### 🛠️ LlmsTxtKit — C#/.NET Library and MCP Server
 
-**Repository:** [LlmsTxtKit](https://github.com/YOUR_USERNAME/LlmsTxtKit)
+**Repository:** [LlmsTxtKit](https://github.com/southpawriter02/LlmsTxtKit)
 
 The practical implementation arm of this initiative. LlmsTxtKit is an open-source C#/.NET library and MCP (Model Context Protocol) server that implements llms.txt-aware content retrieval, parsing, validation, and caching. It fills the complete absence of .NET tooling in the llms.txt ecosystem and provides the data collection infrastructure for the benchmark study.
 
-LlmsTxtKit is maintained as a separate repository because it's a shipping software product with its own audience, release cycle, and NuGet package — distinct from this research repository. See the [LlmsTxtKit README](https://github.com/YOUR_USERNAME/LlmsTxtKit) for installation, API documentation, and usage examples.
+LlmsTxtKit is maintained as a separate repository because it's a shipping software product with its own audience, release cycle, and NuGet package — distinct from this research repository. See the [LlmsTxtKit README](https://github.com/southpawriter02/LlmsTxtKit) for installation, API documentation, and usage examples.
 
 ---
 

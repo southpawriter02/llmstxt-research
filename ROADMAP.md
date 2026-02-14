@@ -5,7 +5,7 @@
 **Last Updated:** February 2026
 **Status:** Active — Pre-Implementation
 
-> This roadmap covers all three repositories in the initiative: [llmstxt-research](https://github.com/YOUR_USERNAME/llmstxt-research), [LlmsTxtKit](https://github.com/YOUR_USERNAME/LlmsTxtKit), and the [portfolio website](https://github.com/YOUR_USERNAME/website). It is the living document that tracks what gets built, when, and how — while the [PROPOSAL.md](PROPOSAL.md) remains a historical snapshot of the original vision.
+> This roadmap covers all three repositories in the initiative: [llmstxt-research](https://github.com/southpawriter02/llmstxt-research), [LlmsTxtKit](https://github.com/southpawriter02/LlmsTxtKit), and the [portfolio website](https://github.com/southpawriter02/website). It is the living document that tracks what gets built, when, and how — while the [PROPOSAL.md](PROPOSAL.md) remains a historical snapshot of the original vision.
 
 ---
 
@@ -178,15 +178,15 @@ website/website/blog/
 ryan:
   name: Ryan
   title: Technical Writer & .NET Developer
-  url: https://your-portfolio-url.com
-  image_url: https://github.com/YOUR_USERNAME.png
+  url: https://southpawriter.com
+  image_url: https://github.com/southpawriter02.png
   page: true
   description: >
     Researcher focused on AI content retrieval, the llms.txt ecosystem,
     and Generative Engine Optimization (GEO).
   socials:
-    github: YOUR_USERNAME
-    linkedin: your-linkedin-handle
+    github: southpawriter02
+    email: ryan@southpawriter.com
 ```
 
 **Tag setup:** Add llms.txt-initiative-specific tags to `website/website/blog/tags.yml`:
@@ -520,4 +520,4 @@ Throughout this document:
 
 ---
 
-*This document is maintained in the [llmstxt-research](https://github.com/YOUR_USERNAME/llmstxt-research) repository and covers the full initiative across all three repos. For the original project vision and rationale, see [PROPOSAL.md](PROPOSAL.md).*
+*This document is maintained in the [llmstxt-research](https://github.com/southpawriter02/llmstxt-research) repository and covers the full initiative across all three repos. For the original project vision and rationale, see [PROPOSAL.md](PROPOSAL.md).*

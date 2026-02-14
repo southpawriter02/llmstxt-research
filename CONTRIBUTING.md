@@ -16,7 +16,7 @@ The benchmark study needs a diverse set of websites that maintain both well-form
 
 ### Edge Cases and Test Data
 
-LlmsTxtKit's test corpus (maintained in the [LlmsTxtKit repository](https://github.com/YOUR_USERNAME/LlmsTxtKit)) benefits from real-world llms.txt files that expose parser edge cases, unusual section structures, or non-standard Markdown. If you've encountered a file that doesn't parse cleanly, we'd like to add it as a test case. Submit it as an issue on the LlmsTxtKit repo with the `test` label.
+LlmsTxtKit's test corpus (maintained in the [LlmsTxtKit repository](https://github.com/southpawriter02/LlmsTxtKit)) benefits from real-world llms.txt files that expose parser edge cases, unusual section structures, or non-standard Markdown. If you've encountered a file that doesn't parse cleanly, we'd like to add it as a test case. Submit it as an issue on the LlmsTxtKit repo with the `test` label.
 
 ### Blog Post Feedback
 
@@ -56,7 +56,7 @@ All written content in this repository — the paper, benchmark write-up, blog p
 Code in this repository (scripts, notebooks, configuration files) follows these conventions:
 
 - **Python code** (Jupyter notebooks) follows PEP 8 and uses type hints where practical.
-- **C# code** (benchmark data collection runner) follows the .NET coding conventions established in the [LlmsTxtKit CONTRIBUTING guide](https://github.com/YOUR_USERNAME/LlmsTxtKit/blob/main/CONTRIBUTING.md).
+- **C# code** (benchmark data collection runner) follows the .NET coding conventions established in the [LlmsTxtKit CONTRIBUTING guide](https://github.com/southpawriter02/LlmsTxtKit/blob/main/CONTRIBUTING.md).
 - **All code includes inline comments** explaining what it does and why, at a level appropriate for readers who are not the original author.
 
 ---

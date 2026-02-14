@@ -1,6 +1,6 @@
 # Context Collapse Mitigation Benchmark
 
-**Status:** 🔲 Not started — blocked on [LlmsTxtKit](https://github.com/YOUR_USERNAME/LlmsTxtKit) `llmstxt_compare` tool
+**Status:** 🔲 Not started — blocked on [LlmsTxtKit](https://github.com/southpawriter02/LlmsTxtKit) `llmstxt_compare` tool
 **Output format:** Markdown write-up (`write-up.md`) → PDF, raw CSV data, Colab-compatible Jupyter analysis notebook
 
 ---
