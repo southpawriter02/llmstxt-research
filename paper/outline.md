@@ -66,16 +66,16 @@ Open with the practical problem Howard faced: a brand-new Python framework with 
 
 | # | Claim | Evidence Required | Source | Evidence Status |
 |---|---|---|---|---|
-| 3.1 | 844,000+ websites have implemented some form of llms.txt file. | Aggregate directory count data. | llmstxt directories (llmstxt.site, directory.llmstxt.cloud) | 🔄 Number cited in proposal; needs primary verification |
-| 3.2 | Notable adopters include Anthropic, Cloudflare, Stripe, Vercel, Coinbase. | Direct verification of each site's /llms.txt. | Primary — fetch and verify | 🔲 Needs verification |
-| 3.3 | An independent Majestic Million crawl found 15 sites in Feb 2025, growing to 105 by May 2025 — 600% increase from near-zero base. | Crawl data citation. | llmstxtio2025dead | ✅ Available |
-| 3.4 | Adoption is heavily concentrated in developer tools and technical documentation; mainstream web presence is essentially zero. | Sector distribution analysis from directory data. | Primary — analyze directory data | 🔲 Needs analysis |
-| 3.5 | The split between adoption volume (high in dev tools) and breadth (absent on broader web) indicates a niche rather than a standard. | Analytical interpretation of 3.1–3.4. | Author analysis | 🔲 Needs writing |
-| 3.6 | The reference repo itself maintains a curated list of known domains with llms.txt files (`nbs/domains.md`), organized by category, which provides an additional adopter data point and can be cross-referenced against directory listings. | File listing from `AnswerDotAI/llms-txt/nbs/domains.md`. | answerdotai2024llmstxt | ✅ Available |
+| 3.1 | Community directories list hundreds of llms.txt implementations (~784 on llmstxt.site, ~684 on directory.llmstxt.cloud), while a Rankability crawl of ~300K domains found 10.13% had llms.txt files. The widely cited "844,000+" figure has no verifiable primary source. | Directory counts, Rankability crawl data, Majestic Million analysis. | llmstxt directories, rankability2025adoption, green2025million | ✅ Verified — see evidence-inventory.md §3.1 |
+| 3.2 | Notable adopters include Anthropic, Cloudflare, Stripe, Vercel, Coinbase. | Direct verification of each site's /llms.txt. | Primary — fetch and verify | ✅ Verified — all five confirmed active Feb 2026 |
+| 3.3 | An independent Majestic Million crawl found 15 sites in Feb 2025, growing to 105 by May 2025 — 600% increase from near-zero base (0.011% of top 1M). | Crawl data citation. | llmstxtio2025dead, green2025million | ✅ Available |
+| 3.4 | Adoption is heavily concentrated in developer tools and technical documentation; mainstream web presence is essentially zero. Top-1,000 websites show 0% adoption. | Sector distribution from directory data + Rankability. | rankability2025adoption, directory analysis | ✅ Verified |
+| 3.5 | The split between adoption volume (high in dev tools) and breadth (absent on broader web) indicates a niche rather than a standard. | Analytical interpretation of 3.1–3.4. | Author analysis | ✏️ Author analysis — now well-supported by corrected data |
+| 3.6 | Two community directories (llmstxt.site, directory.llmstxt.cloud) provide the most comprehensive adoption tracking. The reference repo's `nbs/domains.md` is a usage-guidelines document showing how different verticals could construct llms.txt files, not an adopter directory. | Directory inspection + repo file analysis. | answerdotai2024llmstxt, llmstxt directories | ✅ Verified — corrected from v1.0 (was mischaracterized) |
 
 ### Narrative Structure
 
-Present the numbers — they tell a split story. 844,000 sounds impressive. But when you look at where those sites are (overwhelmingly developer documentation) and cross-reference against the Majestic Million (only 105 out of the top 1 million websites), a more nuanced picture emerges. The adoption is real but narrow. Use a table or figure showing sector distribution if the data supports it.
+Present the numbers honestly — they tell a split story. Community directories list hundreds of sites, and a large-scale crawl found ~10% adoption among domains surveyed. But that headline number is misleading: when cross-referenced against the Majestic Million (only 105 out of 1,000,000 top websites, or 0.011%), and noting zero adoption among the top 1,000 sites, a much more nuanced picture emerges. Adoption is real but overwhelmingly concentrated in developer documentation — a niche, not a standard. The widely cited "844,000+" figure has no verifiable source and should be treated skeptically. Use the Majestic Million and directory data as the honest foundation.
 
 ### Data Artifacts
 
@@ -241,12 +241,15 @@ Full citation list, sourced from `shared/references.md` and `shared/references.b
 
 | Status | Count | Percentage |
 |---|---|---|
-| ✅ Available | 19 | 48% |
-| 🔄 Partially available | 10 | 25% |
-| 🔲 Needs research/writing | 11 | 28% |
-| **Total claims** | **40** | |
+| ✅ Verified | 33 | 67% |
+| 🔄 Partially verified | 1 | 2% |
+| ❌ Corrected | 2 | 4% |
+| ✏️ Author analysis | 13 | 27% |
+| **Total claims** | **49** | |
 
-The paper's core arguments are well-supported. The primary gaps are in verification of specific numbers (adoption counts, market share percentages), locating primary sources for a few specific incidents (Google's llms.txt on Search Central), and the analytical writing that synthesizes evidence into arguments. No section is blocked by missing evidence — the work is writing-ready once the 🔄 items are verified.
+> **Note:** The original v1.0 summary counted 40 claims; the actual section-by-section total is 49 (7+6+9+7+5+5+5+5). See `paper/evidence-inventory.md` for the full claim-by-claim verification record with source URLs, dates, and notes.
+
+The paper is writing-ready. All externally-sourceable claims are verified except one (4.5 — hosting provider attribution, partially verified). The 13 author-analysis claims are the paper's original analytical contributions. Two claims (3.1 adoption count, 3.6 domains.md reference) were corrected during evidence consolidation — the corrections strengthen the paper's credibility by presenting honest data.
 
 ---
 
@@ -255,3 +258,4 @@ The paper's core arguments are well-supported. The primary gaps are in verificat
 | Version | Date | Changes |
 |---|---|---|
 | 1.0 | February 2026 | Initial outline with full evidence tracking |
+| 1.1 | February 15, 2026 | Claims 3.1 and 3.6 corrected per evidence-inventory.md findings. 844K adoption figure replaced with verified directory/crawl data. domains.md reference corrected. Narrative structure updated. Evidence summary updated to reflect 49 claims, 67% verified. |

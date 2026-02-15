@@ -1,108 +1,316 @@
-% Shared BibTeX Bibliography
-% llms.txt Research & Tooling Initiative
-%
-% This file provides structured bibliographic entries for tools that
-% consume BibTeX (LaTeX, Pandoc, etc.). For the human-readable version,
-% see references.md in this same directory.
-%
-% Entries are organized by category and keyed by a short identifier
-% used in \cite{} commands.
+%% ==========================================================================
+%% references.bib — Shared BibTeX bibliography
+%% "The llms.txt Access Paradox" research initiative
+%%
+%% This file is the machine-readable counterpart to references.md.
+%% Both files should be kept in sync. When adding a new reference,
+%% update BOTH files.
+%%
+%% Entry types used:
+%%   @online    — Web pages, blog posts, documentation (most entries)
+%%   @article   — Academic papers with arXiv or journal publication
+%%   @misc      — Social media posts, informal sources
+%%
+%% Citation keys follow the pattern: author/orgYYYYkeyword
+%% e.g., howard2024llmstxt, cloudflare2024aindependence
+%%
+%% Last updated: February 15, 2026
+%% Total entries: 27 (synced with references.md)
+%% ==========================================================================
 
-% --- Standards and Specifications ---
 
-@misc{howard2024llmstxt,
-  author       = {Jeremy Howard},
-  title        = {The /llms.txt file},
+%% -------------------------------------------------------------------------
+%% Standards and Specifications
+%% -------------------------------------------------------------------------
+
+@online{howard2024llmstxt,
+  author       = {Howard, Jeremy},
+  title        = {The /llms.txt File},
   year         = {2024},
+  month        = sep,
   url          = {https://llmstxt.org/},
-  note         = {Accessed February 2026}
+  organization = {Answer.AI},
+  note         = {Original specification proposal. Dated 2024-09-03.}
 }
 
-@misc{answerdotai2024llmstxt,
+@online{answerdotai2024llmstxt,
   author       = {{AnswerDotAI}},
-  title        = {llms-txt {GitHub} repository},
+  title        = {llms-txt {GitHub} Repository},
   year         = {2024},
   url          = {https://github.com/AnswerDotAI/llms-txt},
-  note         = {Reference Python implementation}
+  note         = {Reference implementation. Key files: \texttt{llms\_txt/miniparse.py}
+                  (canonical parser), \texttt{llms\_txt/core.py} (XML context generation),
+                  \texttt{nbs/domains.md} (vertical usage guidelines, NOT an adopter
+                  directory), \texttt{nbs/ed.md} (editor integration walkthrough).}
 }
 
-@misc{cloudflare2025contentsignals,
+@online{cloudflare2025contentsignals,
   author       = {{Cloudflare}},
-  title        = {Giving users choice with {Cloudflare's} new {Content Signals Policy}},
+  title        = {Giving Users Choice with {Cloudflare's} New Content Signals Policy},
   year         = {2025},
-  url          = {https://blog.cloudflare.com/content-signals-policy/}
+  month        = sep,
+  day          = {24},
+  url          = {https://blog.cloudflare.com/content-signals-policy/},
+  note         = {Introduces three machine-readable directives: search, ai-input,
+                  ai-train. Deployed to 3.8 million domains via managed robots.txt.}
 }
 
-@misc{cc2025signals,
+@online{cc2025signals,
   author       = {{Creative Commons}},
-  title        = {{CC Signals}: What We've Been Working On},
+  title        = {{CC} Signals: What We've Been Working On},
   year         = {2025},
-  url          = {https://creativecommons.org/2025/12/15/cc-signals-what-weve-been-working-on/}
+  month        = dec,
+  day          = {15},
+  url          = {https://creativecommons.org/2025/12/15/cc-signals-what-weve-been-working-on/},
+  note         = {Still in pilot phase as of December 2025.}
 }
 
-% --- Industry Analysis ---
 
-@misc{cloudflare2025aindependence,
+%% -------------------------------------------------------------------------
+%% Industry Analysis and Commentary
+%% -------------------------------------------------------------------------
+
+@online{cloudflare2024aindependence,
   author       = {{Cloudflare}},
-  title        = {Declaring your {AIndependence}: blocking {AI} bots, scrapers and crawlers with a single click},
-  year         = {2025},
-  howpublished = {Cloudflare Blog}
+  title        = {Declare Your {AIndependence}: Block {AI} Bots, Scrapers and
+                  Crawlers with a Single Click},
+  year         = {2024},
+  month        = jul,
+  day          = {3},
+  url          = {https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click/},
+  note         = {Introduced opt-in one-click AI bot blocking for all customers.
+                  In June 2024, AI bots accessed ~39\% of top 1M Cloudflare
+                  properties but only 2.98\% blocked them.}
 }
 
-@misc{mintlify2025llmstxt,
+@online{cloudflare2025independence,
+  author       = {{Cloudflare}},
+  title        = {Content Independence Day},
+  year         = {2025},
+  month        = jul,
+  day          = {1},
+  howpublished = {Cloudflare Blog},
+  note         = {Changed AI bot blocking from opt-in to default for newly created
+                  domains. Successor to the July 2024 AIndependence announcement.}
+}
+
+@online{mintlify2025llmstxt,
   author       = {{Mintlify}},
   title        = {The Value of llms.txt: Hype or Real?},
   year         = {2025},
-  url          = {https://www.mintlify.com/blog/the-value-of-llms-txt-hype-or-real}
+  url          = {https://www.mintlify.com/blog/the-value-of-llms-txt-hype-or-real},
+  note         = {Documents Microsoft and OpenAI crawler activity on llms.txt and
+                  llms-full.txt via Profound tracking data. Mintlify developed
+                  llms-full.txt in collaboration with Anthropic.}
 }
 
-@misc{yoast2025llmstxt,
+@online{yoast2025llmstxt,
   author       = {{Yoast}},
   title        = {What {AI} Gets Wrong About Your Site \& llms.txt},
   year         = {2025},
-  url          = {https://yoast.com/what-ai-gets-wrong-about-your-site-llms-txt/}
+  url          = {https://yoast.com/what-ai-gets-wrong-about-your-site-llms-txt/},
+  note         = {Found GPTBot, ClaudeBot, and Google AI crawlers do not routinely
+                  request llms.txt. References a hosting provider managing 20,000
+                  sites with zero GPTBot activity on llms.txt.}
 }
 
-@misc{llmstxtio2025dead,
+@online{llmstxtio2025dead,
   author       = {{llms-txt.io}},
   title        = {Is llms.txt Dead? The Current State of Adoption in 2025},
   year         = {2025},
-  url          = {https://llms-txt.io/blog/is-llms-txt-dead}
+  url          = {https://llms-txt.io/blog/is-llms-txt-dead},
+  note         = {Cites Majestic Million crawl data: 15 sites (Feb 2025) growing
+                  to 105 (May 2025). References Ray Martinez's GPTBot observations.}
 }
 
-@misc{shelby2025metakeywords,
-  author       = {Shelby, C.},
-  title        = {No, llms.txt is not the 'new meta keywords'},
+@online{green2025million,
+  author       = {Green, Chris},
+  title        = {A Million Websites in Search of llms.txt},
   year         = {2025},
-  howpublished = {Search Engine Land}
+  url          = {https://www.chris-green.net/post/million-websites-in-search-of-llms-txt},
+  note         = {Independent Majestic Million analysis: 105 valid llms.txt files
+                  = 0.011\% of top 1M websites.}
 }
 
-@misc{365i2026google,
+@online{rankability2025adoption,
+  author       = {{Rankability}},
+  title        = {{LLMS.txt} Adoption Research Report 2025},
+  year         = {2025},
+  url          = {https://www.rankability.com/data/llms-txt-adoption/},
+  note         = {Large-scale crawl of ~300K domains found 10.13\% had llms.txt.
+                  Zero adoption among top-1,000 websites.}
+}
+
+@online{shelby2025metakeywords,
+  author       = {Shelby, Chris},
+  title        = {No, llms.txt is Not the ``New Meta Keywords''},
+  year         = {2025},
+  url          = {https://searchengineland.com/no-llms-txt-is-not-the-new-meta-keywords-458199},
+  organization = {Search Engine Land},
+  note         = {Response to Mueller's comparison of llms.txt to the keywords meta tag.}
+}
+
+@online{sej2025mueller,
+  author       = {{Search Engine Journal}},
+  title        = {{Google} Says {LLMs.txt} Comparable to Keywords Meta Tag},
+  year         = {2025},
+  month        = apr,
+  url          = {https://www.searchenginejournal.com/google-says-llms-txt-comparable-to-keywords-meta-tag/544804/},
+  note         = {Documents John Mueller's April 2025 comparison of llms.txt
+                  to the discredited keywords meta tag.}
+}
+
+@online{sel2025illyes,
+  author       = {{Search Engine Land}},
+  title        = {{Google} Says Normal {SEO} Works for Ranking in {AI} Overviews
+                  and llms.txt Won't Be Used},
+  year         = {2025},
+  month        = jul,
+  url          = {https://searchengineland.com/google-says-normal-seo-works-for-ranking-in-ai-overviews-and-llms-txt-wont-be-used-459422},
+  note         = {Documents Gary Illyes's statement at Search Central Live
+                  (July 2025) that Google will not use llms.txt.}
+}
+
+@online{martinez2025archeredu,
+  author       = {Martinez, Ray},
+  title        = {Are {LLMs.txt} Files Being Implemented Across the Web?},
+  year         = {2025},
+  url          = {https://www.archeredu.com/hemj/are-llms-txt-files-being-implemented-across-the-web/},
+  organization = {Archer Education},
+  note         = {Documents GPTBot fetching llms.txt every 15 minutes
+                  with server log evidence.}
+}
+
+@online{omnius2025google,
+  author       = {{Omnius}},
+  title        = {{Google} Adds {LLMs.txt} to Docs After Publicly Dismissing It},
+  year         = {2025},
+  url          = {https://www.omnius.so/industry-updates/google-adds-llms-txt-to-docs-after-publicly-dismissing-it},
+  note         = {Coverage of the December 3, 2025 discovery of llms.txt on
+                  developers.google.com/search/docs/.}
+}
+
+@online{365i2025googletest,
   author       = {{365i}},
-  title        = {Google Says Markdown for {AI} Is 'a Stupid Idea.' They're Half Right.},
-  year         = {2026},
-  url          = {https://www.365iwebdesign.co.uk/news/2026/02/08/google-markdown-ai-stupid-idea-discovery-files/}
+  title        = {{Google} Tests llms.txt Then Removes It},
+  year         = {2025},
+  month        = dec,
+  day          = {9},
+  url          = {https://www.365i.co.uk/blog/2025/12/09/google-llms-discover-ai-mode-2025/},
+  note         = {Reports on Google's brief deployment and removal of llms.txt
+                  from Search Central documentation.}
 }
 
-% --- Academic and Research ---
+@online{365i2026google,
+  author       = {{365i}},
+  title        = {{Google} Says Markdown for {AI} Is ``a Stupid Idea.''
+                  They're Half Right},
+  year         = {2026},
+  month        = feb,
+  day          = {8},
+  url          = {https://www.365iwebdesign.co.uk/news/2026/02/08/google-markdown-ai-stupid-idea-discovery-files/},
+  note         = {Documents Gary Illyes's statements and the broader Google
+                  position on llms.txt and discovery files.}
+}
+
+
+%% -------------------------------------------------------------------------
+%% Primary Sources (Social Media)
+%% -------------------------------------------------------------------------
+
+@misc{schwartz2025x,
+  author       = {Schwartz, Barry},
+  title        = {X Post: {Google Search Central} llms.txt Discovery},
+  year         = {2025},
+  month        = dec,
+  day          = {3},
+  url          = {https://x.com/rustybrick/status/1996192945486111193},
+  note         = {Primary source documenting the discovery of llms.txt on
+                  developers.google.com/search/docs/. Mueller responded
+                  ``hmmn :-/''.}
+}
+
+@misc{martinez2025x,
+  author       = {Martinez, Ray},
+  title        = {X Post: {GPTBot} 15-Minute llms.txt Crawling},
+  year         = {2025},
+  url          = {https://x.com/RayMartinezSEO/status/1947357454292889874},
+  note         = {Server log evidence showing GPTBot fetching llms.txt every
+                  15 minutes. Martinez is the founder of Archer Education.}
+}
+
+
+%% -------------------------------------------------------------------------
+%% Technical Documentation
+%% -------------------------------------------------------------------------
+
+@online{w3techs2026cloudflare,
+  author       = {{W3Techs}},
+  title        = {Usage Statistics of {Cloudflare}},
+  year         = {2026},
+  url          = {https://w3techs.com/technologies/details/cn-cloudflare},
+  note         = {As of Feb 2026: Cloudflare used by 21.3\% of all websites,
+                  79.9\% of CDN/reverse-proxy market, 48.7\% of top 1M sites.}
+}
+
+@online{cloudflare2025botdetection,
+  author       = {{Cloudflare}},
+  title        = {Bot Detection Engines},
+  year         = {2025},
+  url          = {https://developers.cloudflare.com/bots/concepts/bot-detection-engines/},
+  note         = {Documents detection signals: JavaScript execution, cookies
+                  (cf\_clearance), data center IPs, user agents,
+                  TLS/JA3/JA4 fingerprinting.}
+}
+
+@online{cloudflare2025aicrawlcontrol,
+  author       = {{Cloudflare}},
+  title        = {{AI} Crawl Control},
+  year         = {2025},
+  url          = {https://developers.cloudflare.com/ai-crawl-control/},
+  note         = {Dashboard: Overview, Crawlers, Settings, Metrics, robots.txt
+                  tabs. Defaults: search=yes, ai-train=no, ai-input=neutral.
+                  ``Block on all pages'' is default for newly created domains.}
+}
+
+@online{cloudflare2025aicrawlwaf,
+  author       = {{Cloudflare}},
+  title        = {{AI} Crawl Control with {WAF}},
+  year         = {2025},
+  url          = {https://developers.cloudflare.com/ai-crawl-control/configuration/ai-crawl-control-with-waf/},
+  note         = {Execution order: Traffic -> WAF custom rules -> Bot Solutions
+                  -> AI Crawl Control: Pay Per Crawl. Allowed bots may still
+                  be affected by security rules executing before AI Crawl Control.}
+}
+
+
+%% -------------------------------------------------------------------------
+%% Academic and Research
+%% -------------------------------------------------------------------------
 
 @article{aggarwal2024geo,
-  author       = {Aggarwal, P. and others},
+  author       = {Aggarwal, Pranjal and Murahari, Vishvak and Rajpurohit, Tanmay
+                  and Kalyan, Ashwin and Narasimhan, Karthik and Metzler, Aman},
   title        = {{GEO}: Generative Engine Optimization},
   year         = {2024},
   journal      = {arXiv preprint},
   eprint       = {2311.09735},
-  institution  = {Princeton University}
+  archiveprefix = {arXiv},
+  primaryclass = {cs.IR},
+  institution  = {Princeton University},
+  note         = {Found citations and statistics improve AI visibility 30--40\%;
+                  keyword stuffing decreases it ~10\%. Does NOT mention
+                  llms.txt specifically.}
 }
 
-@misc{chroma2025contextrot,
+@online{chroma2025contextrot,
   author       = {{Chroma Research}},
   title        = {Context Rot},
   year         = {2025},
   url          = {https://research.trychroma.com/context-rot}
 }
 
-@misc{emergentmind2025collapse,
+@online{emergentmind2025contextcollapse,
   author       = {{Emergent Mind}},
   title        = {Context Collapse},
   year         = {2025},
