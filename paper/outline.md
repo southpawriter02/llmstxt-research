@@ -48,6 +48,8 @@ The abstract closes by noting that these findings are supported by server log ev
 | 2.3 | The spec is deliberately minimal: H1 title (required), blockquote summary, freeform Markdown, H2 sections with link lists, Optional section. | Direct spec description. | howard2024llmstxt | ✅ Available |
 | 2.4 | The spec explicitly targets inference-time usage ("our expectation is that llms.txt will mainly be useful for inference"). | Direct quote from spec. | howard2024llmstxt | ✅ Available |
 | 2.5 | The spec proposes `.md`-appended URLs for clean Markdown versions of pages. | Spec description. | howard2024llmstxt | ✅ Available |
+| 2.6 | The reference Python implementation confirms the spec's minimalism — the canonical parser is ~20 lines of regex-based string processing, with no validation, no error handling, and no edge-case management. | Source code analysis of `miniparse.py` in `AnswerDotAI/llms-txt`. | answerdotai2024llmstxt | ✅ Available |
+| 2.7 | The reference implementation generates Claude-oriented XML context using `<project>`/`<section>`/`<doc>` elements and explicitly skips the Optional section by default. | Source code analysis of `core.py` and the `ed` walkthrough (`nbs/ed.md`). | answerdotai2024llmstxt | ✅ Available |
 
 ### Narrative Structure
 
@@ -69,6 +71,7 @@ Open with the practical problem Howard faced: a brand-new Python framework with 
 | 3.3 | An independent Majestic Million crawl found 15 sites in Feb 2025, growing to 105 by May 2025 — 600% increase from near-zero base. | Crawl data citation. | llmstxtio2025dead | ✅ Available |
 | 3.4 | Adoption is heavily concentrated in developer tools and technical documentation; mainstream web presence is essentially zero. | Sector distribution analysis from directory data. | Primary — analyze directory data | 🔲 Needs analysis |
 | 3.5 | The split between adoption volume (high in dev tools) and breadth (absent on broader web) indicates a niche rather than a standard. | Analytical interpretation of 3.1–3.4. | Author analysis | 🔲 Needs writing |
+| 3.6 | The reference repo itself maintains a curated list of known domains with llms.txt files (`nbs/domains.md`), organized by category, which provides an additional adopter data point and can be cross-referenced against directory listings. | File listing from `AnswerDotAI/llms-txt/nbs/domains.md`. | answerdotai2024llmstxt | ✅ Available |
 
 ### Narrative Structure
 

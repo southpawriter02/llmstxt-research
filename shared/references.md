@@ -8,6 +8,12 @@ This file serves as the shared reference list for the paper, benchmark write-up,
 
 - Howard, J. (2024). "The /llms.txt file." llmstxt.org. https://llmstxt.org/
 - AnswerDotAI. (2024). llms-txt GitHub repository. https://github.com/AnswerDotAI/llms-txt
+  - `llms_txt/miniparse.py` — Minimal standalone parser (canonical parsing behavior, no external dependencies)
+  - `llms_txt/core.py` — Reference implementation (parsing, XML context generation via fastcore FT, parallel document fetching)
+  - `nbs/llms-sample.txt` — Canonical example file from the specification
+  - `nbs/domains.md` — Curated list of known domains with llms.txt files (useful for benchmark corpus selection and adoption statistics)
+  - `nbs/ed.md` — Narrative walkthrough demonstrating intended editor/IDE integration pattern
+  - `llms_txt/txt2html.py` — HTML renderer used for the llmstxt.org website
 - Cloudflare. (2025). "Giving users choice with Cloudflare's new Content Signals Policy." https://blog.cloudflare.com/content-signals-policy/
 - Creative Commons. (2025). "CC Signals: What We've Been Working On." https://creativecommons.org/2025/12/15/cc-signals-what-weve-been-working-on/
 
