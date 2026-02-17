@@ -95,12 +95,12 @@ This is the paper's first major finding. It establishes that the standard is not
 
 | # | Claim | Evidence Required | Source | Evidence Status |
 |---|---|---|---|---|
-| 4.1 | No major LLM provider has publicly confirmed using llms.txt at inference time. | Survey of public statements from Google, OpenAI, Anthropic, Microsoft. | Multiple — see below | 🔄 Partially gathered |
+| 4.1 | No major LLM provider has publicly confirmed using llms.txt at inference time. | Survey of public statements from Google, OpenAI, Anthropic, Microsoft. | Multiple — see evidence-inventory.md §4 | ✅ Verified — Google explicitly rejected (Mueller April 2025, Illyes July 2025). No public confirmation from OpenAI, Anthropic, or Microsoft for inference-time usage. |
 | 4.2 | Google has explicitly rejected the standard. Mueller compared it to the keywords meta tag (April 2025). Illyes stated no support at Search Central Live (July 2025). | Direct citations of Mueller and Illyes statements. | shelby2025metakeywords, 365i2026google | ✅ Available |
-| 4.3 | Google was caught with an llms.txt on their own Search Central docs (December 2025), responded "hmmn :-/", and removed it within hours. | Direct citation of the incident. | Primary — find the original Twitter thread / announcement | 🔄 Need primary source |
+| 4.3 | Google was caught with an llms.txt on their own Search Central docs (December 2025), responded "hmmn :-/", and removed it within hours. | Direct citation of the incident. | schwartz2025x, infante2025bsky, omnius2025google | ✅ Verified — Discovered Dec 3, 2025 by Lidia Infante (Bluesky). Barry Schwartz covered on X. Mueller responded with exact quote. File removed within hours. |
 | 4.4 | Yoast found that GPTBot, ClaudeBot, and Google AI crawlers don't request llms.txt files in their analysis. | Yoast article citation. | yoast2025llmstxt | ✅ Available |
-| 4.5 | A hosting provider managing 20,000 sites confirmed zero GPTBot activity on llms.txt. | Citation from Yoast or related analysis. | yoast2025llmstxt | 🔄 Verify specific claim |
-| 4.6 | Another developer showed GPTBot pinging their llms.txt every 15 minutes. | Citation from llms-txt.io or independent report. | llmstxtio2025dead | 🔄 Verify specific claim |
+| 4.5 | A hosting provider managing 20,000 sites confirmed zero GPTBot activity on llms.txt. | Citation from Yoast or related analysis. | yoast2025llmstxt | 🔄 Partially verified — Referenced in Yoast article but provider unnamed. **Editorial decision (Feb 16): Do NOT use in paper.** Rely on claim 4.4 instead. Blog posts may retain with attribution caveat. |
+| 4.6 | Another developer showed GPTBot pinging their llms.txt every 15 minutes. | Citation from llms-txt.io or independent report. | llmstxtio2025dead, martinez2025x | ✅ Verified — Developer: Ray Martinez, founder of Archer Education. X post + Archer Education blog with log evidence. |
 | 4.7 | The contradictory log data suggests experimental or selective behavior, not systematic support. | Analytical interpretation. | Author analysis | 🔲 Needs writing |
 | 4.8 | Mintlify and Profound data show Microsoft and OpenAI crawlers actively accessing llms.txt and llms-full.txt. | Mintlify article citation. | mintlify2025llmstxt | ✅ Available |
 | 4.9 | Training-time crawling is categorically different from inference-time retrieval. The spec targets inference; the evidence points to training. | Analytical distinction, citing spec text. | howard2024llmstxt, author analysis | ✅ Available |
@@ -122,12 +122,12 @@ This is the paper's most original contribution. It documents a problem that nobo
 
 | # | Claim | Evidence Required | Source | Evidence Status |
 |---|---|---|---|---|
-| 5.1 | Cloudflare sits in front of roughly 20% of all public websites. | Cloudflare market share data. | Cloudflare public disclosures / W3Techs data | 🔄 Number is widely cited; verify current |
-| 5.2 | Cloudflare began blocking all AI crawlers by default on new domains in July 2025 ("AIndependence Day"). | Cloudflare blog post citation. | cloudflare2025aindependence | ✅ Available |
-| 5.3 | AI crawlers trigger bot-detection heuristics because they don't execute JavaScript, don't maintain cookies, originate from data center IPs, and use non-browser user agents. | Technical description of WAF heuristics. | Cloudflare documentation + author experience | 🔄 Needs documentation |
+| 5.1 | Cloudflare sits in front of roughly 20% of all public websites. | Cloudflare market share data. | W3Techs (w3techs2026cloudflare) | ✅ Verified — W3Techs Feb 2026: 21.3% of all websites. 79.9% of CDN/reverse-proxy market. 48.7% of top 1M traffic sites. |
+| 5.2 | Cloudflare began blocking all AI crawlers by default on new domains in July 2025 ("AIndependence Day"). | Cloudflare blog post citation. | cloudflare2024aindependence (July 2024 opt-in launch), cloudflare2025independence (July 2025 default blocking) | ✅ Verified — Two distinct events: July 3, 2024 = opt-in "AIndependence Day" blog post; July 1, 2025 = "Content Independence Day" default blocking for new domains. Paper should reference both for timeline accuracy. |
+| 5.3 | AI crawlers trigger bot-detection heuristics because they don't execute JavaScript, don't maintain cookies, originate from data center IPs, and use non-browser user agents. | Technical description of WAF heuristics. | Cloudflare bot detection docs (cloudflare2025botdetection) | ✅ Verified — Documentation confirms all four signals plus TLS/JA3/JA4 fingerprinting, malicious fingerprint database, missing standard browser headers. `cf_clearance` cookie requires JS execution. |
 | 5.4 | The result is a three-way misalignment: site owner creates llms.txt → infrastructure blocks AI crawlers → AI falls back to search APIs. | Analytical synthesis of 5.1–5.3. | Author analysis | 🔲 Needs writing |
-| 5.5 | Cloudflare offers granular controls (ai-train, search, ai-input) but these require active configuration most site owners never perform. | Cloudflare documentation on AI Crawl Control. | Cloudflare docs | 🔄 Needs documentation |
-| 5.6 | WAF custom rules execute before AI Crawl Control settings, meaning a security rule can block an AI crawler even when AI Crawl Control says "allowed." | Cloudflare execution order documentation. | Cloudflare docs + author experience | 🔄 Needs documentation |
+| 5.5 | Cloudflare offers granular controls (ai-train, search, ai-input) but these require active configuration most site owners never perform. | Cloudflare documentation on AI Crawl Control. | Cloudflare AI Crawl Control docs (cloudflare2025aicrawlcontrol) | ✅ Verified — Dashboard at AI Crawl Control section. Default for managed robots.txt: search=yes, ai-train=no, ai-input=neutral. "Block on all pages" is default for new domains. |
+| 5.6 | WAF custom rules execute before AI Crawl Control settings, meaning a security rule can block an AI crawler even when AI Crawl Control says "allowed." | Cloudflare execution order documentation. | Cloudflare WAF/AI Crawl Control docs (cloudflare2025aicrawlcontrolwaf) | ✅ Verified — Execution order: Traffic → WAF custom rules → Bot Solutions → AI Crawl Control: Pay Per Crawl. Terminating actions stop evaluation immediately. |
 | 5.7 | The author experienced this blocking firsthand. [Specific account of what happened, what configurations were tried, what failed.] | Primary source — the author's own experience. | Author's firsthand account | ✅ Available (needs writing) |
 
 ### Narrative Structure
@@ -217,7 +217,7 @@ This section translates the findings into actionable advice. Resist the temptati
 
 | # | Claim | Evidence Required | Source | Evidence Status |
 |---|---|---|---|---|
-| 9.1 | No published study has empirically measured whether llms.txt-curated content improves AI response quality versus HTML-derived text. | Literature survey confirming absence. | Author survey | 🔄 Informal survey done; needs formal confirmation |
+| 9.1 | No published study has empirically measured whether llms.txt-curated content improves AI response quality versus HTML-derived text. | Literature survey confirming absence. | Author survey — formal search completed | ✅ Verified — Formal search across Google Scholar, arXiv, Semantic Scholar found no such study. GEO paper (arXiv:2311.09735) does not mention llms.txt. |
 | 9.2 | The accompanying benchmark study (companion project) addresses this gap directly. | Cross-reference to benchmark project. | Internal cross-reference | ✅ Available |
 | 9.3 | The tooling gap (no .NET implementation) limits the ecosystem's reach to Python and JavaScript developers. | Ecosystem survey. | Author survey (Blog Post 3 content) | ✅ Available |
 | 9.4 | The companion LlmsTxtKit project addresses the .NET gap. | Cross-reference to LlmsTxtKit project. | Internal cross-reference | ✅ Available |
@@ -231,25 +231,25 @@ Frame the gaps honestly — these are the things the paper doesn't answer, and d
 
 ## Section 10: References
 
-**Status:** 🔄 Partially compiled
+**Status:** ✅ Compiled — see `shared/references.md` (v2.0, 27+ entries)
 
-Full citation list, sourced from `shared/references.md` and `shared/references.bib`. Format consistently (preferably a standard academic citation style, adapted for web-primary sources).
+Full citation list, sourced from `shared/references.md` and `shared/references.bib`. Format consistently (preferably a standard academic citation style, adapted for web-primary sources). All new references discovered during Sprint 1 evidence verification have been added to `shared/references.md`.
 
 ---
 
-## Overall Evidence Status Summary
+## Overall Evidence Status Summary (v1.2)
 
-| Status | Count | Percentage |
-|---|---|---|
-| ✅ Verified | 33 | 67% |
-| 🔄 Partially verified | 1 | 2% |
-| ❌ Corrected | 2 | 4% |
-| ✏️ Author analysis | 13 | 27% |
-| **Total claims** | **49** | |
+| Status | Count | Percentage | Change from v1.1 |
+|---|---|---|---|
+| ✅ Verified | 33 | 67% | — (outline now matches evidence-inventory.md) |
+| 🔄 Partially verified | 1 | 2% | — (4.5 — editorial decision: NOT used in paper) |
+| ❌ Corrected | 2 | 4% | — (3.1 adoption count, 3.6 domains.md) |
+| ✏️ Author analysis | 13 | 27% | — |
+| **Total claims** | **49** | | |
 
 > **Note:** The original v1.0 summary counted 40 claims; the actual section-by-section total is 49 (7+6+9+7+5+5+5+5). See `paper/evidence-inventory.md` for the full claim-by-claim verification record with source URLs, dates, and notes.
 
-The paper is writing-ready. All externally-sourceable claims are verified except one (4.5 — hosting provider attribution, partially verified). The 13 author-analysis claims are the paper's original analytical contributions. Two claims (3.1 adoption count, 3.6 domains.md reference) were corrected during evidence consolidation — the corrections strengthen the paper's credibility by presenting honest data.
+**Writing-readiness assessment (v1.2):** The paper is fully writing-ready. All externally-sourceable claims are verified. Claim 4.5 (hosting provider attribution) remains partially verified but an editorial decision has been made to NOT use it in the paper — rely on claim 4.4 (Yoast's own verified finding) instead. The 13 author-analysis claims are the paper's original analytical contributions and don't need external verification. Two claims (3.1 adoption count, 3.6 domains.md reference) were corrected during Sprint 1 evidence consolidation — the corrections strengthen the paper's credibility. All new references have been added to `shared/references.md`.
 
 ---
 
@@ -258,4 +258,6 @@ The paper is writing-ready. All externally-sourceable claims are verified except
 | Version | Date | Changes |
 |---|---|---|
 | 1.0 | February 2026 | Initial outline with full evidence tracking |
+| 1.1 | February 15, 2026 | Claims 3.1 and 3.6 corrected per evidence-inventory.md findings. 844K adoption figure replaced with verified directory/crawl data. domains.md reference corrected. Narrative structure updated. Evidence summary updated to reflect 49 claims, 67% verified. |
+| 1.2 | February 17, 2026 | **Story 1.2 sync:** All evidence statuses synced with evidence-inventory.md v2.0. Eight claims upgraded from 🔄 to ✅ (4.1, 4.3, 4.6, 5.1, 5.3, 5.5, 5.6, 9.1). Claim 4.5 editorial decision documented. References section marked as compiled. Source keys updated with specific reference IDs. |
 | 1.1 | February 15, 2026 | Claims 3.1 and 3.6 corrected per evidence-inventory.md findings. 844K adoption figure replaced with verified directory/crawl data. domains.md reference corrected. Narrative structure updated. Evidence summary updated to reflect 49 claims, 67% verified. |
