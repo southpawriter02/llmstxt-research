@@ -3,7 +3,7 @@
 **Author:** Ryan
 **Version:** 1.0
 **Last Updated:** February 2026
-**Status:** Active — Pre-Implementation
+**Status:** Active — Sprint 1 Complete (Feb 21, 2026)
 
 > This roadmap covers all three repositories in the initiative: [llmstxt-research](https://github.com/southpawriter02/llmstxt-research), [LlmsTxtKit](https://github.com/southpawriter02/LlmsTxtKit), and the [portfolio website](https://github.com/southpawriter02/website). It is the living document that tracks what gets built, when, and how — while the [PROPOSAL.md](PROPOSAL.md) remains a historical snapshot of the original vision.
 
@@ -27,13 +27,13 @@ The initiative spans approximately 18 weeks (~4.5 months) organized into four ph
 
 | Deliverable | Repository | Status | Notes |
 |---|---|---|---|
-| Repository scaffolding (both repos) | llmstxt-research, LlmsTxtKit | 🔲 Not started | Directory structures, LICENSE, CONTRIBUTING.md, GitHub Projects boards |
-| Paper outline and research consolidation | llmstxt-research | 🔲 Not started | `paper/outline.md` with section-by-section completion tracking |
-| Paper first draft | llmstxt-research | 🔲 Not started | `paper/draft.md`, 6,000–10,000 words |
-| LlmsTxtKit PRS + Design Spec | LlmsTxtKit | 🔲 Not started | `specs/prs.md`, `specs/design-spec.md` |
-| LlmsTxtKit User Stories + Test Plan | LlmsTxtKit | 🔲 Not started | `specs/user-stories.md`, `specs/test-plan.md` |
-| Blog Post 1: WAF story | llmstxt-research | 🔲 Not started | `blog/01-waf-story.md` → publish to website |
-| Benchmark corpus selection begins | llmstxt-research | 🔲 Not started | `benchmark/corpus/site-list.csv` initial population |
+| Repository scaffolding (both repos) | llmstxt-research, LlmsTxtKit | ✅ Complete | Directory structures, LICENSE, GitHub Projects boards, labels, issues — all automated via `scripts/gh-project/` |
+| Paper outline and research consolidation | llmstxt-research | ✅ Complete | `paper/outline.md` v1.2, `paper/evidence-inventory.md` v2.0 (51 claims, 27+ sources, 12+ primary) |
+| Paper first draft | llmstxt-research | 🔲 Not started | `paper/draft.md`, 6,000–10,000 words — Sprint 2+ |
+| LlmsTxtKit PRS + Design Spec | LlmsTxtKit | ✅ Complete | `specs/prs.md`, `specs/design-spec.md` — stubs completed pre-sprint |
+| LlmsTxtKit User Stories + Test Plan | LlmsTxtKit | ✅ Complete | `specs/user-stories.md`, `specs/test-plan.md` — stubs completed pre-sprint |
+| Blog Post 1: WAF story | llmstxt-research | ✅ Complete | Published as "The WAF Paradox" (Parts 1 & 2) on Docusaurus blog. 7 total posts published (exceeds Sprint 1 target) |
+| Benchmark corpus selection begins | llmstxt-research | 🔲 Not started | `benchmark/corpus/site-list.csv` initial population — Sprint 2 |
 
 **Phase 1 exit criteria:** Paper first draft complete. LlmsTxtKit spec documents complete and reviewed. Blog Post 1 published. Benchmark corpus selection underway.
 
@@ -517,6 +517,7 @@ Throughout this document:
 | Version | Date | Changes |
 |---|---|---|
 | 1.0 | February 2026 | Initial roadmap extracted from PROPOSAL.md v1.1 with expanded ongoing-effort sections |
+| 1.1 | February 21, 2026 | Sprint 1 status update: Phase 1 deliverables updated to reflect actual completion. Research consolidation, extension labeling audit, blog posts, shared artifacts, and project infrastructure all verified complete. See `sprint-1-assessment.md` for full audit. |
 
 ---
 

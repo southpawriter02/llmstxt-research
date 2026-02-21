@@ -21,7 +21,7 @@ This file serves as the shared reference list for the paper, benchmark write-up,
 ## Industry Analysis and Commentary
 
 - Cloudflare. (2024). "Declare your AIndependence: block AI bots, scrapers and crawlers with a single click." Cloudflare Blog, July 3, 2024. https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click/
-- Cloudflare. (2025). "Content Independence Day." Cloudflare Blog, July 1, 2025. *(Default blocking for new domains.)*
+- Cloudflare. (2025). "Content Independence Day." Cloudflare Blog, July 1, 2025. _(Default blocking for new domains.)_
 - Mintlify. (2025). "The Value of llms.txt: Hype or Real?" https://www.mintlify.com/blog/the-value-of-llms-txt-hype-or-real
 - Yoast. (2025). "What AI Gets Wrong About Your Site & llms.txt." https://yoast.com/what-ai-gets-wrong-about-your-site-llms-txt/
 - llms-txt.io. (2025). "Is llms.txt Dead? The Current State of Adoption in 2025." https://llms-txt.io/blog/is-llms-txt-dead
@@ -31,7 +31,7 @@ This file serves as the shared reference list for the paper, benchmark write-up,
 - Search Engine Journal. (2025). "Google Says LLMs.txt Comparable to Keywords Meta Tag." https://www.searchenginejournal.com/google-says-llms-txt-comparable-to-keywords-meta-tag/544804/
 - Search Engine Land. (2025). "Google says normal SEO works for ranking in AI Overviews and llms.txt won't be used." https://searchengineland.com/google-says-normal-seo-works-for-ranking-in-ai-overviews-and-llms-txt-wont-be-used-459422
 - Martinez, R. (2025). "Are LLMs.txt Files Being Implemented Across the Web?" Archer Education. https://www.archeredu.com/hemj/are-llms-txt-files-being-implemented-across-the-web/
-- Omnius. (2025). "Google Adds LLMs.txt to Docs After Publicly Dismissing It." https://www.omnius.so/industry-updates/google-adds-llms-txt-to-docs-after-publicly-dismissing-it
+- Omnius. (2025). "Google Adds LLMs.txt to Docs After Publicly Dismissing It." https://www.omnius.so/industry-updates/google-adds-llms-txt-to-docs-after-publicly-dismissing-it _(URL no longer available; redirects to homepage. Article was never individually archived by Wayback Machine, Google Cache, or archive.today. Existence confirmed by Wayback Machine snapshot of the /industry-updates listing page from Dec 18, 2025; screenshot saved in `paper/data/omnius-wayback-listing-20251218.png`. Corroborating source only; primary sources for claim 4.3 are schwartz2025x and infante2025bsky.)_
 - 365i. (2025). "Google tests llms.txt then removes it." https://www.365i.co.uk/blog/2025/12/09/google-llms-discover-ai-mode-2025/
 - 365i. (2026). "Google Says Markdown for AI Is 'a Stupid Idea.' They're Half Right." https://www.365iwebdesign.co.uk/news/2026/02/08/google-markdown-ai-stupid-idea-discovery-files/
 
