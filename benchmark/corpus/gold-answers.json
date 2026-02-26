@@ -1,0 +1,2683 @@
+[
+  {
+    "site_id": "S001",
+    "domain": "docs.stripe.com",
+    "answers": [
+      {
+        "question_id": "S001-Q01",
+        "gold_answer": "The primary backend object for payments in Stripe is PaymentIntent, which manages the payment process and tracks its status throughout the transaction lifecycle. The recommended modern frontend tool is the Payment Element, which replaces the legacy Card Element and provides a unified interface for multiple payment methods.",
+        "source_urls": [
+          "https://docs.stripe.com/payments"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q02",
+        "gold_answer": "Stripe Connect uses multiple charge types for marketplace payments, allowing platforms to create charges and split payments between the platform and connected sellers or service providers. Funds move directly from customers to the platform, which then handles distribution to sellers.",
+        "source_urls": [
+          "https://docs.stripe.com/connect"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q03",
+        "gold_answer": "Stripe Billing is a platform for managing subscriptions, invoicing, and recurring payments with automation features including smart retry logic for failed payments and support for multiple pricing models. Billing APIs differ from direct PaymentIntent integration by handling subscription lifecycle management and invoicing automatically, while PaymentIntent focuses on individual transactions.",
+        "source_urls": [
+          "https://docs.stripe.com/billing"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q04",
+        "gold_answer": "The Setup Intents API enables storing customer payment details securely without immediately charging them, making it ideal for saving payment methods and setting up recurring payments. Setup Intents work alongside the Payment Intents API, where Setup Intents handle the initial payment method collection and storage, while PaymentIntents manage the actual payment execution.",
+        "source_urls": [
+          "https://docs.stripe.com/payments/save-and-reuse"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q05",
+        "gold_answer": "Stripe Connect offers three account types for platforms: Standard (lowest integration, direct Stripe relationship), Express (balanced ease-of-use with platform control over onboarding and payouts), and Custom (maximum control with platform responsibility for all account management). Modern Stripe documentation recommends using the Accounts v2 API or controller properties terminology instead of these legacy account types.",
+        "source_urls": [
+          "https://docs.stripe.com/connect/accounts",
+          "https://docs.stripe.com/connect/account-types"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q06",
+        "gold_answer": "Stripe Checkout is a prebuilt payment page that can be hosted on Stripe's servers or embedded on your website, supporting both one-time and subscription payments. Payment Links provide a no-code option to create custom payment pages without coding, while Checkout is recommended for comprehensive payment acceptance scenarios including embedded forms and multiple payment methods.",
+        "source_urls": [
+          "https://docs.stripe.com/payments/checkout"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q07",
+        "gold_answer": "Stripe Issuing enables businesses to create, manage, and distribute payment cards for customers. Stripe Treasury (formerly Financial Accounts for platforms) allows connected accounts to hold funds, perform transfers, and manage cash flow. Together with Financial Accounts, they expand Stripe's payment capabilities beyond accepting payments to issuing cards and enabling embedded financial services.",
+        "source_urls": [
+          "https://docs.stripe.com/issuing",
+          "https://docs.stripe.com/treasury"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S001-Q08",
+        "gold_answer": "The Payment Element reduces PCI compliance obligations by collecting payment information securely without it passing through your servers. Stripe Confirmation Tokens centralize payment data including shipping and return URLs into a single object that can be transmitted to servers, enabling Stripe to add new payment capabilities while maintaining consistency and reducing PCI exposure through client-side data handling.",
+        "source_urls": [
+          "https://docs.stripe.com/security/guide.md",
+          "https://docs.stripe.com/payments/payment-element/migration-ct.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S002",
+    "domain": "developers.cloudflare.com",
+    "answers": [
+      {
+        "question_id": "S002-Q01",
+        "gold_answer": "Cloudflare Workers is a serverless platform enabling developers to deploy, build, and scale applications globally across Cloudflare's network with a single command. Unlike serverful compute models requiring infrastructure management, Workers eliminates infrastructure concerns by automatically provisioning and scaling compute resources globally.",
+        "source_urls": [
+          "https://developers.cloudflare.com/workers"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q02",
+        "gold_answer": "Cloudflare's AI Gateway provides visibility and control over AI applications through analytics, logging, caching, and rate limiting, while Workers AI represents hosted LLM models that integrate with AI Gateway. Workers AI operates as one of several providers compatible with AI Gateway, enabling orchestrated access to language models.",
+        "source_urls": [
+          "https://developers.cloudflare.com/ai-gateway"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q03",
+        "gold_answer": "Cloudflare R2's three primary use cases are cloud-native application storage, cloud storage for web content, and data lakes for analytics and big data. Unlike S3, R2 eliminates costly egress bandwidth fees, positioning itself as a cost-competitive alternative by charging for storage and API operations without separate egress costs.",
+        "source_urls": [
+          "https://developers.cloudflare.com/r2"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q04",
+        "gold_answer": "Model Context Protocol integration enables agents to expose their tools to other agents and language models, supporting multi-tool coordination and interoperability without custom integration for each interaction. Key security considerations include OAuth 2.1 for authentication, CSRF protection using secure cookies, input validation to prevent XSS attacks, restrictive Content Security Policy headers, and state management with short expiration times.",
+        "source_urls": [
+          "https://developers.cloudflare.com/agents",
+          "https://developers.cloudflare.com/agents/guides/securing-mcp-server"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q05",
+        "gold_answer": "Cloudflare AI Gateway caching stores identical LLM API responses and serves them directly from Cloudflare's cache for future requests, reducing latency through faster response delivery and reducing costs by minimizing provider API calls. Caching can be configured with HTTP headers including cache TTL duration, skip cache instructions, and custom cache keys.",
+        "source_urls": [
+          "https://developers.cloudflare.com/ai-gateway/features/caching"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q06",
+        "gold_answer": "Durable Objects are specialized Cloudflare Workers combining compute with persistent storage, featuring global uniqueness enabling worldwide request routing to specific instances and attached durable storage for strongly consistent data access. This enables building stateful applications like collaborative editors, multiplayer games, and live chat without separate database infrastructure.",
+        "source_urls": [
+          "https://developers.cloudflare.com/durable-objects"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q07",
+        "gold_answer": "Cloudflare's browser rendering runs headless Chrome on the global edge network with instant access to browser pools, low cold-start times, and session reuse for improved performance. Traditional headless browser approaches require managing your own infrastructure; use Cloudflare for high-volume screenshot generation and data extraction at scale, while traditional approaches suit one-off automation tasks.",
+        "source_urls": [
+          "https://developers.cloudflare.com/browser-rendering"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S002-Q08",
+        "gold_answer": "Cloudflare's DNS services provide fast, resilient authoritative DNS management with DNSSEC protection and DDoS defense. Firewall rules and WAF check incoming requests against rulesets for filtering undesired traffic. Together they create comprehensive security by protecting DNS resolution, filtering traffic patterns, and blocking application-layer attacks, while Workers can leverage these protections by accessing Cloudflare's network features.",
+        "source_urls": [
+          "https://developers.cloudflare.com/dns",
+          "https://developers.cloudflare.com/waf"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S003",
+    "domain": "resend.com",
+    "answers": [
+      {
+        "question_id": "S003-Q01",
+        "gold_answer": "Resend supports two main operational modes for sending emails: standard individual email sending and batch email sending for multiple recipients. Batch emails allow for efficient bulk communication without the need for four distinct modes.",
+        "source_urls": [
+          "https://resend.com/docs/api-reference/emails/send-batch-emails",
+          "https://resend.com/docs/dashboard/emails/batch-sending"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q02",
+        "gold_answer": "Domains are fundamental to email deliverability through DNS authentication standards including SPF records authorizing IP addresses and DKIM public keys verifying authenticity. Domain verification with DMARC records starting in 2024 by Gmail and Yahoo is increasingly mandatory, with proper configuration helping prevent spoofing and build trust with mailbox providers for improved inbox placement.",
+        "source_urls": [
+          "https://resend.com/docs/dashboard/domains/introduction.md",
+          "https://resend.com/docs/dashboard/domains/dmarc.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q03",
+        "gold_answer": "Segments are retrieved through API listing endpoints for filtering contacts, while audiences are dashboard pages for managing marketing broadcasts with organized contacts. Use audiences when managing individual marketing campaigns, storing contacts with custom properties for personalization, and controlling preferences through Topics.",
+        "source_urls": [
+          "https://resend.com/docs/dashboard/audiences/introduction.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q04",
+        "gold_answer": "Topics in Resend enable subscription management by allowing creation of distinct content categories where subscribers manage their email preferences through opt-in or opt-out settings. This relates to email compliance by supporting consent-based sending, enabling granular unsubscribe controls, and providing auditable records of subscriber consent and preferences.",
+        "source_urls": [
+          "https://resend.com/docs/api-reference/topics/create-topic.md",
+          "https://resend.com/docs/dashboard/topics/introduction.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q05",
+        "gold_answer": "Resend webhooks track email lifecycle events through real-time HTTPS requests sending JSON payloads when events occur like delivery, bounces, and opens. Event types including email.delivered, email.bounced, email.failed, and email.sent provide comprehensive monitoring of deliverability status, enabling you to assess whether emails successfully reach recipients or encounter problems.",
+        "source_urls": [
+          "https://resend.com/docs/webhooks/introduction.md",
+          "https://resend.com/docs/webhooks/event-types.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q06",
+        "gold_answer": "Resend's email receiving capabilities enable processing incoming emails by parsing content and attachments, then sending POST requests to configured endpoints. Key features include support for both Resend-managed and custom domains, reliable email storage even during webhook downtime, intelligent routing based on recipient addresses, and webhook verification mechanisms.",
+        "source_urls": [
+          "https://resend.com/docs/dashboard/receiving/introduction.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q07",
+        "gold_answer": "Idempotency keys prevent duplicate emails by checking whether an identical email with the same key has been sent in the last 24 hours, returning the same response without resending if found. Trade-offs between scheduling and immediate sending include that scheduled emails limit timing to 30 days in advance while providing engagement optimization, whereas immediate sending suits time-sensitive communications like password resets.",
+        "source_urls": [
+          "https://resend.com/docs/dashboard/emails/idempotency-keys.md",
+          "https://resend.com/docs/dashboard/emails/schedule-email.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S003-Q08",
+        "gold_answer": "Contact properties are custom attributes managed through the Resend API with structured data including property ID, key name, type, and timestamps. These work alongside custom headers which can be added to emails for deliverability and unsubscribe shortcuts, and templates which provide structure for personalized campaigns, enabling comprehensive personalization workflows for targeted email communications.",
+        "source_urls": [
+          "https://resend.com/docs/api-reference/contact-properties/list-contact-properties.md",
+          "https://resend.com/docs/dashboard/emails/custom-headers.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S004",
+    "domain": "clerk.com",
+    "answers": [
+      {
+        "question_id": "S004-Q01",
+        "gold_answer": "Clerk's core authentication components include Sign-in/Sign-up interfaces, User Management components like UserButton and UserProfile, Organization tools for multi-tenant applications, and built-in multifactor authentication and session management. Sessions differ from JWTs in that Clerk manages the full session lifecycle including device monitoring and session revocation, providing greater security control than simple token systems.",
+        "source_urls": [
+          "https://clerk.com"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q02",
+        "gold_answer": "Clerk Organizations enable multi-tenant B2B applications by providing role-based access controls where users can have specific roles within organizations, manage permissions across teams, and support both individual and organization-level subscriptions. This architecture allows businesses to bill per team and gate features based on organizational plan tier.",
+        "source_urls": [
+          "https://clerk.com/billing"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q03",
+        "gold_answer": "Clerk offers three passwordless authentication methods: magic links for one-time use email-based access, passkeys providing cryptographic authentication without passwords, and OTP (one-time passwords) sent via SMS or email. Magic links suit users without existing accounts or those preferring email authentication, while passkeys offer stronger security, and OTP works for verification scenarios.",
+        "source_urls": [
+          "https://clerk.com/blog/passwordless-authentication",
+          "https://clerk.com/blog/ultimate-guide-magic-link-authentication"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q04",
+        "gold_answer": "Clerk Billing integrates with subscriptions by defining and managing plans directly in Clerk while automatically synchronizing subscription status with user data. It integrates with Stripe for payment processing, where Clerk handles the user interface and entitlement logic while Stripe processes actual payments, enabling both B2C and B2B billing models.",
+        "source_urls": [
+          "https://clerk.com/billing"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q05",
+        "gold_answer": "Clerk's webhook system sends HTTP POST requests to your configured endpoints whenever significant events occur like user creation, profile updates, and session changes. Webhooks are delivered through Svix infrastructure with automatic retry logic using exponential backoff, security verification through HMAC signatures, and are confirmed with HTTP 20x status responses.",
+        "source_urls": [
+          "https://clerk.com/blog/webhooks-getting-started"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q06",
+        "gold_answer": "Clerk's user metadata refers to private data accessible only through the Backend API, while public metadata is safely accessible through session tokens and frontend environments. User metadata supports custom user attributes and personalization by storing application-specific data tied to user profiles, enabling tailored experiences and attribute-based access control.",
+        "source_urls": [
+          "https://clerk.com/blog/read-user-data-guide"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q07",
+        "gold_answer": "Clerk supports Enterprise SSO through SAML (Secure Assertion Markup Language) for standard enterprise authentication and OAuth for social sign-on from 20+ providers. SAML with verified domains provides automatic enrollment through Just-in-Time provisioning, while social authentication offers faster onboarding for consumer users, with the trade-off being that SAML requires enterprise IT setup but provides centralized control.",
+        "source_urls": [
+          "https://clerk.com/blog/streamline-enterprise-onboarding-saml",
+          "https://clerk.com/blog/social-sso-in-next-js"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S004-Q08",
+        "gold_answer": "Clerk's Next.js SDK uses ClerkProvider in the layout and Server Components with auth() and currentUser() helpers for App Router, versus getServerSideProps and getAuth() for Pages Router. Server-side authentication is more secure because it prevents token theft from XSS attacks and maintains token management on the server, whereas client-side authentication exposes tokens stored in local storage to security vulnerabilities.",
+        "source_urls": [
+          "https://clerk.com/blog/nextjs-authentication",
+          "https://clerk.com/blog/comparing-authentication-react-nextjs"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S005",
+    "domain": "docs.pinecone.io",
+    "answers": [
+      {
+        "question_id": "S005-Q01",
+        "gold_answer": "Dense vectors are multidimensional representations where each number corresponds to a point in space, enabling semantic search by finding vectors that are closer together semantically. Sparse vectors have very large dimensions with only small proportions of non-zero values representing word importance, enabling lexical keyword-based search where words are scored and summed independently.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/search/semantic-search.md",
+          "https://docs.pinecone.io/guides/search/lexical-search.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q02",
+        "gold_answer": "Serverless indexes run on cloud infrastructure managed by Pinecone, eliminating infrastructure concerns while pod-based indexes require selecting pre-configured hardware units with trade-offs between storage capacity, latency, and throughput. Collections are static non-queryable copies of pod-based indexes used for backups and recovery, with recently created customers unable to provision new pod-based indexes.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/indexes/pods/understanding-pod-based-indexes.md",
+          "https://docs.pinecone.io/guides/manage-data/manage-indexes.md",
+          "https://docs.pinecone.io/guides/indexes/pods/understanding-collections.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q03",
+        "gold_answer": "Namespaces in Pinecone enable multitenancy by providing isolated data containers where all operations target specific namespaces. In serverless indexes, each namespace is stored separately for physical isolation, ensuring one tenant's activity doesn't impact others and enabling simple offboarding by deleting a namespace.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/index-data/implement-multitenancy.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q04",
+        "gold_answer": "Pinecone's hybrid search combines dense vectors for semantic similarity and sparse vectors for keyword matching in a single query using the dotproduct metric. This approach addresses limitations where semantic search misses exact keyword matches while lexical search overlooks synonyms, providing both semantic understanding and keyword precision with simpler architecture than maintaining separate indexes.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/search/hybrid-search.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q05",
+        "gold_answer": "Upsert operations in Pinecone add or update records, overwriting entire records if IDs already exist, supporting batch processing up to 1000 vectors. Metadata filtering allows narrowing search results by applying conditions to metadata key-value pairs using operators like $eq and $in. Data freshness is eventually consistent, with LSN (Log Sequence Numbers) for serverless indexes enabling verification of whether writes are reflected in current query results.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/index-data/upsert-data.md",
+          "https://docs.pinecone.io/guides/search/filter-by-metadata.md",
+          "https://docs.pinecone.io/guides/index-data/check-data-freshness.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q06",
+        "gold_answer": "Pinecone performance optimization strategies include organizing data in logical namespaces with metadata filtering to reduce scan overhead, caching index hosts to eliminate repeated lookups, reusing connection objects to reduce latency, disabling vector value retrieval when unneeded, deploying from the same cloud region as indexes, and using import from object storage for throughput, batch upserting up to 1000 vectors, and parallel operations.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/optimize/decrease-latency.md",
+          "https://docs.pinecone.io/guides/optimize/increase-throughput.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q07",
+        "gold_answer": "Pinecone Assistant enables RAG by automatically handling chunking, embedding, and storage of documents while querying language models with document context to provide grounded answers with citations. It builds on core vector database functionality by automating the RAG pipeline from document upload through context retrieval.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/assistant/overview.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S005-Q08",
+        "gold_answer": "Pinecone's authentication uses API keys with customizable permissions for project access, control plane operations, and data plane operations. Audit logs on Enterprise plans capture user and API actions written to S3 every 30 minutes as JSON files. Encryption includes 256-bit AES-256 at rest, TLS 1.2 with 256-bit AES-256 in transit, and customer-managed encryption keys (CMEK) through AWS KMS for Enterprise users on serverless AWS indexes.",
+        "source_urls": [
+          "https://docs.pinecone.io/guides/production/security-overview.md",
+          "https://docs.pinecone.io/guides/production/configure-audit-logs.md",
+          "https://docs.pinecone.io/guides/production/configure-cmek.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S006",
+    "domain": "ai-sdk.dev",
+    "answers": [
+      {
+        "question_id": "S006-Q01",
+        "gold_answer": "The RAG Agent guide recommends breaking down source material into smaller pieces through chunking, with the documentation noting that it is worth experimenting with different chunking techniques in projects as the best technique will vary.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q02",
+        "gold_answer": "The AI SDK RAG implementation explicitly uses pgvector, a PostgreSQL extension for storing and retrieving vector embeddings, which requires an index such as HNSW or IVFFlat for better performance in similarity search operations.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q03",
+        "gold_answer": "The Multi-Modal Agent guide demonstrates provider flexibility by showing that the same code works with three specific model providers: OpenAI (GPT-4o), Anthropic (Claude), and other providers including Vertex and Ollama, by changing only the provider instance on a single line.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/multimodal-rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q04",
+        "gold_answer": "The mathematical measure used to calculate similarity between embedded vectors in the RAG pipeline is cosine similarity, where a value of 1 indicates high similarity and a value of -1 indicates high opposition.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q05",
+        "gold_answer": "According to the AI SDK documentation, RAG chunking strategy directly affects embedding quality because the larger the input to the embedding model, the lower the quality of the resulting embedding will be, making appropriate chunk sizing critical for effective semantic search in the retrieval pipeline.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q06",
+        "gold_answer": "The RAG implementation solves knowledge cutoff in LLMs by retrieving relevant context from source material based on semantic similarity, with the retrieval pipeline being the specific component responsible for finding relevant context that augments the LLM's response.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S006-Q07",
+        "gold_answer": "The Slackbot Agent guide uses a multi-step tool calling pattern with `stopWhen: stepCountIs(10)` to enable multi-step agentic flows, and demonstrates example tools including a weather tool for fetching real-time weather information and a web search tool powered by Exa for searching up-to-date information.",
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/slackbot"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S007",
+    "domain": "docs.fireworks.ai",
+    "answers": [
+      {
+        "question_id": "S007-Q01",
+        "gold_answer": "According to the Fireworks documentation, FLUX.1 [schnell] FP8, a 12 billion parameter rectified flow transformer, is the image generation model available through their image generation API, with FP8 using reduced precision numerics for 2x faster inference.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/generate-a-new-image-from-a-text-prompt.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q02",
+        "gold_answer": "According to Fireworks documentation, there is no upper limit on the number of events that can be included in a single batch request to the batch inference API, though the dataset must be less than 500 MB in size and must complete processing within a maximum timeout of 24 hours.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-batch-inference-job.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q03",
+        "gold_answer": "Fireworks supports three fine-tuning methodologies for training custom models: Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Reinforcement Fine-Tuning (RFT), with RFT enabling open models to match or surpass frontier closed models.",
+        "source_urls": [
+          "https://docs.fireworks.ai/guides/fine-tuning-overview.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q04",
+        "gold_answer": "The Anthropic-compatible endpoint at Fireworks (`https://api.fireworks.ai/inference`) is used for making API calls compatible with the Anthropic SDK, with the specific API method name `/v1/messages` indicating this compatibility by accepting a POST request with structured input messages.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/anthropic-messages.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q05",
+        "gold_answer": "In Fireworks' reinforcement fine-tuning pipeline, custom evaluators grade model outputs to determine reward signals, playing a critical role in the RFT workflow where the evaluator scores generated trajectories and the trainer uses those scores to update model weights, supporting both programmatic verifiable evaluators and LLM-as-Judge evaluators.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-evaluator.md",
+          "https://docs.fireworks.ai/api-reference/create-reinforcement-fine-tuning-job.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q06",
+        "gold_answer": "Fireworks offers three specific deployment configuration options: autoscaling for managing variable load, speculative decoding for performance optimization by predicting and pre-computing token sequences, and regional deployment options that enable performance optimization by allowing inference to run closer to users geographically.",
+        "source_urls": [
+          "https://docs.fireworks.ai/guides/deploy-autoscaling.md",
+          "https://docs.fireworks.ai/guides/speculative-decoding.md",
+          "https://docs.fireworks.ai/guides/regions.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q07",
+        "gold_answer": "The complete workflow for creating and validating a custom evaluator in Fireworks involves: first getting an evaluator upload endpoint through the dedicated API, then uploading the evaluator code to that endpoint (with project structure typically including Python code defining the evaluation logic), and finally validating the upload to ensure the evaluator functions correctly before use in reinforcement fine-tuning jobs.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-evaluator.md",
+          "https://docs.fireworks.ai/api-reference/get-evaluator-upload-endpoint.md",
+          "https://docs.fireworks.ai/api-reference/validate-evaluator-upload.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S007-Q08",
+        "gold_answer": "Fireworks offers audio transcription capabilities through two distinct endpoints: the standard transcription endpoint for processing audio files and returning complete transcriptions, and the streaming transcription endpoint for real-time processing of audio streams as they are being transmitted.",
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/audio-transcriptions.md",
+          "https://docs.fireworks.ai/api-reference/audio-streaming-transcriptions.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S008",
+    "domain": "docs.crewai.com",
+    "answers": [
+      {
+        "question_id": "S008-Q01",
+        "gold_answer": "The four core components that form the fundamental building blocks of CrewAI's agent framework are Agents (individual AI entities with defined roles and capabilities), Tasks (specific assignments with execution details), Tools (functions for interacting with external systems), and Processes (workflows that define how agents interact and coordinate).",
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/agents.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q02",
+        "gold_answer": "The primary purpose of the Hallucination Guardrail feature in CrewAI's enterprise offering is to validate AI-generated content and ensure it is grounded in facts by comparing task outputs against reference context and providing detailed feedback when potentially hallucinated content is detected.",
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/features/hallucination-guardrail.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q03",
+        "gold_answer": "Three trigger types available in CrewAI AMP for automating crew execution are Gmail Trigger (which kicks off crews when Gmail events occur), Slack Trigger (which starts crews directly from Slack channels), and Google Calendar Trigger for automating crew execution based on calendar events.",
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/guides/gmail-trigger.md",
+          "https://docs.crewai.com/en/enterprise/guides/google-calendar-trigger.md",
+          "https://docs.crewai.com/en/enterprise/guides/slack-trigger.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q04",
+        "gold_answer": "The three available process types in CrewAI for managing how agents execute tasks are Sequential (where tasks are executed one after the other in a linear progression), Hierarchical (where a manager agent oversees task execution including planning, delegation, and validation), and Hybrid processes that combine elements of both approaches.",
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/processes.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q05",
+        "gold_answer": "CrewAI's memory system integrates with agent capabilities by providing a unified memory system that enhances task execution across a crew, allowing agents to access shared context and learning from previous interactions to improve decision-making and coordination in completing complex tasks.",
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/memory.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q06",
+        "gold_answer": "The Flow HITL (Human-In-The-Loop) Management feature in CrewAI differs from standard flow execution by enabling human oversight and decision-making at designated points in the workflow, providing specific routing capabilities that allow flows to branch based on human input or approval before continuing with subsequent tasks.",
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/features/flow-hitl-management.md",
+          "https://docs.crewai.com/en/guides/human-in-the-loop.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q07",
+        "gold_answer": "CrewAI integrates with MCP (Model Context Protocol) servers to enable agents to access tools through multiple transport mechanisms, including stdio (standard input/output), SSE (Server-Sent Events), and streamable HTTP protocols, allowing flexible tool access patterns across different infrastructure environments.",
+        "source_urls": [
+          "https://docs.crewai.com/en/mcp/overview.md",
+          "https://docs.crewai.com/en/mcp/stdio.md",
+          "https://docs.crewai.com/en/mcp/sse.md",
+          "https://docs.crewai.com/en/mcp/streamable-http.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S008-Q08",
+        "gold_answer": "CrewAI integrates with observability platforms including Datadog and Langfuse, which support monitoring and evaluating agent performance in production by providing visibility into agent execution patterns, task completion rates, and model performance metrics.",
+        "source_urls": [
+          "https://docs.crewai.com/en/observability/overview.md",
+          "https://docs.crewai.com/en/observability/datadog.md",
+          "https://docs.crewai.com/en/observability/langfuse.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S009",
+    "domain": "turso.tech",
+    "answers": [
+      {
+        "question_id": "S009-Q01",
+        "gold_answer": "Turso uses libSQL, a production-ready fork of SQLite, as its underlying technology, which maintains full backward compatibility with SQLite while adding features such as HTTP protocol support, native vector search, and open contribution support.",
+        "source_urls": [
+          "https://turso.tech/docs"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q02",
+        "gold_answer": "According to the Turso documentation, the five core features supported by Turso's SQLite-compatible database are: concurrent writes and encryption at rest, vector search and full-text search capabilities, cloud synchronization through Turso Sync, offline-first functionality with automatic syncing, and native vector search for AI/RAG applications.",
+        "source_urls": [
+          "https://turso.tech/docs"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q03",
+        "gold_answer": "For TypeScript/JavaScript development, Turso recommends `@libsql/client` for embedded local databases and ORM integration, while `@tursodatabase/serverless` is recommended for serverless cloud access as a lightweight option with zero native dependencies designed for edge computing environments.",
+        "source_urls": [
+          "https://turso.tech/docs/sdk/ts/quickstart"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q04",
+        "gold_answer": "The key difference between Turso Sync and embedded replicas is that embedded replicas allow you to replicate a Turso database inside your application with automatic syncing when reconnected, whereas Turso Sync provides offline-first development with conflict resolution capabilities for concurrent writes across client and cloud environments.",
+        "source_urls": [
+          "https://turso.tech/docs/turso-sync"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q05",
+        "gold_answer": "Turso Sync enables offline-first development by allowing applications to work with local data and automatically sync changes when reconnected to the cloud, using a Last-Push-Wins conflict resolution mechanism by default (where the version pushed last takes precedence) while also supporting custom conflict resolution strategies including DISCARD_LOCAL, REBASE_LOCAL, and MANUAL_RESOLUTION for handling concurrent writes.",
+        "source_urls": [
+          "https://turso.tech/docs/turso-sync"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q06",
+        "gold_answer": "Turso Cloud's multi-region deployment and point-in-time recovery features work together to support disaster recovery and operational continuity by allowing databases to be replicated across multiple geographic regions while enabling restoration to any specific point in time, ensuring data availability and business continuity across different failure scenarios.",
+        "source_urls": [
+          "https://turso.tech/docs/turso-cloud"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q07",
+        "gold_answer": "Turso supports TypeScript/JavaScript frameworks including Next.js, Remix, and Astro, along with ORM integrations for Drizzle and Prisma, which enable seamless integration with Turso databases through type-safe query builders and automatic schema management.",
+        "source_urls": [
+          "https://turso.tech/docs/sdk/ts/guides/nextjs",
+          "https://turso.tech/docs/sdk/ts/orm/drizzle",
+          "https://turso.tech/docs/sdk/ts/orm/prisma"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S009-Q08",
+        "gold_answer": "AgentFS is a feature in Turso designed specifically for AI agent applications, providing filesystem and state management capabilities that emphasize auditability and reproducibility for agent operations, enabling agents to persist and retrieve state reliably.",
+        "source_urls": [
+          "https://turso.tech/docs/agentfs"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S010",
+    "domain": "docs.getlago.com",
+    "answers": [
+      {
+        "question_id": "S010-Q01",
+        "gold_answer": "According to Lago documentation, gross revenue is calculated by considering all finalized invoices (whether related to subscriptions or usage), adding pay in advance fees (whether invoiceable or not), and deducting the total amount of credit notes refunded to customers.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/gross-revenue.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q02",
+        "gold_answer": "Lago supports two primary types of coupons for customer discounts: fixed amount coupons and percentage-based coupons, allowing platforms to apply both flat reductions and proportional discounts to customer invoices.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/coupons/coupon-object",
+          "https://docs.getlago.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q03",
+        "gold_answer": "The key difference between the invoice collection metric and the MRR (Monthly Recurring Revenue) metric in Lago is that invoice collection tracks actual payments collected from customers, while MRR measures the recurring revenue expected from active subscriptions regardless of payment status.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/invoice-collection.md",
+          "https://docs.getlago.com/api-reference/analytics/mrr.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q04",
+        "gold_answer": "Overdue balance in Lago's billing system represents the total amount owed by customers that remains unpaid past the due date, and is calculated from invoices in states such as pending or failed payment states that have not been successfully collected.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/overdue-balance.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q05",
+        "gold_answer": "Billable metrics in Lago define usage-based pricing by specifying how consumption is measured and tracked, with aggregation types (such as COUNT, SUM, MAX, WEIGHTED SUM, LATEST, UNIQUE COUNT, or CUSTOM) playing a critical role in how consumption data is processed and metered for billing purposes.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/billable-metrics/object.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q06",
+        "gold_answer": "Lago's credit note system integrates with invoice management by allowing credit notes to be created to refund customers, with operations including creation, modification, and voiding of credit notes, enabling adjustment of customer balances and dispute resolution beyond initial invoice creation.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/credit-notes/create.md",
+          "https://docs.getlago.com/api-reference/credit-notes/credit-note-object.md",
+          "https://docs.getlago.com/api-reference/credit-notes/void.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q07",
+        "gold_answer": "Entitlements and features in Lago's plan and subscription system work together where features represent functional capabilities that customers can access, entitlements define which features are included in a plan, and privileges enhance feature functionality by adding usage limits, priority tiers, or additional capabilities to features.",
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/entitlements/features/feature-object.md",
+          "https://docs.getlago.com/api-reference/entitlements/plan-entitlements/plan-entitlement-object.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S010-Q08",
+        "gold_answer": "Lago supports payment provider integrations with Stripe, Adyen, and GoCardless, which enable flexible payment collection across different geographic markets by providing local payment methods, supporting multiple currencies, and enabling automatic payment retries tailored to regional payment preferences.",
+        "source_urls": [
+          "https://docs.getlago.com/guides/payments/payment-providers/stripe.md",
+          "https://docs.getlago.com/guides/payments/payment-providers/adyen.md",
+          "https://docs.getlago.com/guides/payments/payment-providers/gocardless.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S011",
+    "domain": "smartcar.com",
+    "answers": [
+      {
+        "question_id": "S011-Q01",
+        "gold_answer": "A Smartcar access token remains valid for 2 hours before expiring, after which a refresh token lasting 60 days can be used to obtain a new token pair without requiring the user to re-authenticate.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/authorization/overview.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q02",
+        "gold_answer": "The maximum time window for retrieving BMW charge records through the Smartcar API is 30 days or the duration since the vehicle owner first granted application access, whichever is shorter.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/bmw/get-charge-records.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q03",
+        "gold_answer": "Three vehicle system categories supported by the System Status endpoint are tire pressure monitoring (SYSTEM_TPMS), airbag systems (SYSTEM_AIRBAG), and engine diagnostics (SYSTEM_MIL), which monitor tire sensors, vehicle safety restraints, and engine fault detection respectively.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/get-system-status.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q04",
+        "gold_answer": "Compatibility check results vary by region (US, CA, Europe) and trim level, with the API supporting region-based queries but not explicitly exposing trim-level filtering. The VIN-based compatibility check only supports US vehicles and cannot check capabilities for Canadian and European VINs, requiring users to contact Smartcar directly for specific trim-level compatibility details rather than relying on a single compatibility check.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/compatibility-api-intro.md",
+          "https://smartcar.com/docs/api-reference/compatibility/by-region-and-make.md",
+          "https://smartcar.com/docs/api-reference/compatibility/by-vin.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q05",
+        "gold_answer": "Tesla vehicles require Virtual Key support to enable lock/unlock commands through Smartcar's API. Virtual Key is a mandatory requirement for these operations and serves as the special infrastructure consideration that must be in place for command execution on Tesla vehicles.",
+        "source_urls": [
+          "https://smartcar.com/docs/connect/other-actions/tesla-virtual-key",
+          "https://smartcar.com/docs/api-reference/control-lock-unlock",
+          "https://smartcar.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q06",
+        "gold_answer": "The webhook delivery system does not guarantee ordered delivery and provides at-least-once delivery semantics with automatic retries up to 4 attempts using exponential backoff; developers must use unique eventId fields for deduplication and compare oemUpdatedAt timestamps to establish correct ordering when processing vehicle state changes.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/webhooks/delivery-behavior.md",
+          "https://smartcar.com/docs/api-reference/webhooks/events/vehicle-state.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q07",
+        "gold_answer": "Smartcar's permissions system uses OAuth-based scopes derived from selected signals within the Dashboard, where developers choose granular vehicle data points that automatically map to required read and control permissions; brand-specific endpoints integrate into this permission model but are being deprecated by Q3 2026 in favor of standardized API approaches that maintain consistent permission handling across all vehicle makes.",
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/permissions.md",
+          "https://smartcar.com/docs/api-reference/about-brand-specific.md",
+          "https://smartcar.com/docs/connect/advanced-config/flows.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S011-Q08",
+        "gold_answer": "Data freshness frequency varies significantly across OEM brands, ranging from 1-5 minutes for Tesla and BYD to 30-60 minutes for Acura and Toyota, with most manufacturers clustering in the 5-10 minute range; developers should implement webhook-based subscriptions rather than polling to handle this variation, using stored token pairs and backend database structures to manage asynchronous updates from different manufacturers with varying latencies.",
+        "source_urls": [
+          "https://smartcar.com/docs/help/frequencies.md",
+          "https://smartcar.com/docs/help/reliability-and-freshness.md",
+          "https://smartcar.com/docs/getting-started/how-to/architecture-design.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S012",
+    "domain": "nextjs.org",
+    "answers": [
+      {
+        "question_id": "S012-Q01",
+        "gold_answer": "Dynamic route segments in Next.js App Router use square bracket notation as the file extension convention, where folder names wrapped in brackets like [slug] create dynamic segments that are filled at request time or prerendered at build time.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q02",
+        "gold_answer": "The 'use server' directive marks code for server-side execution only, designating a function or file to be executed on the server and enabling access to secure resources like databases without exposing them to the client.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-server"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q03",
+        "gold_answer": "Next.js 'use cache' directive provides two primary caching levels with distinct durations: client-side caching (stale time of 5 minutes client-side) and server-side caching (revalidate time of 15 minutes server-side). These times can be customized using the 'cacheLife' function to control both when content is considered stale for the client and when the server revalidates data.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q04",
+        "gold_answer": "Server Components and Client Components must be combined by nesting Client Components within Server Components, where Server Components fetch data and Client Components handle interactivity; Server Components cannot directly use state, effects, or browser APIs while Client Components cannot directly access secure server resources, requiring developers to pass serializable props from server to client boundaries.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+          "https://nextjs.org/docs/app/api-reference/directives/use-client",
+          "https://nextjs.org/docs/app/api-reference/directives/use-server"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q05",
+        "gold_answer": "Next.js provides three caching directives with distinct scopes and lifetimes: 'use cache' (in-memory server-side with stale: 5 min, revalidate: 15 min defaults), 'use cache: remote' (persistent remote handler with configurable revalidate and expire times), and 'use cache: private' (browser-only per-client caching without server storage). Each directive addresses different performance needs: standard for shared static content, remote for reducing backend load in serverless, and private for compliance-required personal data.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache",
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache-private",
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache-remote"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q06",
+        "gold_answer": "Incremental Static Regeneration (ISR) uses time-based revalidation to update static content at specified intervals without rebuilding the entire site, while on-demand revalidation using revalidatePath or revalidateTag invalidates cache entries immediately following specific events; developers choose ISR for predictable refresh cycles and on-demand revalidation for event-driven updates like content changes.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/guides/incremental-static-regeneration",
+          "https://nextjs.org/docs/app/getting-started/caching-and-revalidating"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q07",
+        "gold_answer": "Server Components, Client Components, and Cache Components work together through Partial Prerendering (PPR), which prerendered static and cached content into an HTML shell while streaming dynamic content. This combination optimizes performance by delivering an interactive initial shell instantly, defers network requests for truly dynamic content, and caches results that don't require user-specific data to reduce backend load.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/cache-components",
+          "https://nextjs.org/docs/app/getting-started/server-and-client-components"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S012-Q08",
+        "gold_answer": "Metadata, OG images, and the Link component work together by using generateMetadata to fetch dynamic page information and ImageResponse for programmatic OG image generation, while the Link component provides prefetching and client-side navigation that coordinates with metadata through the router cache; this combination enables search engine optimization, social media shareability, and optimized navigation performance across different page types.",
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/metadata-and-og-images",
+          "https://nextjs.org/docs/app/api-reference/components/link",
+          "https://nextjs.org/docs/app/getting-started/images"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S013",
+    "domain": "postman.com",
+    "answers": [
+      {
+        "question_id": "S013-Q01",
+        "gold_answer": "The primary purpose of the Postman API Visualizer feature is to transform raw API JSON and XML responses into interactive visual representations such as bar graphs, tables, heat maps, and geographic maps without requiring extensive coding.",
+        "source_urls": [
+          "https://www.postman.com/api-visualizer/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q02",
+        "gold_answer": "The Postman API security training sessions cover identification and mitigation of OWASP API vulnerabilities, including common vulnerabilities like broken object level authorization and excessive data exposure, with instruction on using Postman monitors to automate API security tests.",
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/introduction-to-api-security/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q03",
+        "gold_answer": "The key concept emphasized in the API Lifecycle documentation as the foundation for building high-quality APIs is the series of eight standardized stages including define, design, develop, test, secure, deploy, observe, and distribute that teams must follow to successfully design, develop, deploy, and consume APIs.",
+        "source_urls": [
+          "https://www.postman.com/api-platform/api-lifecycle/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q04",
+        "gold_answer": "Postman Flows, Collections, and Workspaces interact together by enabling developers to chain requests and authorization using low-code visual workflows in Flows, organize and version API requests in Collections, and facilitate team collaboration by sharing applications and organizing workspaces, with Collections serving as reusable request libraries and Workspaces providing the collaborative environment for team-based API development.",
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/building-low-code-applications-with-postman-flows/",
+          "https://www.postman.com/events/intergalactic/harnessing-collections-and-workspaces-for-collaboration/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q05",
+        "gold_answer": "Basic API testing involves sending requests, inspecting responses, and writing test snippets to validate functionality, while advanced API testing with automation uses pre-request scripts, assertions, variables, and libraries to handle complex workflows across multiple endpoints with conditional logic and data transformation in different environments.",
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/an-introduction-for-testers/",
+          "https://www.postman.com/events/intergalactic/advanced-api-testing-best-practices-and-automation-techniques/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q06",
+        "gold_answer": "Partner Workspaces enable organizations to collaborate within Postman's extensible platform for API integration and distribution partnerships, while the Public API Network serves as a discovery and distribution mechanism for APIs to Postman's 40 million developers, with Partner Workspaces facilitating internal collaboration and the Public API Network enabling broad API discoverability.",
+        "source_urls": [
+          "https://www.postman.com/partner-program/",
+          "https://www.postman.com/events/intergalactic/discovering-public-apis-and-public-api-network/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q07",
+        "gold_answer": "API governance defines policies and standards that guide API design, development, and maintenance across organizations, API design is the intentional process of making decisions about how APIs expose data to consumers, and API lifecycle management encompasses the complete journey from concept through production; these three pillars converge by applying governance throughout the lifecycle, automating consistency checks, maintaining discoverable catalogs, and prioritizing developer enablement to enable organizations to scale API-first development.",
+        "source_urls": [
+          "https://www.postman.com/api-platform/api-governance/",
+          "https://www.postman.com/api-platform/api-design/",
+          "https://www.postman.com/api-platform/api-lifecycle/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S013-Q08",
+        "gold_answer": "The API-first approach connects documentation, testing, and governance by prioritizing API design before implementation, using documentation to improve developer onboarding, integrating testing throughout the lifecycle to ensure quality, and applying governance standards at each stage; this holistic methodology enables organizations to develop APIs in partnership with stakeholders, maintain consistency across portfolios, and reduce collaboration blockers through centralized workspaces and transparent processes.",
+        "source_urls": [
+          "https://www.postman.com/api-first/",
+          "https://www.postman.com/events/intergalactic/introduction-to-documentation/",
+          "https://www.postman.com/events/intergalactic/collaboration-and-governance-for-api-teams/"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S014",
+    "domain": "vite.dev",
+    "answers": [
+      {
+        "question_id": "S014-Q01",
+        "gold_answer": "Vite's dev server uses ES modules (ESM) as the module system to serve source files, enabling native browser module support for development with instant updates.",
+        "source_urls": [
+          "https://vite.dev/guide/features.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q02",
+        "gold_answer": "Vite uses Rollup as the build tool for its production bundling process, generating optimized and minified output for deployment.",
+        "source_urls": [
+          "https://vite.dev/guide/build.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q03",
+        "gold_answer": "Vite organizes configuration options into seven major categories: Shared Options (cross-context settings), Server Options (dev server configuration), Build Options (production build settings), Preview Options (preview server settings), Dep Optimization Options (dependency pre-bundling), SSR Options (server-side rendering configuration), and Worker Options (web worker configuration).",
+        "source_urls": [
+          "https://vite.dev/config"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q04",
+        "gold_answer": "Hot Module Replacement (HMR) provides instant precise updates without reloading the page by leveraging native ESM, while Dependency Pre-Bundling converts ESM dependencies with many internal modules into single modules and reduces HTTP requests from 600+ to one for packages like lodash-es; together they optimize development by combining instant HMR feedback with faster initial page loads through consolidated module bundling and aggressive HTTP caching.",
+        "source_urls": [
+          "https://vite.dev/guide/features.md",
+          "https://vite.dev/guide/dep-pre-bundling.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q05",
+        "gold_answer": "Vite's plugin system architecture differs between environments by supporting universal hooks like resolveId and transform that run in both dev and build contexts, with development-specific hooks including configureServer and handleHotUpdate for dev server integration, while build uses Rollup's full bundling pipeline; developers can conditionally apply plugins via the apply property to target 'serve' or 'build' contexts.",
+        "source_urls": [
+          "https://vite.dev/guide/api-plugin.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q06",
+        "gold_answer": "Server-Side Rendering (SSR) configuration in Vite requires separate client and server build commands using the --outDir and --ssr flags, with development setup using Vite in middleware mode with Express; SSR differs from static deployment by requiring server runtime infrastructure and configuration options like ssr.noExternal and ssr.target to manage dependency externalization and Node.js specific behavior.",
+        "source_urls": [
+          "https://vite.dev/guide/ssr.md",
+          "https://vite.dev/guide/static-deploy.md",
+          "https://vite.dev/config/ssr-options.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q07",
+        "gold_answer": "Vite's Environment API creates a unified abstraction across different runtime environments by enabling explicit configuration of multiple environments like browser, Node server, and edge runtimes within a single application, allowing developers to match development behavior to production constraints; this design pattern enables plugin developers to write environment-agnostic tooling that automatically adapts to configured environments without requiring separate logic for each runtime.",
+        "source_urls": [
+          "https://vite.dev/guide/api-environment.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S014-Q08",
+        "gold_answer": "The Plugin API, JavaScript API, and HMR API work together by enabling plugins to register transformation hooks using the Plugin API, developers to programmatically control Vite using the JavaScript API for building and previewing, and the HMR API to manage hot module replacement for development; these three systems combine to allow developers to build advanced tooling that transforms code during development, controls build processes, and maintains live updates across complex applications.",
+        "source_urls": [
+          "https://vite.dev/guide/api-plugin.md",
+          "https://vite.dev/guide/api-javascript.md",
+          "https://vite.dev/guide/api-hmr.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S015",
+    "domain": "trigger.dev",
+    "answers": [
+      {
+        "question_id": "S015-Q01",
+        "gold_answer": "Trigger.dev operates under the Apache 2.0 license, which is a permissive open source license enabling users to view source code, contribute, and self-host the platform.",
+        "source_urls": [
+          "https://trigger.dev/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q02",
+        "gold_answer": "Trigger.dev is designed to handle three types of long-running operations without serverless timeout limitations: AI agents and autonomous workflows, extended LLM operations and prompt chaining, and video, audio, and document processing tasks.",
+        "source_urls": [
+          "https://trigger.dev/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q03",
+        "gold_answer": "Trigger.dev provides built-in monitoring and observability features including a full dashboard for task execution visibility, real-time updates via API and React hooks for displaying task status in frontends, and automatic retries with queuing for reliable background job processing.",
+        "source_urls": [
+          "https://trigger.dev/llms.txt",
+          "https://trigger.dev/docs"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q04",
+        "gold_answer": "Trigger.dev's 'No Timeouts' benefit eliminates serverless constraints by allowing tasks to run for hours, while 'No Server Management' handles infrastructure automatically, combining to enable developers migrating from traditional serverless platforms to write long-running workflows in plain async code without managing containers or worrying about timeout limits.",
+        "source_urls": [
+          "https://trigger.dev/llms.txt",
+          "https://trigger.dev/docs"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q05",
+        "gold_answer": "Trigger.dev's Scheduled Tasks feature uses cron expressions for periodic job execution managed by the platform, while traditional cron requires server management and maintenance; Scheduled Tasks offer advantages including built-in monitoring, automatic retries, and elastic scaling without the operational overhead of traditional cron implementations.",
+        "source_urls": [
+          "https://trigger.dev/product/scheduled-tasks",
+          "https://trigger.dev/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q06",
+        "gold_answer": "Trigger.dev's Concurrency feature controls how many tasks run simultaneously to prevent overwhelming shared resources, while the Realtime feature enables live updates about task execution status; together they enable building responsive, scalable multi-tenant SaaS applications by allowing per-tenant concurrency limits and real-time progress communication to frontend dashboards.",
+        "source_urls": [
+          "https://trigger.dev/product/concurrency",
+          "https://trigger.dev/product/realtime",
+          "https://trigger.dev/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q07",
+        "gold_answer": "Self-hosting Trigger.dev provides source code transparency and full control over extensibility and deployment infrastructure, while managed deployment offers simplified operations and automatic scaling; the tradeoff between self-hosting and managed deployment involves operational complexity versus ease of use, with self-hosting enabling custom infrastructure integration and managed deployment reducing observability and maintenance responsibilities.",
+        "source_urls": [
+          "https://trigger.dev/docs/open-source-self-hosting",
+          "https://trigger.dev/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S015-Q08",
+        "gold_answer": "AI agents, scheduled tasks, and background job processing converge within Trigger.dev as unified capabilities through a common task execution model supporting long-running async workflows, with AI agents leveraging background job infrastructure for extended LLM operations, scheduled tasks providing temporal triggering, and background jobs handling event-driven execution; this integration enables architects to implement complex multi-step AI workflows, periodic maintenance tasks, and event-responsive processing using a single framework without timeout constraints.",
+        "source_urls": [
+          "https://trigger.dev/product/ai-agents",
+          "https://trigger.dev/product/scheduled-tasks",
+          "https://trigger.dev/docs/guides/ai-agents"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S016",
+    "domain": "buildwithfern.com",
+    "answers": [
+      {
+        "question_id": "S016-Q01",
+        "gold_answer": "Fern organizes its platform into two main product sections: SDKs (for generating client libraries in multiple languages like TypeScript, Python, Go, and Java) and Docs (for creating API documentation with customizable themes and deployment options).",
+        "source_urls": [
+          "https://buildwithfern.com"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q02",
+        "gold_answer": "Webflow is one of the companies mentioned as a customer that trusts Fern for their SDK and documentation needs, along with other notable customers including Auth0, ElevenLabs, Alchemy, and LaunchDarkly.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q03",
+        "gold_answer": "Fern enables developers to start with an API specification and automatically generate SDKs in multiple languages, contrasting with traditional hand-rolled, drift-prone SDKs by providing consistent multi-language client libraries.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q04",
+        "gold_answer": "Fern's documentation features include interactive, brand-tailored API documentation with customizable branding and conversion-focused design, enabling teams to create branded and modern documentation experiences.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q05",
+        "gold_answer": "Under the Build section, the buildwithfern.com/learn resource is available for learning about SDK and documentation generation.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q06",
+        "gold_answer": "API-first teams, product teams, and developer-experience teams benefit from Fern, with Fern solving the specific problem for product and developer-experience teams of creating branded documentation and shareable resources.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S016-Q07",
+        "gold_answer": "Fern positions itself as reducing consistency issues and maintenance overhead compared to hand-rolled SDKs by providing automatically generated SDKs that eliminate drift and the burden of maintaining bespoke implementations across multiple languages.",
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S017",
+    "domain": "loops.so",
+    "answers": [
+      {
+        "question_id": "S017-Q01",
+        "gold_answer": "The critical implementation detail emphasized in Loops documentation is that API requests must be performed server-side and not in browser clients.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q02",
+        "gold_answer": "Two of the three entry points that Loops provides for getting started are the Quickstart guide and the API Introduction documentation, with OpenAPI specifications as the third option.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q03",
+        "gold_answer": "Loops describes itself as a platform for handling three different types of email: product emails, marketing communications, and transactional messages through a unified interface.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q04",
+        "gold_answer": "The API references and machine-readable specifications provided in OpenAPI YAML and JSON formats support different use cases by enabling toolchain integration and allowing developers to choose between documentation or programmatic schema-driven approaches.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q05",
+        "gold_answer": "Loops' contact management, template creation, and event-triggered messaging capabilities are integrated within a unified platform that combines dashboard UI with server-side API for flexible automation workflows.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q06",
+        "gold_answer": "Loops supports integration workflows through direct connections to modern tech stacks and third-party tools, and provides Bounce.Doctor as an additional tool to address email delivery concerns through deliverability diagnostics.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S017-Q07",
+        "gold_answer": "Loops' architectural requirement for server-side API requests reflects the platform's design philosophy of prioritizing security and high inbox placement by preventing sensitive operations from occurring in untrusted client-side environments.",
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S018",
+    "domain": "ai.google.dev",
+    "answers": [
+      {
+        "question_id": "S018-Q01",
+        "gold_answer": "The primary purpose of the Gemini API is to enable AI-powered applications through fundamental capabilities including content generation, embeddings, and token counting.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q02",
+        "gold_answer": "Three capabilities under the Advanced Features section of Gemini API documentation are batch processing operations, prompt caching for optimized performance, and file handling capabilities.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q03",
+        "gold_answer": "Foundational features like content generation and token counting provide core AI functionality that supports practical applications, while the semantic retrieval system leverages these capabilities to enable advanced question-answering and corpus management for enterprise use cases.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q04",
+        "gold_answer": "The inclusion of both the Live Music API and legacy PaLM API documentation alongside current Gemini API documentation demonstrates the platform's evolution, with the PaLM API noted as decommissioned to indicate the transition toward Gemini as the primary offering.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q05",
+        "gold_answer": "The API reference section organized by feature type, including method references, batch operations, and specialized tools, provides comprehensive endpoint documentation for Gemini.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q06",
+        "gold_answer": "Permissions and model management features combine to support enterprise use cases by providing authentication systems for corpora and tuning operations alongside fine-tuning capabilities that enable customization of AI behavior.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S018-Q07",
+        "gold_answer": "Gemini API balances foundational capabilities such as content generation with sophisticated enterprise features including semantic retrieval, fine-tuning, and permission systems, enabling accessibility for standard use cases while providing depth for enterprise deployments requiring authentication and data management.",
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S019",
+    "domain": "developer.chrome.com",
+    "answers": [
+      {
+        "question_id": "S019-Q01",
+        "gold_answer": "Chrome's built-in AI capabilities available to developers include the Prompt API, Translator API, Summarizer API, Language Detector API, and Proofreader and Rewriter APIs, all of which bring powerful models client-side to protect user data.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q02",
+        "gold_answer": "Three major categories of web APIs documented under Capabilities & Web APIs are WebUSB for USB device communication, Web Serial API for serial device communication, and Shape Detection API for detecting faces, barcodes, and text in images.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q03",
+        "gold_answer": "Chrome DevTools features support developers through AI-assisted debugging across multiple panels, including network analysis, performance profiling, and styling assistance to help developers understand how websites work.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q04",
+        "gold_answer": "The relationship between Manifest V3 migration and the extension development lifecycle is that extensions require updating to Manifest V3, which emphasizes security improvements and service worker-based architecture to replace older background page models as part of the extension development lifecycle.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q05",
+        "gold_answer": "The Web Bluetooth API allows websites to communicate with Bluetooth devices according to Chrome's capabilities documentation.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q06",
+        "gold_answer": "Chrome's approach to built-in AI differs from traditional cloud-based AI solutions by bringing powerful models client-side, allowing developers to offer AI features to users while protecting sensitive data through on-device processing.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S019-Q07",
+        "gold_answer": "Hardware capabilities APIs including Bluetooth, USB, Serial, and NFC enable new categories of web applications by allowing websites to communicate directly with physical devices, making wireless and serial device interaction accessible through the browser.",
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S020",
+    "domain": "firebase.google.com",
+    "answers": [
+      {
+        "question_id": "S020-Q01",
+        "gold_answer": "The two primary SDK language platforms that Firebase provides comprehensive documentation for are JavaScript/Web for browser and Node.js applications, and Kotlin/Android for Android development.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q02",
+        "gold_answer": "Three core Firebase services documented for the JavaScript SDK are Authentication supporting multiple providers, Realtime Database for real-time data synchronization, and Firestore for document-based NoSQL querying.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q03",
+        "gold_answer": "Firestore's lite variant differs from the full SDK by providing a streamlined version designed for reduced bundle size, while the standard Firestore offers full-featured capabilities including local caching options.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q04",
+        "gold_answer": "Vertex AI integration extends the Firebase ecosystem by providing access to Google's generative AI capabilities including text and image generation, schema-based structured outputs, safety filtering, and live audio conversation support for developers.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q05",
+        "gold_answer": "The Firebase Kotlin/Android SDK supports multiple authentication providers including Google, GitHub, Twitter, OAuth, SAML, and phone-based authentication methods.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q06",
+        "gold_answer": "Firebase organizes its documentation by modular packages enabling selective feature inclusion, with references spanning package level, class/interface level, and sub-packages to maintain comprehensive API coverage across platforms and use cases.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S020-Q07",
+        "gold_answer": "Firebase balances real-time capabilities such as Realtime Database and Cloud Functions with security features including App Check for client verification and authentication with multi-factor options, enabling developers to build secure applications with live data synchronization.",
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S021",
+    "domain": "web.dev",
+    "answers": [
+      {
+        "question_id": "S021-Q01",
+        "gold_answer": "The Core Web Vitals metrics mentioned in web.dev documentation include Largest Contentful Paint (LCP) for measuring content rendering speed, Cumulative Layout Shift (CLS) for visual stability, Interaction to Next Paint (INP) for responsiveness, and First Contentful Paint (FCP).",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q02",
+        "gold_answer": "Three specialized areas covered by web.dev beyond core web development topics are WebAssembly compilation and optimization, emerging AI capabilities for client-side implementation, and WebXR for augmented reality positioning.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q03",
+        "gold_answer": "Web.dev's security guidance articles including Content Security Policy, CORS, and hacked site recovery relate to the broader accessibility and performance topics by establishing foundational requirements for secure, accessible, and performant web applications.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q04",
+        "gold_answer": "Code Labs provide hands-on learning modules, security guidance addresses fundamental protections like CSP to reduce cross-site scripting attacks, and emerging technologies content covers cutting-edge features, collectively supporting web.dev's pedagogical approach of combining theoretical knowledge with practical implementation.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q05",
+        "gold_answer": "Emerging browser features covered under the Emerging Technologies section of web.dev include WebAssembly, Web Components and custom elements, Payment Request API and Web Payments, and WebXR for augmented reality positioning.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q06",
+        "gold_answer": "Practical guides like centering in CSS and building button components support web.dev's overall educational mission by demonstrating real-world implementation techniques that complement broader performance and security concepts.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S021-Q07",
+        "gold_answer": "Web.dev bridges theoretical knowledge about critical rendering paths with practical performance optimization by explaining that optimizing the critical rendering path prioritizes display of content related to user action, with specific guidance on JavaScript execution, font loading, and resource delivery strategies.",
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S022",
+    "domain": "plaid.com",
+    "answers": [
+      {
+        "question_id": "S022-Q01",
+        "gold_answer": "The primary use cases for Plaid's Signal product are transaction scoring and risk assessment, with documentation covering Signal Transaction Scores integration, Signal Items creation, and Signal Rules for customizing risk parameters.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q02",
+        "gold_answer": "Three authentication or identity products that Plaid offers are Instant Auth for rapid authentication, Instant Match for account verification, and Database Auth for custom database authentication approaches.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q03",
+        "gold_answer": "Plaid's Transfer services enable fund movement domestically with comprehensive documentation covering recurring transfers and transfer platforms, while European Payment Initiation differs by specifically addressing payment initiation within European geographic scope.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q04",
+        "gold_answer": "The relationship between Plaid's Income verification products and its financial data enrichment capabilities is that Income supports three verification methods including Bank Income, Payroll Income, and Document Income, which provide enriched financial data for verification and risk assessment workflows.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q05",
+        "gold_answer": "The platforms supported for integrating Plaid's Link product according to the documentation are Web, iOS, Android, and React Native, with features including Multi-Item Link, OAuth guide, and Update mode.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q06",
+        "gold_answer": "Plaid's Risk & Insights products including Monitor with watchlists and matching algorithms, Protect, Beacon in beta, and Financial Insights collectively address financial security by supporting compliance and fraud prevention use cases across the platform.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S022-Q07",
+        "gold_answer": "Plaid's Account management, security, and team administration features support enterprise implementations through Transfer for Platforms enabling marketplace operations, reseller programs for partner integration, team management for organizational structure, and the Plaid Ledger flow of funds for tracking complex financial operations.",
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S023",
+    "domain": "developer.squareup.com",
+    "answers": [
+      {
+        "question_id": "S023-Q01",
+        "gold_answer": "Square's SDK documentation explicitly covers three common API patterns across multiple language implementations: pagination for handling large result sets across multiple requests, idempotency keys for protecting against duplicate API calls that could have negative consequences, and object versioning for enabling optimistic concurrency by incrementing version numbers on resources like Customer objects.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/sdks/dotnet/common-square-api-patterns",
+          "https://developer.squareup.com/docs/sdks/java/common-square-api-patterns",
+          "https://developer.squareup.com/docs/sdks/nodejs/common-square-api-patterns"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q02",
+        "gold_answer": "Square's documentation specifically documents clearing API object fields through sparse updates as distinct from standard updates, accomplished by including the field in a request and setting the value to null, which differs from standard update operations and requires the X-Clear-Null header for UpdateOrder requests.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/build-basics/clearing-fields"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q03",
+        "gold_answer": "To use the Terminal API for QR code payment methods beyond basic payment processing, Square Terminal must be running version 6.58 or later, must be activated and located in Japan, and the seller must be approved to accept QR code payments in Japan.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/terminal-api/overview",
+          "https://developer.squareup.com/docs/terminal-api/international-payment-methods/paypay-qr-code-payments"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q04",
+        "gold_answer": "The Mobile Payments SDK and Reader SDK differ in their offline payment handling approaches, though specific implementation requirements for each would require access to detailed offline payment documentation for both SDKs.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/mobile-payments-sdk/android/offline-payments",
+          "https://developer.squareup.com/docs/reader-sdk/cookbook/capture-a-transaction"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q05",
+        "gold_answer": "The Sandbox Payments testing environment provides a testing ground for payment processing workflows that directly inform production mobile payment hardware integration through Terminal API and Mobile Payments SDK configuration patterns.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/devtools/sandbox/payments",
+          "https://developer.squareup.com/docs/mobile-payments-sdk/android/configure-authorize",
+          "https://developer.squareup.com/docs/terminal-api/integrate-square-terminal"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q06",
+        "gold_answer": "The Customer Groups API endpoints manage customer group segmentation by creating named collections and managing group membership, while the Customers API handles customer profile storage including contact details and preferences, and the Customer Segments API provides read-only access to dynamic customer collections based on filter criteria.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/customer-groups-api/what-it-does",
+          "https://developer.squareup.com/docs/customers-api/use-the-api/keep-records",
+          "https://developer.squareup.com/docs/customer-segments-api/what-it-does"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q07",
+        "gold_answer": "Gift card redemption is processed through either automatic activity creation when using the Payments API or manual activity creation via the CreateGiftCardActivity endpoint, while gift card reloading involves processing an order for the reload amount and then calling CreateGiftCardActivity with the LOAD activity type, with both operations requiring the gift card to be in the ACTIVE state.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/gift-cards/redeem-gift-cards",
+          "https://developer.squareup.com/docs/gift-cards/reload-gift-cards"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S023-Q08",
+        "gold_answer": "App Marketplace listings for applications using gift cards require syncing gift card activities from Square to the partner platform with balance synchronization, while Inventory API applications must enable stock tracking on items and implement bidirectional sync between the partner platform and Square inventory, with webhook monitoring for inventory changes.",
+        "source_urls": [
+          "https://developer.squareup.com/docs/app-marketplace/requirements/gift-cards-api",
+          "https://developer.squareup.com/docs/app-marketplace/requirements/inventory-api"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S024",
+    "domain": "www.notion.so",
+    "answers": [
+      {
+        "question_id": "S024-Q01",
+        "gold_answer": "Notion organizes its functionality into five distinct core product categories: AI tools including custom agents and meeting notes, Docs for flexible documentation and note-taking, Projects for project management with multiple visualization options, Wikis for centralized knowledge management, and Forms for creating unlimited forms to collect data within the workspace.",
+        "source_urls": [
+          "https://www.notion.com/product/ai",
+          "https://www.notion.com/product/docs",
+          "https://www.notion.com/product/projects",
+          "https://www.notion.com/product/wikis",
+          "https://www.notion.com/product/forms"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q02",
+        "gold_answer": "Notion explicitly targets startups with emphasis on rapid team coordination, enterprise organizations with best-in-class support and security for GDPR and HIPAA compliance, and nonprofits with dedicated solutions and discount programs for mission-driven organizations.",
+        "source_urls": [
+          "https://www.notion.com/startups",
+          "https://www.notion.com/teams",
+          "https://www.notion.com/enterprise",
+          "https://www.notion.com/nonprofits"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q03",
+        "gold_answer": "Notion's offering for engineering teams consolidates fragmented workflows including sprints, documentation, and project tracking in a unified workspace with customizable workflows and integrated documentation, while the product team offering enables cross-functional visibility through custom roadmap views, centralized organization of research and specifications, and flexible customization matching unique workflows.",
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-engineering",
+          "https://www.notion.com/product/notion-for-product"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q04",
+        "gold_answer": "Notion's AI capabilities, automation features, and form-building tools are integrated platform features. Notion AI offers writing assistance and workspace automation, while Forms enables unlimited form creation that populates responses directly into Notion databases, allowing users to create end-to-end automated workflows from data capture through database organization.",
+        "source_urls": [
+          "https://www.notion.com/product/ai",
+          "https://www.notion.com/product/forms",
+          "https://www.notion.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q05",
+        "gold_answer": "Manager-specific tools within Notion including manager dashboards, company OKRs, and team wikis integrate with project management features through customizable project views that support both high-level overviews and detailed specifics, and with calendar features that display deadlines and project timelines alongside calendar events for full workload visibility.",
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-managers",
+          "https://www.notion.com/product/calendar",
+          "https://www.notion.com/product/projects"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q06",
+        "gold_answer": "Notion's sites feature provides the easiest way to get a website up and running using thousands of templates and drag-and-drop editing, while the wikis feature is designed to centralize all organizational knowledge and documentation with drag-and-drop organization, synced blocks for content that updates automatically across multiple locations, and verification features ensuring users access the latest information.",
+        "source_urls": [
+          "https://www.notion.com/product/sites",
+          "https://www.notion.com/product/wikis"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q07",
+        "gold_answer": "Notion's approach to serving education and students includes free Plus Plan access for individual students at accredited colleges, free access for student-led organizations, a Campus Leaders Program empowering students to teach and promote Notion, and purpose-built student templates, which complements its enterprise solution offerings through the same platform infrastructure designed for teams of all sizes.",
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-education",
+          "https://www.notion.com/enterprise"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S024-Q08",
+        "gold_answer": "Notion's mail product is an AI-powered email client that automatically labels and sorts emails, creates custom views by topic or sender, and integrates with Gmail, while the notes and docs product provides flexible documentation with 50+ content types including code snippets, toggles, and embedded media, with both products featuring real-time collaboration and integration capabilities within the workspace.",
+        "source_urls": [
+          "https://www.notion.com/product/mail",
+          "https://www.notion.com/product/docs"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S025",
+    "domain": "www.coursera.org",
+    "answers": [
+      {
+        "question_id": "S025-Q01",
+        "gold_answer": "Coursera's education hub covers primary career focus areas in AI engineering, AI research science, and AI data training, with all three relating directly to artificial intelligence alongside other technology career paths.",
+        "source_urls": [
+          "https://www.coursera.org/articles/ai-engineer",
+          "https://www.coursera.org/articles/ai-research-scientist",
+          "https://www.coursera.org/articles/ai-data-trainer"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q02",
+        "gold_answer": "Coursera's certification resources cover specific credential types including AWS certifications, Azure certifications, and PMI certifications for project management.",
+        "source_urls": [
+          "https://www.coursera.org/articles/aws-certification",
+          "https://www.coursera.org/articles/azure-certification",
+          "https://www.coursera.org/articles/a-guide-to-pmi-certifications"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q03",
+        "gold_answer": "Coursera's coverage of data and analytics careers in roles such as data analyst and big data engineer relates to its broader technology career offerings by providing specialized technical foundations that support data-driven decision-making across multiple professional domains.",
+        "source_urls": [
+          "https://www.coursera.org/articles/data-analyst",
+          "https://www.coursera.org/articles/big-data-engineer",
+          "https://www.coursera.org/articles/back-end-developer"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q04",
+        "gold_answer": "Coursera's AI career paths including AI engineer and AI architect roles establish conceptual connections with traditional software development roles through algorithm engineering, which bridges AI specialization with core software development foundations.",
+        "source_urls": [
+          "https://www.coursera.org/articles/ai-engineer",
+          "https://www.coursera.org/articles/algorithm-engineer",
+          "https://www.coursera.org/articles/application-developer"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q05",
+        "gold_answer": "The business and finance careers documented on Coursera in roles such as accountant and account manager relate to technical career paths in data and analytics through the analytics engineer role, which bridges business intelligence and technical data analysis capabilities.",
+        "source_urls": [
+          "https://www.coursera.org/articles/accountant",
+          "https://www.coursera.org/articles/account-manager-career-path-guide",
+          "https://www.coursera.org/articles/analytics-engineer"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q06",
+        "gold_answer": "Coursera's 30-60-90 Day Plan resource provides guidance on creating a structured onboarding timeline that breaks professional goals and achievements into three phases over the first quarter of employment, fitting within career development guidance by helping individuals articulate transition strategy and demonstrate value during critical career transitions.",
+        "source_urls": [
+          "https://www.coursera.org/articles/30-60-90-day-plan"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q07",
+        "gold_answer": "Coursera offers specialized career paths in emerging technology domains including android app developer, AI architect, and AI ethicist roles, which differ from traditional technical roles by emphasizing specialized application domains, architectural roles in AI systems, and ethical considerations in emerging technology implementation.",
+        "source_urls": [
+          "https://www.coursera.org/articles/android-app-developer",
+          "https://www.coursera.org/articles/ai-architect",
+          "https://www.coursera.org/articles/ai-ethicist"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S025-Q08",
+        "gold_answer": "Coursera structures guidance for job search strategies through resources such as how to announce a new job on LinkedIn, providing practical tactical guidance distinct from broader career transition documentation.",
+        "source_urls": [
+          "https://www.coursera.org/articles/announce-new-job-linkedin",
+          "https://www.coursera.org/articles"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S026",
+    "domain": "www.edx.org",
+    "answers": [
+      {
+        "question_id": "S026-Q01",
+        "gold_answer": "edX offers five primary degree and credential program types: bachelor's degrees in fields like business, computer science, data science, health, and nursing, master's degrees including MBAs and specialized graduate programs, doctorate degrees for advanced academic credentials, professional certificates lasting 2-10 months, and XSeries programs providing structured course sequences with certificates of achievement.",
+        "source_urls": [
+          "https://www.edx.org/bachelors",
+          "https://www.edx.org/masters",
+          "https://www.edx.org/doctorate",
+          "https://www.edx.org/professional-certificate",
+          "https://www.edx.org/xseries"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q02",
+        "gold_answer": "Based on the available source content, specific university names that are explicitly identified as foundational partners in edX's platform could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://www.edx.org/school/harvardx",
+          "https://www.edx.org/school/mitx",
+          "https://www.edx.org/school/berkeleyx"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q03",
+        "gold_answer": "edX's computer science courses including Python and data science offerings integrate with its broader business and engineering program categories through bachelor's degrees in computer science and data science, master's degrees in computer science, and professional certificates that bridge technical skills to business applications in analytics and data-driven decision-making.",
+        "source_urls": [
+          "https://www.edx.org/learn/python",
+          "https://www.edx.org/learn/data-science",
+          "https://www.edx.org/learn/leadership",
+          "https://www.edx.org/learn/mechanical-engineering"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q04",
+        "gold_answer": "edX's CS50 course serves as Harvard's flagship foundational computer science program positioned as an accessible entry point covering essentials including programming languages and mobile app development, functioning as the trusted Harvard-backed pathway that balances comprehensive theory with real-world projects across multiple skill levels and professional applications relative to other platform computer science offerings.",
+        "source_urls": [
+          "https://www.edx.org/cs50",
+          "https://www.edx.org/learn/artificial-intelligence",
+          "https://www.edx.org/learn/data-science"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q05",
+        "gold_answer": "edX's support resources and partner institutions work together through a network of 250+ content partners creating 5,300+ online programs, with businesses able to access corporate training solutions through business.edx.org partnerships while learners access support through the Help Center.",
+        "source_urls": [
+          "https://help.edx.org",
+          "https://www.edx.org/schools-partners",
+          "https://www.edx.org/school/stanfordonline"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q06",
+        "gold_answer": "edX provides accessibility and localization features to serve its global learner population across 190+ countries, including formal accessibility policies and multi-language support options demonstrated through language selection in the platform footer.",
+        "source_urls": [
+          "https://www.edx.org/about-us",
+          "https://help.edx.org"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q07",
+        "gold_answer": "The instructor onboarding process at edX relates to institutional partnerships through the network of 250+ content partners that contribute courses and programs, though specific details about the onboarding process structure were not available in the source content.",
+        "source_urls": [
+          "https://www.edx.org/become",
+          "https://www.edx.org/schools-partners"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S026-Q08",
+        "gold_answer": "edX offers distinct pathways for individual courses where learners can audit most courses for free with optional paid certificates starting at $50, and for formal degree credentials including professional certificates, MicroBachelors, MicroMasters, full bachelor's and graduate degrees ranging from $500 to higher amounts depending on credential type.",
+        "source_urls": [
+          "https://www.edx.org/courses",
+          "https://www.edx.org/learn",
+          "https://www.edx.org/bachelors"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S027",
+    "domain": "docs.ghost.org",
+    "answers": [
+      {
+        "question_id": "S027-Q01",
+        "gold_answer": "Ghost's Admin API is designed for content creation and management supporting full CRUD operations across resources like posts, pages, and members, while the Content API is read-only and designed to deliver published content to frontend applications and readers.",
+        "source_urls": [
+          "https://docs.ghost.org/admin-api.md",
+          "https://docs.ghost.org/content-api.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q02",
+        "gold_answer": "Static site generators explicitly documented as compatible with Ghost's JAMstack integration approach include Gatsby, Next.js, Eleventy, and Nuxt, each enabling developers to build completely custom front-ends using Ghost as a headless CMS.",
+        "source_urls": [
+          "https://docs.ghost.org/jamstack/gatsby.md",
+          "https://docs.ghost.org/jamstack/next.md",
+          "https://docs.ghost.org/jamstack/eleventy.md",
+          "https://docs.ghost.org/jamstack/nuxt.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q03",
+        "gold_answer": "Ghost's theme development helpers and contextual routing systems work together by having the routing system use the data property to fetch and associate data from the Ghost API with specified routes, while helpers access this contextual information through Handlebars templates, enabling dynamic content presentation based on the route's data context.",
+        "source_urls": [
+          "https://docs.ghost.org/themes/helpers.md",
+          "https://docs.ghost.org/themes/routing.md",
+          "https://docs.ghost.org/themes/structure.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q04",
+        "gold_answer": "Ghost's membership system and newsletter delivery capabilities have an integrated architectural relationship where the membership feature provides the subscriber base, newsletters leverage distinct audience segments created by the membership system to target free and paid members, and newsletters can automatically subscribe members on signup with visibility settings determining distribution to the membership base.",
+        "source_urls": [
+          "https://docs.ghost.org/members.md",
+          "https://docs.ghost.org/newsletters.md",
+          "https://docs.ghost.org/admin-api/newsletters/overview.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q05",
+        "gold_answer": "Ghost's migration guides for competing platforms like WordPress and Medium provide built-in automated migration tools through the Admin interface, while Ghost's custom developer migration option uses database structure JSON format that mirrors the underlying database structure rather than the API, allowing developers direct field control and the flexibility to build custom exporters for platforms without existing tools.",
+        "source_urls": [
+          "https://docs.ghost.org/migration/wordpress.md",
+          "https://docs.ghost.org/migration/medium.md",
+          "https://docs.ghost.org/migration/custom.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q06",
+        "gold_answer": "Ghost implements a role-based permissions structure for user roles and team member invitations, where inviting a user requires specifying the ID of the role they should receive and the email address for the invite link, with administrators fetching available roles to identify appropriate role IDs for assignment.",
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/users/roles.md",
+          "https://docs.ghost.org/admin-api/users/invites.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q07",
+        "gold_answer": "Ghost's webhook capabilities support publishing and automation workflows by enabling custom integrations to subscribe to events like posts being published to Ghost and automatically trigger HTTP POST payloads, facilitating real-time synchronization between Ghost and third-party platforms for rebuilding search indexes, sending Slack notifications, and triggering full site deployments.",
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/webhooks/overview.md",
+          "https://docs.ghost.org/webhooks.md",
+          "https://docs.ghost.org/publishing.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S027-Q08",
+        "gold_answer": "The Admin API handles image uploads through the POST endpoint that stores images via storage adapters and returns image objects with URLs, while theme asset management handles responsive image configuration and static asset organization within the theme structure.",
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/images/overview.md",
+          "https://docs.ghost.org/themes/assets.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S028",
+    "domain": "developer.mastercard.com",
+    "answers": [
+      {
+        "question_id": "S028-Q01",
+        "gold_answer": "Based on the available source content, specific information about the six primary service categories that organize Mastercard's API offerings could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/account-to-account-commerce/",
+          "https://developer.mastercard.com/product/authentication-solutions/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q02",
+        "gold_answer": "Mastercard's Automatic Billing Updater provides access to updated payment account credentials through pull or push models to maintain current payment information, while the Account Validation service validates payment accounts, though detailed functional comparison requires complete documentation for both services.",
+        "source_urls": [
+          "https://developer.mastercard.com/automatic-billing-updater/documentation/index.md",
+          "https://developer.mastercard.com/account-validation/documentation/index.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q03",
+        "gold_answer": "Based on the available source content, comprehensive information about how Mastercard's fraud prevention products like Ethoca Alerts integrate with its broader risk management ecosystem could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/ethoca-alerts-for-merchants/",
+          "https://developer.mastercard.com/product/first-party-trust/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q04",
+        "gold_answer": "Based on the available source content, comprehensive information about the conceptual relationship between Mastercard's benefits and loyalty services and its consumer experience offerings could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/mastercard-loyalty-management/",
+          "https://developer.mastercard.com/product/personalized-offers/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q05",
+        "gold_answer": "Based on the available source content, information about how Mastercard's open finance APIs differ between regional implementations could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/open-finance-europe/",
+          "https://developer.mastercard.com/product/open-finance/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q06",
+        "gold_answer": "Based on the available source content, information about the two primary authentication mechanisms used across Mastercard's API services could not be extracted from the fetched pages.",
+        "source_urls": [
+          "https://developer.mastercard.com/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q07",
+        "gold_answer": "Mastercard's Cross-Border Services provides faster, transparent payments between senders and recipients through multiple channels and payout methods, though information about how domestic and cross-border payment solutions work together requires additional documentation.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/mastercard-send/",
+          "https://developer.mastercard.com/cross-border-services/documentation/index.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S028-Q08",
+        "gold_answer": "Mastercard offers two sustainability-focused products: the Carbon Calculator API (enabling developers to measure and integrate carbon emissions tracking into applications) and the Donate API (facilitating charitable giving and donation processing). Together, these products enable use cases ranging from carbon footprint transparency in transactions to supporting charitable causes.",
+        "source_urls": [
+          "https://developer.mastercard.com/product/carbon-calculator",
+          "https://developer.mastercard.com/donations/documentation",
+          "https://developer.mastercard.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S029",
+    "domain": "mintlify.com",
+    "answers": [
+      {
+        "question_id": "S029-Q01",
+        "gold_answer": "Mintlify's automated documentation agent's primary capabilities include researching existing documentation, planning complex tasks, writing content following best practices, validating changes using CLI checks, creating pull requests for review, generating new documentation from prompts and Slack threads, modifying existing docs for new features, and searching and revising code examples and API references.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/agent/index.md",
+          "https://www.mintlify.com/docs/agent/customize.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q02",
+        "gold_answer": "Mintlify provides 24 customizable components for documentation content creation organized into categories including tabs, code groups, and steps for structuring content, callouts and badges for drawing attention, accordions and expandables for showing and hiding content, fields and responses for documenting APIs, and cards and tiles for linking to other pages.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/components/index.md",
+          "https://www.mintlify.com/docs/components/accordions.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q03",
+        "gold_answer": "Mintlify's deployment options across different platforms include GitHub for automatic deployments with pull request triggering, Vercel for hosting with URL rewriting capabilities to proxy requests without changing the browser URL, and preview deployments available on Pro and Enterprise plans that automatically create unique preview URLs for pull requests.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/deploy/github.md",
+          "https://www.mintlify.com/docs/deploy/vercel.md",
+          "https://www.mintlify.com/docs/deploy/preview-deployments.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q04",
+        "gold_answer": "Mintlify's llms.txt optimization plays a foundational accessibility role within its broader AI strategy by functioning as a structural bridge that enables AI tools to efficiently navigate documentation structure and locate relevant content, operating similar to how sitemaps help search engines, with automatic generation and updates handled maintenance-free by the platform.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/ai/llmstxt.md",
+          "https://www.mintlify.com/docs/ai/assistant.md",
+          "https://www.mintlify.com/docs/ai-native.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q05",
+        "gold_answer": "Mintlify's role-based access control features restrict deployment triggering to editors and admins only with viewers unable to initiate deployments, integrating with deployment workflows where deployment actions are permission-restricted through enterprise-level RBAC features.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/dashboard/roles.md",
+          "https://www.mintlify.com/docs/deploy/deployments.md",
+          "https://www.mintlify.com/docs/deploy/ci.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q06",
+        "gold_answer": "Mintlify provides the POST endpoint /agent/{projectId}/job for creating agent documentation jobs, accepting branch names, messages containing user and supplementary system prompts, and optional parameters for model selection and draft mode control, and the GET endpoint /v1/analytics/{projectId}/assistant for returning paginated AI assistant conversation history with date filtering and pagination controls.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/api/agent/create-agent-job.md",
+          "https://www.mintlify.com/docs/api/analytics/assistant-conversations.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q07",
+        "gold_answer": "Mintlify's OpenAPI setup capabilities enable automatic generation of API pages from OpenAPI 3.0 and 3.1 specifications, while AsyncAPI setup enables creation of websocket documentation with AsyncAPI specifications, with both following parallel integration patterns that serve different API documentation needs for REST/HTTP endpoints and real-time websocket communication respectively.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/api-playground/openapi-setup.md",
+          "https://www.mintlify.com/docs/api-playground/asyncapi-setup.md"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S029-Q08",
+        "gold_answer": "Mintlify offers analytics through traffic analysis with visitor data and AI agent traffic tracking, assistant insights that automatically group conversations by topic, search analytics tracking query click-through rates, and CSV export capabilities, while feedback collection mechanisms include thumbs rating for simple satisfaction voting, contextual feedback for free-form comments, code snippet feedback, edit suggestions, and the ability to raise GitHub issues from documentation.",
+        "source_urls": [
+          "https://www.mintlify.com/docs/optimize/analytics.md",
+          "https://www.mintlify.com/docs/optimize/feedback.md"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S030",
+    "domain": "sourceforge.net",
+    "answers": [
+      {
+        "question_id": "S030-Q01",
+        "gold_answer": "SourceForge claims to catalog over 4,000 distinct B2B software categories within its comparison directory.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q02",
+        "gold_answer": "SourceForge serves approximately 20 million monthly users on its platform.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q03",
+        "gold_answer": "SourceForge's team of research analysts, in conjunction with the vendors, are credited with providing product information, pricing, reviews, and specifications on the platform.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q04",
+        "gold_answer": "In addition to its B2B software comparison directory, SourceForge includes an open source software directory with source code and download options.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q05",
+        "gold_answer": "SourceForge's comparison tools allow users to filter by at least five criteria including price, user reviews, integrations, deployment, and region, as well as support and training offerings.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q06",
+        "gold_answer": "SourceForge differentiates itself by positioning powerful tools to B2B software and services vendors that enable them to accurately showcase their offerings to potential buyers and acquire new customers.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S030-Q07",
+        "gold_answer": "SourceForge covers software domains including advertising technology, API management, application development, testing tools, and game development platforms, along with over 40 additional business sectors such as AI, marketing, IT management, finance, and HR. Understanding this range helps organizations identify solutions tailored to their specific industry needs and deployment requirements across cloud, on-premises, and mobile platforms.",
+        "source_urls": [
+          "https://sourceforge.net/llms.txt",
+          "https://sourceforge.net/software/"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S031",
+    "domain": "yoast.com",
+    "answers": [
+      {
+        "question_id": "S031-Q01",
+        "gold_answer": "Yoast SEO originally launched its platform in 2010.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q02",
+        "gold_answer": "The discount code provided for purchasing Yoast Premium is LLMTXT15, which provides 15% off.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q03",
+        "gold_answer": "Yoast SEO products are compatible with WordPress, Shopify, Elementor, Jetpack, and the WordPress REST API.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q04",
+        "gold_answer": "Yoast offers specialized SEO plugins for WooCommerce and Shopify, enabling merchants to optimize product and category pages.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q05",
+        "gold_answer": "Yoast provides continuous learning to users through the Yoast SEO Academy, offering both complimentary introductory courses on SEO fundamentals and paid specialized training, supplemented by monthly podcasts reviewing algorithm updates, bi-weekly webinars for beginners, and comprehensive blog content and guides covering SEO best practices.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q06",
+        "gold_answer": "Yoast's stated mission is \"SEO for everyone,\" reflecting a commitment to democratizing search engine optimization knowledge. Their educational initiatives through the Academy, podcasts, and webinars, combined with their plugin offerings for WordPress, Shopify, WooCommerce, and other platforms, work together to make SEO accessible and practical for users ranging from bloggers to Fortune 500 companies.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q07",
+        "gold_answer": "As both a plugin provider and educational resource, Yoast's dual approach provides users with hands-on optimization tools integrated directly into their platforms while offering the knowledge through courses and learning materials needed to use those tools effectively, enabling a comprehensive learning-by-doing experience that supports users from beginners to advanced practitioners.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S031-Q08",
+        "gold_answer": "The Yoast SEO Academy structures its courses to address different audience types, offering complimentary introductory courses on SEO fundamentals alongside paid specialized training covering topics like technical SEO, international optimization, and e-commerce strategies tailored to merchants and advanced practitioners.",
+        "source_urls": [
+          "https://yoast.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S032",
+    "domain": "students.ubc.ca",
+    "answers": [
+      {
+        "question_id": "S032-Q01",
+        "gold_answer": "The primary accessibility service referenced on the UBC student services page is the Centre for Accessibility, which provides academic accommodations support.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q02",
+        "gold_answer": "While the UBC student services page emphasizes multiple service areas and digital access points, specific social media platforms are not explicitly listed in the available content.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q03",
+        "gold_answer": "The page footer information regarding the specific month and year of last update is not provided in the available content.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q04",
+        "gold_answer": "According to the listed login options, UBC uses Canvas for course learning platform access, Workday for account management, and the Student Health and Wellbeing booking system for health-related services.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q05",
+        "gold_answer": "UBC student services address the needs of non-traditional student populations including international students, Indigenous students, graduate students, and those new to UBC through dedicated advising and resource pages tailored to each group's specific needs.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q06",
+        "gold_answer": "Mental health resources available to UBC students include counseling and substance use support services available through dedicated campus facilities, which integrate with the broader health and wellness offerings that also include medical services, financial wellness education workshops, and the Student Health and Wellbeing booking system.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q07",
+        "gold_answer": "The structure of UBC's student services supports the full student lifecycle by providing academic support and registration assistance at entry, comprehensive health and wellness services during their studies, career development and research opportunities to prepare for post-graduation, and resources emphasizing that students can navigate support offered throughout their entire university experience.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S032-Q08",
+        "gold_answer": "Peer mentorship and community involvement play a foundational role in the comprehensive student experience model presented on this page, as evidenced by campus life services that facilitate student clubs, orientation programs, and community involvement opportunities alongside academic, financial, health, and career development support.",
+        "source_urls": [
+          "https://students.ubc.ca/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S033",
+    "domain": "www.uslanguageservices.com",
+    "answers": [
+      {
+        "question_id": "S033-Q01",
+        "gold_answer": "U.S. Language Services' certified translation offering is priced at $39 per page with a guarantee that most documents are delivered within 24 hours.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q02",
+        "gold_answer": "U.S. Language Services employs over 150 professional translators with an average of 5 years of experience.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q03",
+        "gold_answer": "U.S. Language Services holds an A+ BBB rating and maintains an average Google review score of 4.9 stars based on 748 reviews.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q04",
+        "gold_answer": "U.S. Language Services operates Monday through Friday from 8:00 AM to 4:00 PM ET and can be contacted via phone at (240) 673-2933, email at info@uslanguageservices.com, or WhatsApp.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q05",
+        "gold_answer": "U.S. Language Services' certified translation offering is priced at $39 per page with delivery within 24 hours, while standard translation is priced at $0.12 per word with delivery within 24 to 48 hours depending on project size.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q06",
+        "gold_answer": "U.S. Language Services' institutional client base comprises diverse organizations including over 100 law firms, universities such as MIT, Harvard Kennedy School, and Stanford, federal agencies including the U.S. Army, CDC, and DOJ, and industries spanning healthcare, finance, and construction.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q07",
+        "gold_answer": "U.S. Language Services' social responsibility commitment is demonstrated through its diverse institutional client base serving educational, government, and non-profit sectors, enabling it to provide translation services that support immigration, legal, healthcare, and federal communities in accessing language services.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S033-Q08",
+        "gold_answer": "U.S. Language Services' linguistic coverage of 35+ languages directly supports its market positioning by enabling the company to serve its diverse institutional client base including law firms, universities, and federal agencies, while providing immigration and naturalization guidance resources that leverage this comprehensive language capability.",
+        "source_urls": [
+          "https://www.uslanguageservices.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S034",
+    "domain": "www.manageengine.com",
+    "answers": [
+      {
+        "question_id": "S034-Q01",
+        "gold_answer": "ManageEngine ADAudit Plus is a comprehensive auditing platform designed to monitor activity and track changes and events across hybrid IT environments including Active Directory, Microsoft Entra ID, file servers, Windows systems, and workstations through a centralized interface.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q02",
+        "gold_answer": "ADAudit Plus provides specialized reporting for SOX, HIPAA, PCI DSS, GDPR, FISMA, GLBA, and ISO 27001 compliance frameworks, with over 250 pre-built reports available.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q03",
+        "gold_answer": "ADAudit Plus provides real-time monitoring capabilities including immediate notifications when critical activities occur, with email and SMS alerts for significant events enabling rapid response to potential security issues.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q04",
+        "gold_answer": "The specific number of how-to guides documented in the ADAudit Plus knowledge base is not provided in the available content.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q05",
+        "gold_answer": "ADAudit Plus helps solve administrative challenges including account lockout analysis, file change monitoring with permission tracking, GPO settings change auditing, privileged user monitoring, and employee time tracking at workstations, enabling organizations to detect and respond to security issues.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q06",
+        "gold_answer": "ADAudit Plus combines real-time monitoring and alerts that enable rapid threat detection with automated compliance reporting across major regulatory frameworks including HIPAA, PCI DSS, and GDPR, creating a comprehensive Active Directory security solution that addresses both immediate security concerns and long-term compliance requirements.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q07",
+        "gold_answer": "ADAudit Plus's Attack Surface Analyzer identifies 25+ Active Directory attacks including Kerberoasting and DCSync while detecting risky configurations, providing practical implementation guidance that supports the configuration options available for organizations securing their Active Directory environments against documented threat vectors.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S034-Q08",
+        "gold_answer": "ADAudit Plus's best practices and security recommendations inform its configuration options through capabilities such as privileged user monitoring, file integrity monitoring, and attack detection mechanisms that enable organizations to implement security controls aligned with recognized Active Directory security standards.",
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S035",
+    "domain": "openvpn.net",
+    "answers": [
+      {
+        "question_id": "S035-Q01",
+        "gold_answer": "OpenVPN provides two main product offerings for business VPN solutions: Access Server, a self-hosted business VPN platform, and CloudConnexa, a cloud-delivered VPN service.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q02",
+        "gold_answer": "OpenVPN highlights healthcare, financial services, energy, manufacturing, and retail as distinct industry sectors that are target markets for its VPN solutions.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q03",
+        "gold_answer": "OpenVPN emphasizes a flexible deployment approach in its positioning of its enterprise VPN platform, supporting both on-premises and cloud environments with extensibility via plugins and kernel-level Data Channel Offload technology.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q04",
+        "gold_answer": "OpenVPN's platform is designed to address remote access and Zero Trust Network Access, site-to-site connectivity, and SaaS application protection use cases.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q05",
+        "gold_answer": "Access Server is a self-hosted business VPN platform offering granular role-based policies and identity provider integration, while CloudConnexa is a cloud-delivered VPN service featuring DNS filtering, full-mesh topology networking, and IoT device segmentation.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q06",
+        "gold_answer": "OpenVPN's industry-specific compliance requirements including HIPAA for healthcare, PCI-DSS for financial services, and NERC CIP for energy sectors are addressed through its general platform features such as granular access control, authentication integration, and DNS filtering capabilities applicable across all deployment scenarios.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S035-Q07",
+        "gold_answer": "OpenVPN's use cases align with its two distinct product offerings: Access Server supports remote access, Zero Trust Network Access, and site-to-site connectivity through its self-hosted architecture, while CloudConnexa addresses secure DNS filtering, IoT device communications, and SaaS application protection through its cloud-delivered service model.",
+        "source_urls": [
+          "https://openvpn.net/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S036",
+    "domain": "docs.usebraintrust.com",
+    "answers": [
+      {
+        "question_id": "S036-Q01",
+        "gold_answer": "Braintrust describes itself as the world's first web3, decentralized talent marketplace, functioning as a global platform where members can earn, learn, and grow through talent and client connections.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q02",
+        "gold_answer": "Braintrust uses BTRST tokens as its primary currency for network participation and incentives.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q03",
+        "gold_answer": "The Professional Network Launch Contest was held in June 2023, offering token rewards including an AI Competition with 500 BTRST available.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q04",
+        "gold_answer": "The Ambassador, Builder, and Educator grants programs are no longer active, though they previously provided opportunities for members to contribute to the platform through social media and moderation, platform feature development, and educational initiatives.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q05",
+        "gold_answer": "Braintrust users engage with the platform through community channels including a dedicated Discord community, with governance participation mechanisms that enable token holders to participate in decisions affecting the network.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q06",
+        "gold_answer": "Members earn BTRST tokens through network participation and referrals, and token holders can participate in governance decisions affecting the network, directly linking token earnings to decentralized governance participation.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q07",
+        "gold_answer": "Braintrust's grant programs, now inactive, and community engagement initiatives through contests and Discord channels worked together to incentivize network growth by rewarding contributions in platform development, community moderation, education, and professional networking activities.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S036-Q08",
+        "gold_answer": "Braintrust provides practical guidance for users in managing platform wallets and BTRST token withdrawal, supporting broader Web3 adoption by enabling members to understand token value and blockchain basics while facilitating their participation in the decentralized talent marketplace.",
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  },
+  {
+    "site_id": "S037",
+    "domain": "docs.zapier.com",
+    "answers": [
+      {
+        "question_id": "S037-Q01",
+        "gold_answer": "Zapier indicates two primary methods for building integrations: the Platform UI, a visual form editor for those comfortable with API integration, and the Platform CLI, a command-line toolset using JavaScript for local development.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q02",
+        "gold_answer": "Zapier integrations support API Key, Basic Auth, Digest Auth, OAuth v2, and Session Authentication methods.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q03",
+        "gold_answer": "The three primary types of operations that Zapier integrations can perform are triggers, actions including create and search operations, and search-or-create operations.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q04",
+        "gold_answer": "The specific version of Node.js supported by recent updates to Zapier's platform tooling is not explicitly stated in the available content.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q05",
+        "gold_answer": "Zapier's two main trigger types are polling triggers and REST Hooks for instant execution, which differ in their real-time capabilities with REST Hooks providing immediate trigger execution compared to periodic polling.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q06",
+        "gold_answer": "The Platform UI and CLI approaches enable different developer workflows: the Platform UI serves those comfortable with API integration using visual form editors, while the Platform CLI provides command-line toolset using JavaScript for local development and testing, together offering flexibility for developers with varying technical preferences.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q07",
+        "gold_answer": "Zapier's embedding solutions including the Workflow Element and pre-built UI components enable developers to embed automation directly into their products, differing from traditional integration approaches by solving the problem of providing frictionless onboarding and native automation capabilities within third-party applications.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      },
+      {
+        "question_id": "S037-Q08",
+        "gold_answer": "The Zapier Workflow API enables developers to integrate automation capabilities into their own products by providing native workflow building functionality, allowing applications to leverage Zapier's integration platform as a foundation for their automation features.",
+        "source_urls": [
+          "https://docs.zapier.com/llms.txt"
+        ],
+        "verified_date": "2026-02-25"
+      }
+    ]
+  }
+]

@@ -19,13 +19,13 @@ For the full methodology, experimental design, and analysis plan, see the projec
 
 | Deliverable | File | Status |
 |---|---|---|
-| Test site corpus | `corpus/site-list.csv` | 🔲 Not started |
-| Question sets | `corpus/questions.json` | 🔲 Not started |
-| Gold-standard answers | `corpus/gold-answers.json` | 🔲 Not started |
-| Scoring rubric | `corpus/scoring-rubric.md` | 🔲 Not started |
+| Test site corpus | `corpus/site-list.csv` | ✅ 37 sites verified |
+| Question sets | `corpus/questions.json` | ✅ All 37 sites complete (286 questions) |
+| Gold-standard answers | `corpus/gold-answers.json` | ✅ All 37 sites complete (286 answers) |
+| Scoring rubric | `corpus/scoring-rubric.md` | ✅ Refined (v2) — corpus-calibrated examples, 10 edge cases |
 | Data collection runner (C#) | `scripts/run-benchmark.cs` | 🔲 Not started |
-| Benchmark configuration | `scripts/benchmark-config.json` | 🔲 Not started |
-| Detailed methodology | `methodology.md` | 🔲 Not started |
+| Benchmark configuration | `scripts/benchmark-config.json` | ✅ Complete (schema doc: `scripts/benchmark-config-schema.md`) |
+| Detailed methodology | `methodology.md` | ✅ All 7 sections complete |
 | Reproducibility instructions | `REPRODUCING.md` | 🔲 Not started |
 | Raw experimental data | `results/raw-data.csv` | 🔲 Not started |
 | Analysis notebook (Jupyter) | `results/analysis.ipynb` | 🔲 Not started |
@@ -71,8 +71,9 @@ benchmark/
 │   ├── gold-answers.json  # Researcher-authored correct answers
 │   └── scoring-rubric.md  # Detailed scoring criteria with examples
 ├── scripts/
-│   ├── run-benchmark.cs   # C# data collection orchestrator
-│   └── benchmark-config.json
+│   ├── run-benchmark.cs           # C# data collection orchestrator
+│   ├── benchmark-config.json      # Model specs, parameters, paths, run protocol
+│   └── benchmark-config-schema.md # Config schema documentation with field definitions
 └── results/
     ├── raw-data.csv       # Complete experimental results
     ├── analysis.ipynb     # Jupyter analysis notebook (Colab-compatible)

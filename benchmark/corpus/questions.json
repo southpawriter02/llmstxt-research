@@ -1,0 +1,3730 @@
+[
+  {
+    "site_id": "S001",
+    "domain": "docs.stripe.com",
+    "questions": [
+      {
+        "question_id": "S001-Q01",
+        "text": "According to Stripe's documentation, what is the primary backend object for payments and what modern frontend tool option is recommended instead of the legacy Card Element?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Instructions for Large Language Model Agents: Best Practices for integrating Stripe",
+          "Elements"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S001-Q02",
+        "text": "What are the three types of charges used in Stripe Connect integrations, and how do funds move between the platform and connected accounts?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Connect"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/connect/charges.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q03",
+        "text": "How does Stripe's Billing API differ from direct PaymentIntent integration, and when should you prioritize Billing APIs for your integration design?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Billing",
+          "Instructions for Large Language Model Agents"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/billing/billing-apis.md",
+          "https://docs.stripe.com/billing/subscriptions/design-an-integration.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q04",
+        "text": "Describe the purpose of the Setup Intents API and explain its relationship to the Payment Intents API in the context of saving payment methods.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Checkout"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/payments/setup-intents.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q05",
+        "text": "What are the key differences between Standard, Express, and Custom connected accounts in Stripe Connect, and what is the modern terminology for describing these account types?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Connect",
+          "Instructions for Large Language Model Agents"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/connect/account-types.md",
+          "https://docs.stripe.com/connect/migrate-to-controller-properties.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q06",
+        "text": "How do Checkout and Payment Links differ in their use cases, and which one is recommended for accepting one-time payments?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Checkout",
+          "Payments"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/payments/checkout.md",
+          "https://docs.stripe.com/payment-links/buy-button.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q07",
+        "text": "What is the relationship between Stripe Issuing, Financial Accounts, and Stripe Treasury, and how do they work together to expand payment capabilities beyond accepting payments?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Issuing",
+          "Capital"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/issuing/how-issuing-works.md",
+          "https://docs.stripe.com/treasury.md"
+        ]
+      },
+      {
+        "question_id": "S001-Q08",
+        "text": "According to Stripe's security guidance, what is the relationship between PCI compliance, the Payment Element, and Stripe Confirmation Tokens in modern payment integrations?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Security",
+          "Elements",
+          "Instructions for Large Language Model Agents"
+        ],
+        "source_urls": [
+          "https://docs.stripe.com/security/guide.md",
+          "https://docs.stripe.com/payments/payment-element/migration-ct.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S002",
+    "domain": "developers.cloudflare.com",
+    "questions": [
+      {
+        "question_id": "S002-Q01",
+        "text": "What is the primary purpose of Cloudflare Workers, and what are the key differences between serverless and serverful compute models as they relate to Workers?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Workers",
+          "Platform"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/workers/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q02",
+        "text": "Explain the architectural relationship between Cloudflare's AI Gateway, Workers AI, and the hosted LLM models available through the platform.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "AI Gateway",
+          "Workers AI"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/ai-gateway/integrations/aig-workers-ai-binding/index.md",
+          "https://developers.cloudflare.com/ai-gateway/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q03",
+        "text": "What are the three primary use cases for Cloudflare R2, and how does it compare to traditional S3 storage in terms of egress costs?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "R2",
+          "Storage"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/r2/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q04",
+        "text": "How does the Model Context Protocol (MCP) integration in Cloudflare Agents enable multi-tool coordination, and what are the key security considerations?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Agents",
+          "Model Context Protocol"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/agents/model-context-protocol/index.md",
+          "https://developers.cloudflare.com/agents/guides/securing-mcp-server/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q05",
+        "text": "Describe the caching strategy in Cloudflare's AI Gateway and explain how it reduces costs and improves latency for LLM API calls.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "AI Gateway"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/ai-gateway/features/caching/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q06",
+        "text": "What is Durable Objects and how does it enable building stateful applications on Cloudflare's edge network, particularly for multi-user scenarios?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Durable Objects"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/durable-objects/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q07",
+        "text": "Compare the capabilities of Cloudflare's browser rendering API to traditional headless browser approaches, and explain when you would use each.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Browser Rendering",
+          "Workers"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/browser-rendering/index.md",
+          "https://developers.cloudflare.com/browser-rendering/puppeteer/index.md"
+        ]
+      },
+      {
+        "question_id": "S002-Q08",
+        "text": "How do Cloudflare's DNS services, firewall rules, and WAF work together to create a comprehensive security posture, and what is their relationship to Workers?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "DNS",
+          "Security",
+          "Workers"
+        ],
+        "source_urls": [
+          "https://developers.cloudflare.com/dns/index.md",
+          "https://developers.cloudflare.com/waf/index.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S003",
+    "domain": "resend.com",
+    "questions": [
+      {
+        "question_id": "S003-Q01",
+        "text": "What are the two main operational modes for sending emails with Resend, and how does batch email sending differ from standard email sending?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Emails",
+          "Batch Sending"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/api-reference/emails/send-batch-emails.md",
+          "https://resend.com/docs/dashboard/emails/batch-sending.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q02",
+        "text": "Explain the relationship between domains, DMARC implementation, and email deliverability in Resend, including the role of domain verification.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Domains",
+          "Deliverability Insights"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/dashboard/domains/introduction.md",
+          "https://resend.com/docs/dashboard/domains/dmarc.md",
+          "https://resend.com/docs/dashboard/emails/deliverability-insights.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q03",
+        "text": "What is the primary difference between segments and audiences in Resend, and when should you use each for marketing email campaigns?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Segments",
+          "Contacts"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/api-reference/segments/list-segments.md",
+          "https://resend.com/docs/dashboard/audiences/introduction.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q04",
+        "text": "How do topics in Resend enable subscription management, and how does this relate to email compliance and unsubscribe functionality?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Topics",
+          "Email Suppressions"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/api-reference/topics/create-topic.md",
+          "https://resend.com/docs/dashboard/topics/introduction.md",
+          "https://resend.com/docs/dashboard/emails/email-suppressions.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q05",
+        "text": "Describe how webhooks in Resend track email lifecycle events, and what is the relationship between event types and email deliverability monitoring?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Webhooks"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/webhooks/introduction.md",
+          "https://resend.com/docs/webhooks/event-types.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q06",
+        "text": "What are the key features of Resend's email receiving capabilities (Inbound), and how do they differ from its primary transactional email sending?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Receiving Emails"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/dashboard/receiving/introduction.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q07",
+        "text": "How do idempotency keys in Resend prevent duplicate emails, and what trade-offs exist between email scheduling and immediate sending?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Idempotency Keys",
+          "Schedule Email"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/dashboard/emails/idempotency-keys.md",
+          "https://resend.com/docs/dashboard/emails/schedule-email.md"
+        ]
+      },
+      {
+        "question_id": "S003-Q08",
+        "text": "Explain the relationship between contact properties, custom headers, and templates in Resend, and how they work together for personalized email campaigns.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Contact Properties",
+          "Custom Headers",
+          "Templates"
+        ],
+        "source_urls": [
+          "https://resend.com/docs/api-reference/contact-properties/list-contact-properties.md",
+          "https://resend.com/docs/dashboard/emails/custom-headers.md",
+          "https://resend.com/docs/dashboard/templates/introduction.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S004",
+    "domain": "clerk.com",
+    "questions": [
+      {
+        "question_id": "S004-Q01",
+        "text": "What are the core components of Clerk's authentication platform, and how do sessions differ from JWTs in Clerk's implementation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Sessions",
+          "JWT"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/how-we-roll-sessions"
+        ]
+      },
+      {
+        "question_id": "S004-Q02",
+        "text": "Explain the relationship between Clerk Organizations, roles, and permissions, and how they enable multi-tenant B2B applications.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Organizations",
+          "Role-based Access Control"
+        ],
+        "source_urls": [
+          "https://clerk.com/organizations",
+          "https://clerk.com/blog/role-based-access-control-with-clerk-organizations"
+        ]
+      },
+      {
+        "question_id": "S004-Q03",
+        "text": "What are the key differences between passwordless authentication methods in Clerk (magic links, passkeys, OTP), and when should each be used?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Passwordless Authentication",
+          "Magic Links"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/passwordless-authentication",
+          "https://clerk.com/blog/ultimate-guide-magic-link-authentication"
+        ]
+      },
+      {
+        "question_id": "S004-Q04",
+        "text": "How does Clerk Billing integrate with subscriptions and pricing models, and what is its relationship to Stripe in SaaS applications?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Billing",
+          "Subscriptions"
+        ],
+        "source_urls": [
+          "https://clerk.com/billing",
+          "https://clerk.com/blog/add-subscriptions-to-your-saas-with-clerk-billing"
+        ]
+      },
+      {
+        "question_id": "S004-Q05",
+        "text": "Describe how Clerk's webhook system works and what specific events trigger webhooks during user lifecycle changes.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Webhooks"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/webhooks-getting-started"
+        ]
+      },
+      {
+        "question_id": "S004-Q06",
+        "text": "What is the purpose of Clerk's user metadata and public metadata, and how do they support custom user attributes and personalization?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "User Management"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/read-user-data-guide"
+        ]
+      },
+      {
+        "question_id": "S004-Q07",
+        "text": "Compare Clerk's support for Enterprise SSO (SAML, OAuth) versus social authentication, and explain the security and UX trade-offs.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Enterprise Connections",
+          "Social SSO"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/streamline-enterprise-onboarding-saml",
+          "https://clerk.com/blog/social-sso-in-next-js"
+        ]
+      },
+      {
+        "question_id": "S004-Q08",
+        "text": "How do Clerk's SDKs for different frameworks (Next.js, React, Express) differ in implementation, and what are the security implications of server-side vs client-side authentication?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Next.js Authentication",
+          "React Components",
+          "Session Management"
+        ],
+        "source_urls": [
+          "https://clerk.com/blog/nextjs-authentication",
+          "https://clerk.com/blog/comparing-authentication-react-nextjs"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S005",
+    "domain": "docs.pinecone.io",
+    "questions": [
+      {
+        "question_id": "S005-Q01",
+        "text": "What are the key differences between dense vectors (semantic search) and sparse vectors (lexical search) in Pinecone, and when should each be used?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Search"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/search/semantic-search.md",
+          "https://docs.pinecone.io/guides/search/lexical-search.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q02",
+        "text": "Explain the architectural relationship between serverless indexes, pod-based indexes, and collections in Pinecone, including their trade-offs.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Indexes",
+          "Pods",
+          "Collections"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/indexes/pods/understanding-pod-based-indexes.md",
+          "https://docs.pinecone.io/guides/manage-data/manage-indexes.md",
+          "https://docs.pinecone.io/guides/indexes/pods/understanding-collections.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q03",
+        "text": "What is the purpose of namespaces in Pinecone, and how do they enable multitenancy and data isolation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Multitenancy",
+          "Data Management"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/index-data/implement-multitenancy.md",
+          "https://docs.pinecone.io/guides/manage-data/manage-namespaces.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q04",
+        "text": "How does Pinecone's hybrid search combine semantic and lexical search, and what are the advantages of this approach for information retrieval?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Search"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/search/hybrid-search.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q05",
+        "text": "Describe the relationship between upsert operations, metadata filtering, and data freshness in Pinecone indexes.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Data Ingestion",
+          "Data Management"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/index-data/upsert-data.md",
+          "https://docs.pinecone.io/guides/search/filter-by-metadata.md",
+          "https://docs.pinecone.io/guides/index-data/check-data-freshness.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q06",
+        "text": "What are the primary strategies for optimizing Pinecone performance, including latency reduction, throughput improvement, and search relevance?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Optimize"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/optimize/decrease-latency.md",
+          "https://docs.pinecone.io/guides/optimize/increase-throughput.md",
+          "https://docs.pinecone.io/guides/optimize/increase-relevance.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q07",
+        "text": "How does Pinecone Assistant enable RAG (Retrieval-Augmented Generation) workflows, and what is its relationship to the core vector database functionality?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Pinecone Assistant",
+          "Vector Search"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/assistant/overview.md",
+          "https://docs.pinecone.io/guides/search/search-overview.md"
+        ]
+      },
+      {
+        "question_id": "S005-Q08",
+        "text": "Explain how Pinecone's authentication, audit logs, and encryption features (including customer-managed encryption keys) work together to enable enterprise-grade security.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Security",
+          "Production Checklist"
+        ],
+        "source_urls": [
+          "https://docs.pinecone.io/guides/production/security-overview.md",
+          "https://docs.pinecone.io/guides/production/configure-audit-logs.md",
+          "https://docs.pinecone.io/guides/production/configure-cmek.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S006",
+    "domain": "ai-sdk.dev",
+    "questions": [
+      {
+        "question_id": "S006-Q01",
+        "text": "According to the RAG Agent guide, what is the specific approach recommended for chunking source material into smaller pieces for embedding?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "RAG Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q02",
+        "text": "In the context of the AI SDK, which PostgreSQL extension is explicitly used for storing and retrieving vector embeddings in the RAG implementation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "RAG Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q03",
+        "text": "The Multi-Modal Agent guide demonstrates provider flexibility by using the same code with multiple models. Name the three specific model providers mentioned that work with identical code by changing a single line.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Multi-Modal Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/multimodal-rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q04",
+        "text": "What is the mathematical measure used to calculate similarity between embedded vectors in the RAG pipeline described in the AI SDK documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "RAG Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q05",
+        "text": "Explain the relationship between the RAG chunking strategy and embedding quality according to the AI SDK documentation. Why does the size of input to embeddings affect the output quality?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "RAG Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q06",
+        "text": "How does the RAG implementation solve the problem of knowledge cutoff in LLMs, and what specific component of the retrieval pipeline is responsible for finding relevant context?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "RAG Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/rag"
+        ]
+      },
+      {
+        "question_id": "S006-Q07",
+        "text": "In the Slackbot Agent guide, what pattern is used to implement tool-calling, and what specific functions are demonstrated as examples of tools that the model can invoke?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Slackbot Agent Guide"
+        ],
+        "source_urls": [
+          "https://ai-sdk.dev/docs/guides/slackbot"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S007",
+    "domain": "docs.fireworks.ai",
+    "questions": [
+      {
+        "question_id": "S007-Q01",
+        "text": "According to the Fireworks documentation, which image generation model is available through their image generation API?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Image Generation API"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/generate-a-new-image-from-a-text-prompt.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q02",
+        "text": "What is the maximum number of events that can be included in a single batch request to Fireworks' batch inference API?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Batch Inference API"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-batch-inference-job.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q03",
+        "text": "Name the three fine-tuning methodologies that Fireworks supports for training custom models.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Fine-Tuning Overview"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/guides/fine-tuning-overview.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q04",
+        "text": "According to Fireworks documentation, what is the Anthropic-compatible endpoint used for, and which specific API method name indicates this compatibility?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Anthropic Messages"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/anthropic-messages.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q05",
+        "text": "Explain the relationship between custom evaluators in Fireworks and their use in the reinforcement fine-tuning pipeline. What role do evaluators play in the RFT workflow?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Create Evaluator",
+          "Reinforcement Fine-tuning"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-evaluator.md",
+          "https://docs.fireworks.ai/api-reference/create-reinforcement-fine-tuning-job.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q06",
+        "text": "What are the specific deployment configuration options available in Fireworks, and how do they enable performance optimization for inference?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Autoscaling",
+          "Speculative Decoding",
+          "Regions"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/guides/deploy-autoscaling.md",
+          "https://docs.fireworks.ai/guides/speculative-decoding.md",
+          "https://docs.fireworks.ai/guides/regions.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q07",
+        "text": "Describe the complete workflow for creating and validating a custom evaluator in Fireworks, including the required project structure and validation steps.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Evaluator Workflow"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/create-evaluator.md",
+          "https://docs.fireworks.ai/api-reference/get-evaluator-upload-endpoint.md",
+          "https://docs.fireworks.ai/api-reference/validate-evaluator-upload.md"
+        ]
+      },
+      {
+        "question_id": "S007-Q08",
+        "text": "Which audio processing capabilities does Fireworks offer, and what is the difference between the streaming transcription endpoint and the standard transcription endpoint?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Audio APIs"
+        ],
+        "source_urls": [
+          "https://docs.fireworks.ai/api-reference/audio-transcriptions.md",
+          "https://docs.fireworks.ai/api-reference/audio-streaming-transcriptions.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S008",
+    "domain": "docs.crewai.com",
+    "questions": [
+      {
+        "question_id": "S008-Q01",
+        "text": "What are the four core components that form the fundamental building blocks of CrewAI's agent framework?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Concepts"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/agents.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q02",
+        "text": "According to CrewAI documentation, what is the primary purpose of the Hallucination Guardrail feature in the enterprise offering?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Hallucination Guardrail"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/features/hallucination-guardrail.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q03",
+        "text": "Name three trigger types available in CrewAI AMP for automating crew execution.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Triggers"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/guides/gmail-trigger.md",
+          "https://docs.crewai.com/en/enterprise/guides/google-calendar-trigger.md",
+          "https://docs.crewai.com/en/enterprise/guides/slack-trigger.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q04",
+        "text": "What are the three available process types in CrewAI for managing how agents execute tasks?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Processes"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/processes.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q05",
+        "text": "Explain how CrewAI's memory system integrates with agent capabilities and how it enhances task execution across a crew.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Memory"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/concepts/memory.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q06",
+        "text": "How does the Flow HITL (Human-In-The-Loop) Management feature in CrewAI differ from standard flow execution, and what specific routing capabilities does it provide?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Flow HITL Management",
+          "Human-In-The-Loop"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/enterprise/features/flow-hitl-management.md",
+          "https://docs.crewai.com/en/guides/human-in-the-loop.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q07",
+        "text": "Describe the integration points between CrewAI's MCP server support and how agents access tools through multiple transport mechanisms.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "MCP Overview",
+          "MCP Transports"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/mcp/overview.md",
+          "https://docs.crewai.com/en/mcp/stdio.md",
+          "https://docs.crewai.com/en/mcp/sse.md",
+          "https://docs.crewai.com/en/mcp/streamable-http.md"
+        ]
+      },
+      {
+        "question_id": "S008-Q08",
+        "text": "What observability platforms does CrewAI integrate with, and how do they support monitoring and evaluating agent performance in production?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Observability"
+        ],
+        "source_urls": [
+          "https://docs.crewai.com/en/observability/overview.md",
+          "https://docs.crewai.com/en/observability/datadog.md",
+          "https://docs.crewai.com/en/observability/langfuse.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S009",
+    "domain": "turso.tech",
+    "questions": [
+      {
+        "question_id": "S009-Q01",
+        "text": "What is the underlying technology that Turso uses as its production-ready SQLite fork?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Overview"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs"
+        ]
+      },
+      {
+        "question_id": "S009-Q02",
+        "text": "According to the Turso documentation, what are the five core features supported by Turso's SQLite-compatible database?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Overview"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs"
+        ]
+      },
+      {
+        "question_id": "S009-Q03",
+        "text": "Which TypeScript/JavaScript packages are recommended for different use cases: embedded local databases versus serverless cloud access?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "TypeScript SDK"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/sdk/ts/quickstart"
+        ]
+      },
+      {
+        "question_id": "S009-Q04",
+        "text": "What is the key difference between Turso Sync and embedded replicas according to the documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Turso Sync"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/turso-sync"
+        ]
+      },
+      {
+        "question_id": "S009-Q05",
+        "text": "Explain how Turso Sync enables offline-first development and what conflict resolution mechanism it uses for concurrent writes across client and cloud.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Turso Sync"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/turso-sync"
+        ]
+      },
+      {
+        "question_id": "S009-Q06",
+        "text": "How do Turso Cloud's multi-region deployment and point-in-time recovery features work together to support disaster recovery and operational continuity?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Turso Cloud"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/turso-cloud"
+        ]
+      },
+      {
+        "question_id": "S009-Q07",
+        "text": "What frameworks and ORMs does Turso support for TypeScript/JavaScript development, and how do they integrate with Turso databases?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Framework Guides",
+          "ORM Integration"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/sdk/ts/guides/nextjs",
+          "https://turso.tech/docs/sdk/ts/orm/drizzle",
+          "https://turso.tech/docs/sdk/ts/orm/prisma"
+        ]
+      },
+      {
+        "question_id": "S009-Q08",
+        "text": "Describe the AgentFS feature in Turso and its specific use case for AI agent applications.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "AgentFS"
+        ],
+        "source_urls": [
+          "https://turso.tech/docs/agentfs"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S010",
+    "domain": "docs.getlago.com",
+    "questions": [
+      {
+        "question_id": "S010-Q01",
+        "text": "According to Lago documentation, how is gross revenue calculated, and what financial adjustments are applied in the calculation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Analytics"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/gross-revenue.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q02",
+        "text": "What are the two types of coupons that Lago supports for customer discounts?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Coupons"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/coupons/coupon-object.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q03",
+        "text": "According to Lago, what represents the difference between the invoice collection metric and the MRR metric?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Analytics"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/invoice-collection.md",
+          "https://docs.getlago.com/api-reference/analytics/mrr.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q04",
+        "text": "What is overdue balance in Lago's billing system, and which invoice states contribute to this metric?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Analytics"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/analytics/overdue-balance.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q05",
+        "text": "Explain how billable metrics in Lago define usage-based pricing and what role aggregation types play in measuring consumption.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Billable Metrics"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/billable-metrics/object.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q06",
+        "text": "How does Lago's credit note system integrate with invoice management, and what operations can be performed on credit notes beyond creation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Credit Notes"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/credit-notes/create.md",
+          "https://docs.getlago.com/api-reference/credit-notes/credit-note-object.md",
+          "https://docs.getlago.com/api-reference/credit-notes/void.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q07",
+        "text": "Describe the relationship between entitlements and features in Lago's plan and subscription system. How do privileges enhance feature functionality?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Entitlements"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/api-reference/entitlements/features/feature-object.md",
+          "https://docs.getlago.com/api-reference/entitlements/plan-entitlements/plan-entitlement-object.md"
+        ]
+      },
+      {
+        "question_id": "S010-Q08",
+        "text": "What payment provider integrations does Lago support, and how do they enable flexible payment collection across different geographic markets?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Payment Providers"
+        ],
+        "source_urls": [
+          "https://docs.getlago.com/guides/payments/payment-providers/stripe.md",
+          "https://docs.getlago.com/guides/payments/payment-providers/adyen.md",
+          "https://docs.getlago.com/guides/payments/payment-providers/gocardless.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S011",
+    "domain": "smartcar.com",
+    "questions": [
+      {
+        "question_id": "S011-Q01",
+        "text": "How long does a Smartcar access token remain valid before it expires?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Authorization Overview"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/authorization/overview.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q02",
+        "text": "What is the maximum time window for retrieving BMW charge records through the Smartcar API?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Charge Records"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/bmw/get-charge-records.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q03",
+        "text": "Name three vehicle system categories that the System Status endpoint supports according to the Smartcar documentation.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "System Status"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/get-system-status.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q04",
+        "text": "Explain the difference between the Compatibility API check results for same vehicles across different regions and trim levels, and why users cannot rely on a single compatibility check.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Compatibility API Overview",
+          "By Region and Make",
+          "By VIN"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/compatibility-api-intro.md",
+          "https://smartcar.com/docs/api-reference/compatibility/by-region-and-make.md",
+          "https://smartcar.com/docs/api-reference/compatibility/by-vin.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q05",
+        "text": "What is required for Tesla vehicles to support lock/unlock commands and what special infrastructure consideration must be taken into account?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Tesla Virtual Keys",
+          "Lock & Unlock"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/connect/other-actions/tesla-virtual-key.md",
+          "https://smartcar.com/docs/api-reference/control-lock-unlock.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q06",
+        "text": "How does the webhook delivery system handle ordering guarantees and retries, and what implications does this have for developers processing vehicle state changes?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Delivery Behavior",
+          "VEHICLE_STATE Event"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/webhooks/delivery-behavior.md",
+          "https://smartcar.com/docs/api-reference/webhooks/events/vehicle-state.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q07",
+        "text": "Describe the relationship between the Smartcar Connect permissions system and the specific API endpoints available to an application, including how brand-specific endpoints fit into this permission model.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Permissions",
+          "Make Specific Endpoints",
+          "Connect Flows"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/api-reference/permissions.md",
+          "https://smartcar.com/docs/api-reference/about-brand-specific.md",
+          "https://smartcar.com/docs/connect/advanced-config/flows.md"
+        ]
+      },
+      {
+        "question_id": "S011-Q08",
+        "text": "How does the data freshness frequency vary across different OEM brands and what architectural pattern would a developer need to implement to handle real-time vs. near-real-time data from different vehicle manufacturers?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Data Freshness Frequencies",
+          "Reliability",
+          "Architecture Design"
+        ],
+        "source_urls": [
+          "https://smartcar.com/docs/help/frequencies.md",
+          "https://smartcar.com/docs/help/reliability-and-freshness.md",
+          "https://smartcar.com/docs/getting-started/how-to/architecture-design.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S012",
+    "domain": "nextjs.org",
+    "questions": [
+      {
+        "question_id": "S012-Q01",
+        "text": "What is the primary file extension convention for dynamic route segments in Next.js App Router?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Dynamic Segments"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/file-conventions/dynamic-routes"
+        ]
+      },
+      {
+        "question_id": "S012-Q02",
+        "text": "In Next.js, which directive is used to mark code for server-side execution only?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Directives"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-server"
+        ]
+      },
+      {
+        "question_id": "S012-Q03",
+        "text": "What are the three primary caching directive options available in Next.js and what is their primary purpose?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Caching Directives"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache"
+        ]
+      },
+      {
+        "question_id": "S012-Q04",
+        "text": "Explain how Server Components and Client Components must be combined in a Next.js application, including the limitations that apply when using each and why the architecture requires this pattern.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Server and Client Components",
+          "use client directive",
+          "use server directive"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+          "https://nextjs.org/docs/app/api-reference/directives/use-client",
+          "https://nextjs.org/docs/app/api-reference/directives/use-server"
+        ]
+      },
+      {
+        "question_id": "S012-Q05",
+        "text": "Compare and contrast the caching strategies available through the 'use cache' directive, including the scope and lifetime of each caching level.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "use cache",
+          "use cache: private",
+          "use cache: remote"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache",
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache-private",
+          "https://nextjs.org/docs/app/api-reference/directives/use-cache-remote"
+        ]
+      },
+      {
+        "question_id": "S012-Q06",
+        "text": "What is the difference between Incremental Static Regeneration (ISR) and on-demand revalidation, and in what scenarios would a developer choose one approach over the other?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "ISR",
+          "Caching and Revalidating"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/guides/incremental-static-regeneration",
+          "https://nextjs.org/docs/app/getting-started/caching-and-revalidating"
+        ]
+      },
+      {
+        "question_id": "S012-Q07",
+        "text": "Analyze how the rendering strategies (Server Components, Client Components, Cache Components) work together to optimize both performance and interactivity in a Next.js application.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Cache Components",
+          "Server and Client Components",
+          "Rendering strategies"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/cache-components",
+          "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+          "https://nextjs.org/docs/app/getting-started/fetching-data"
+        ]
+      },
+      {
+        "question_id": "S012-Q08",
+        "text": "How do metadata, OG images, and the Link component work together to create an optimized user experience, and what design patterns emerge when combining these features across different page types?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Metadata and OG images",
+          "Link Component",
+          "Image Optimization"
+        ],
+        "source_urls": [
+          "https://nextjs.org/docs/app/getting-started/metadata-and-og-images",
+          "https://nextjs.org/docs/app/api-reference/components/link",
+          "https://nextjs.org/docs/app/getting-started/images"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S013",
+    "domain": "postman.com",
+    "questions": [
+      {
+        "question_id": "S013-Q01",
+        "text": "What is the primary purpose of the Postman API Visualizer feature?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "API Visualizer"
+        ],
+        "source_urls": [
+          "https://www.postman.com/api-visualizer/"
+        ]
+      },
+      {
+        "question_id": "S013-Q02",
+        "text": "Name at least two specific OWASP API vulnerabilities covered in Postman's security training sessions.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Introduction to API Security"
+        ],
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/introduction-to-api-security/"
+        ]
+      },
+      {
+        "question_id": "S013-Q03",
+        "text": "What key concept is emphasized in the API Lifecycle documentation as the foundation for building high-quality APIs?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "API Platform",
+          "API Lifecycle"
+        ],
+        "source_urls": [
+          "https://www.postman.com/api-platform/api-lifecycle/"
+        ]
+      },
+      {
+        "question_id": "S013-Q04",
+        "text": "Explain how Postman Flows, Collections, and Workspaces interact together to enable team collaboration, including the specific roles and constraints of each component.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Building low-code applications with Postman Flows",
+          "Harnessing Collections and Workspaces for collaboration"
+        ],
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/building-low-code-applications-with-postman-flows/",
+          "https://www.postman.com/events/intergalactic/harnessing-collections-and-workspaces-for-collaboration/"
+        ]
+      },
+      {
+        "question_id": "S013-Q05",
+        "text": "Compare the testing workflow differences between basic API testing and advanced API testing with automation, including the tools and metrics used to measure effectiveness.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "An introduction for testers",
+          "Advanced API testing best practices and automation techniques"
+        ],
+        "source_urls": [
+          "https://www.postman.com/events/intergalactic/an-introduction-for-testers/",
+          "https://www.postman.com/events/intergalactic/advanced-api-testing-best-practices-and-automation-techniques/"
+        ]
+      },
+      {
+        "question_id": "S013-Q06",
+        "text": "How do Partner Workspaces and the Public API Network serve different purposes in Postman, and what are the key differences in how developers interact with each?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Partner Program",
+          "Discovering public APIs and public api network"
+        ],
+        "source_urls": [
+          "https://www.postman.com/partner-program/",
+          "https://www.postman.com/events/intergalactic/discovering-public-apis-and-public-api-network/"
+        ]
+      },
+      {
+        "question_id": "S013-Q07",
+        "text": "Analyze the relationship between API governance, API design, and API lifecycle management, explaining how these three pillars enable organizations to scale API-first development.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "API Governance",
+          "API Design",
+          "API Lifecycle"
+        ],
+        "source_urls": [
+          "https://www.postman.com/api-platform/api-governance/",
+          "https://www.postman.com/api-platform/api-design/",
+          "https://www.postman.com/api-platform/api-lifecycle/"
+        ]
+      },
+      {
+        "question_id": "S013-Q08",
+        "text": "Describe how the API-first approach connects documentation, testing, and governance across the full API lifecycle, and what architectural patterns emerge when organizations adopt this holistic methodology.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "API First",
+          "Introduction to documentation",
+          "Collaboration and governance for API teams"
+        ],
+        "source_urls": [
+          "https://www.postman.com/api-first/",
+          "https://www.postman.com/events/intergalactic/introduction-to-documentation/",
+          "https://www.postman.com/events/intergalactic/collaboration-and-governance-for-api-teams/"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S014",
+    "domain": "vite.dev",
+    "questions": [
+      {
+        "question_id": "S014-Q01",
+        "text": "What module system does Vite's dev server use to serve source files?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Overview"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/features.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q02",
+        "text": "Which build tool does Vite use for its production bundling process?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Build Command"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/build.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q03",
+        "text": "What are the major categories of configuration options available in Vite?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Configuring Vite"
+        ],
+        "source_urls": [
+          "https://vite.dev/config.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q04",
+        "text": "Explain how Hot Module Replacement (HMR) and Dependency Pre-Bundling work together to optimize the development experience, including the specific performance benefits each provides.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Features",
+          "Hot Module Replacement",
+          "Dependency Pre-Bundling"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/features.md",
+          "https://vite.dev/guide/features.md#hot-module-replacement",
+          "https://vite.dev/guide/dep-pre-bundling.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q05",
+        "text": "Compare the plugin system architecture in Vite for development environments versus production builds, including differences in plugin hook availability and execution context.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Plugin API",
+          "Environment API for Plugins"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/api-plugin.md",
+          "https://vite.dev/guide/api-environment-plugins.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q06",
+        "text": "Describe the configuration and optimization considerations for Server-Side Rendering (SSR) in Vite, and how it differs from static site deployment.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Server-Side Rendering",
+          "Deploying a Static Site",
+          "SSR Options"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/ssr.md",
+          "https://vite.dev/guide/static-deploy.md",
+          "https://vite.dev/config/ssr-options.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q07",
+        "text": "Analyze how Vite's Environment API creates a unified abstraction across different runtime environments, and how this design pattern enables plugin developers to write environment-agnostic tooling.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Environment API",
+          "Using Environment Instances",
+          "Environment API for Frameworks"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/api-environment.md",
+          "https://vite.dev/guide/api-environment-instances.md",
+          "https://vite.dev/guide/api-environment-frameworks.md"
+        ]
+      },
+      {
+        "question_id": "S014-Q08",
+        "text": "Explain the relationship between the Plugin API, JavaScript API, and HMR API, and how developers would combine these three systems to build advanced development tooling.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Plugin API",
+          "JavaScript API",
+          "HMR API"
+        ],
+        "source_urls": [
+          "https://vite.dev/guide/api-plugin.md",
+          "https://vite.dev/guide/api-javascript.md",
+          "https://vite.dev/guide/api-hmr.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S015",
+    "domain": "trigger.dev",
+    "questions": [
+      {
+        "question_id": "S015-Q01",
+        "text": "What is the primary licensing model for Trigger.dev?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Benefits"
+        ],
+        "source_urls": [
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q02",
+        "text": "Name three types of long-running operations that Trigger.dev is designed to handle without serverless timeout limitations.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Primary Use Cases"
+        ],
+        "source_urls": [
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q03",
+        "text": "What built-in features does Trigger.dev provide for monitoring and observability of background jobs?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Benefits"
+        ],
+        "source_urls": [
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q04",
+        "text": "Explain how Trigger.dev's 'No Timeouts' and 'No Server Management' benefits work together, and what architectural implications this has for developers migrating from traditional serverless platforms.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Core Benefits",
+          "No Timeouts",
+          "No Server Management"
+        ],
+        "source_urls": [
+          "https://trigger.dev/llms.txt",
+          "https://trigger.dev/docs"
+        ]
+      },
+      {
+        "question_id": "S015-Q05",
+        "text": "Compare the use cases for Trigger.dev's Scheduled Tasks feature versus traditional cron job implementations, including the advantages and requirements of each.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Scheduled Tasks",
+          "Primary Use Cases"
+        ],
+        "source_urls": [
+          "https://trigger.dev/product/scheduled-tasks",
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q06",
+        "text": "Describe how Trigger.dev's Concurrency and Realtime features enable building responsive, scalable multi-tenant SaaS applications, including the specific patterns they support.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Concurrency",
+          "Realtime",
+          "Primary Use Cases"
+        ],
+        "source_urls": [
+          "https://trigger.dev/product/concurrency",
+          "https://trigger.dev/product/realtime",
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q07",
+        "text": "Analyze the relationship between self-hosting and managed deployment options for Trigger.dev, considering the implications for extensibility, observability, and operational complexity.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Open Source",
+          "Self-Hosting",
+          "No Server Management"
+        ],
+        "source_urls": [
+          "https://trigger.dev/docs/open-source-self-hosting",
+          "https://trigger.dev/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S015-Q08",
+        "text": "Describe how AI agents, scheduled tasks, and background job processing converge as unified capabilities within Trigger.dev's platform, and what architectural patterns enable this integration.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "AI Agents",
+          "Scheduled Tasks",
+          "Primary Use Cases"
+        ],
+        "source_urls": [
+          "https://trigger.dev/product/ai-agents",
+          "https://trigger.dev/product/scheduled-tasks",
+          "https://trigger.dev/docs/guides/ai-agents"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S016",
+    "domain": "buildwithfern.com",
+    "questions": [
+      {
+        "question_id": "S016-Q01",
+        "text": "What are the two main product sections that Fern organizes its platform into?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Platform Features"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q02",
+        "text": "Name one company mentioned as a customer that trusts Fern for their SDK and documentation needs.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core platform features and benefits"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q03",
+        "text": "How does Fern's approach to SDK generation differ from traditional bespoke implementations according to the Compare section?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Platform Features",
+          "Compare"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q04",
+        "text": "What is the relationship between Fern's documentation features and brand customization as described on the site?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Build",
+          "Compare",
+          "Solutions"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q05",
+        "text": "What resource is available under the Build section for learning about SDK and documentation generation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Build"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q06",
+        "text": "Which teams would benefit from Fern according to the Solutions section, and what specific problem does Fern solve for product and developer-experience teams?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Solutions"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S016-Q07",
+        "text": "How does Fern position itself in terms of consistency and maintenance overhead compared to hand-rolled SDKs?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Key Differentiators",
+          "Compare"
+        ],
+        "source_urls": [
+          "https://buildwithfern.com/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S017",
+    "domain": "loops.so",
+    "questions": [
+      {
+        "question_id": "S017-Q01",
+        "text": "What critical implementation detail is emphasized in the Loops documentation for API requests?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Critical Implementation Detail"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q02",
+        "text": "Name two of the three entry points that Loops provides for getting started.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Getting Started Resources"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q03",
+        "text": "What different types of email does Loops describe itself as a platform for handling?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Primary Sections",
+          "Core Offering"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q04",
+        "text": "How do the API references and machine-readable specifications in Loops documentation support different use cases?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "API & Developer Tools"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q05",
+        "text": "What relationship exists between Loops' contact management, template creation, and event-triggered messaging capabilities?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Core Offering"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q06",
+        "text": "How does Loops support integration workflows, and what additional tool is provided to address email delivery concerns?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Extended Resources"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S017-Q07",
+        "text": "Describe how Loops' architectural requirement for server-side API requests reflects the platform's design philosophy.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Critical Implementation Detail",
+          "Core Offering"
+        ],
+        "source_urls": [
+          "https://loops.so/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S018",
+    "domain": "ai.google.dev",
+    "questions": [
+      {
+        "question_id": "S018-Q01",
+        "text": "What is the primary purpose of the Gemini API according to its documentation structure?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Content Organization"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q02",
+        "text": "Name three capabilities under the Advanced Features section of Gemini API documentation.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Advanced Features"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q03",
+        "text": "How do foundational features like content generation and token counting relate to the semantic retrieval system in Gemini?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Core API Operations",
+          "Data Management"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q04",
+        "text": "What is the significance of including both the Live Music API and legacy PaLM API documentation in the same reference?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Specialized Capabilities",
+          "Key Observations"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q05",
+        "text": "Which API reference method provides comprehensive endpoint documentation for Gemini?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core API Operations"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q06",
+        "text": "How do permissions and model management features combine to support enterprise use cases in Gemini?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Model Management",
+          "Data Management"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S018-Q07",
+        "text": "Explain how Gemini API balances foundational capabilities with sophisticated enterprise features.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Core API Operations",
+          "Advanced Features",
+          "Key Observations"
+        ],
+        "source_urls": [
+          "https://ai.google.dev/api/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S019",
+    "domain": "developer.chrome.com",
+    "questions": [
+      {
+        "question_id": "S019-Q01",
+        "text": "What built-in AI capabilities are available to developers according to Chrome's documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "AI & Machine Learning"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q02",
+        "text": "Name three major categories of web APIs documented under Capabilities & Web APIs.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Capabilities & Web APIs"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q03",
+        "text": "How do Chrome DevTools features support developers in optimizing performance and debugging applications?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Chrome DevTools"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q04",
+        "text": "What relationship exists between Manifest V3 migration and the extension development lifecycle documented by Chrome?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Chrome Extensions"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q05",
+        "text": "Which API allows websites to communicate with Bluetooth devices according to Chrome's capabilities documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Capabilities & Web APIs"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q06",
+        "text": "How does Chrome's approach to built-in AI differ from traditional cloud-based AI solutions based on the documentation?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "AI & Machine Learning"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S019-Q07",
+        "text": "Describe how hardware capabilities APIs (Bluetooth, USB, Serial, NFC) enable new categories of web applications.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Capabilities & Web APIs",
+          "Hardware access"
+        ],
+        "source_urls": [
+          "https://developer.chrome.com/docs/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S020",
+    "domain": "firebase.google.com",
+    "questions": [
+      {
+        "question_id": "S020-Q01",
+        "text": "What are the two primary SDK language platforms that Firebase provides comprehensive documentation for?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Overview",
+          "Key Content Sections"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q02",
+        "text": "Name three core Firebase services documented for the JavaScript SDK.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "JavaScript SDK References"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q03",
+        "text": "How do Firestore's capabilities differ between the full SDK and the lite variant based on the documentation structure?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "JavaScript SDK References"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q04",
+        "text": "What is the relationship between Vertex AI integration and the broader Firebase ecosystem for developers?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Notable Coverage Areas"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q05",
+        "text": "Which authentication providers are supported by Firebase for Kotlin/Android SDK?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Kotlin/Android SDK References"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q06",
+        "text": "How does Firebase organize its documentation by package level, class/interface level, and sub-packages?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Organizational Pattern"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S020-Q07",
+        "text": "Explain how Firebase balances real-time capabilities with security features across its documentation.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Notable Coverage Areas"
+        ],
+        "source_urls": [
+          "https://firebase.google.com/docs/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S021",
+    "domain": "web.dev",
+    "questions": [
+      {
+        "question_id": "S021-Q01",
+        "text": "What Core Web Vitals metrics are mentioned in the web.dev documentation structure?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Topics"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q02",
+        "text": "Name three specialized areas covered by web.dev beyond core web development topics.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Specialized Areas"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q03",
+        "text": "How do web.dev's security guidance articles relate to the broader accessibility and performance topics covered?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Core Topics",
+          "Notable Sections"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q04",
+        "text": "Explain the relationship between Code Labs, security guidance, and emerging technologies in web.dev's pedagogical approach.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Notable Sections"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q05",
+        "text": "What emerging browser features are covered under the Emerging Technologies section of web.dev?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Emerging Technologies"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q06",
+        "text": "How do practical guides like centering in CSS and building button components support web.dev's overall educational mission?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Notable Sections"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S021-Q07",
+        "text": "Describe how web.dev bridges theoretical knowledge about critical rendering paths with practical performance optimization techniques.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Core Topics",
+          "Notable Sections"
+        ],
+        "source_urls": [
+          "https://web.dev/articles/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S022",
+    "domain": "plaid.com",
+    "questions": [
+      {
+        "question_id": "S022-Q01",
+        "text": "What are the primary use cases for Plaid's Signal product?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Risk & Insights"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q02",
+        "text": "Name three authentication or identity products that Plaid offers.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Authentication & Identity"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q03",
+        "text": "How do Plaid's Transfer services and European Payment Initiation differ in scope and geographic focus?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Payments & Transfers"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q04",
+        "text": "What relationship exists between Plaid's Income verification products and its financial data enrichment capabilities?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Financial Data & Accounts",
+          "Specialized Products"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q05",
+        "text": "Which platforms are supported for integrating Plaid's Link product according to the documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Implementation Resources"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q06",
+        "text": "How do Plaid's Risk & Insights products (Signal, Monitor, Protect, Beacon) collectively address financial security?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Risk & Insights"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      },
+      {
+        "question_id": "S022-Q07",
+        "text": "Explain how Plaid's Account management, security, and team administration features support enterprise implementations.",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Financial Data & Accounts"
+        ],
+        "source_urls": [
+          "https://plaid.com/docs/llms.txt"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S023",
+    "domain": "developer.squareup.com",
+    "questions": [
+      {
+        "question_id": "S023-Q01",
+        "text": "What are the three common API patterns that Square's SDK documentation explicitly covers across multiple language implementations?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Square SDKs",
+          "Common API Patterns"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/sdks/dotnet/common-square-api-patterns",
+          "https://developer.squareup.com/docs/sdks/java/common-square-api-patterns",
+          "https://developer.squareup.com/docs/sdks/nodejs/common-square-api-patterns"
+        ]
+      },
+      {
+        "question_id": "S023-Q02",
+        "text": "According to Square's documentation, what field clearing operation is specifically documented as distinct from standard updates?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Build Basics"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/build-basics/clearing-fields"
+        ]
+      },
+      {
+        "question_id": "S023-Q03",
+        "text": "What specific requirement must be met to use the Terminal API for QR code payment methods beyond basic payment processing?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Terminal API",
+          "International Payment Methods"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/terminal-api/overview",
+          "https://developer.squareup.com/docs/terminal-api/international-payment-methods/paypay-qr-code-payments"
+        ]
+      },
+      {
+        "question_id": "S023-Q04",
+        "text": "How do the Mobile Payments SDK and Reader SDK approaches to offline payment handling differ in their implementation requirements?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Mobile Payments SDK",
+          "Reader SDK"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/mobile-payments-sdk/android/offline-payments",
+          "https://developer.squareup.com/docs/reader-sdk/cookbook/capture-a-transaction"
+        ]
+      },
+      {
+        "question_id": "S023-Q05",
+        "text": "What conceptual relationship exists between the Sandbox Payments testing environment and the production mobile payment hardware integration workflow?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Sandbox",
+          "Mobile Payments",
+          "Terminal API"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/devtools/sandbox/payments",
+          "https://developer.squareup.com/docs/mobile-payments-sdk/android/configure-authorize",
+          "https://developer.squareup.com/docs/terminal-api/integrate-square-terminal"
+        ]
+      },
+      {
+        "question_id": "S023-Q06",
+        "text": "Which Square API endpoints are responsible for managing customer group segmentation versus customer profile storage?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Customer Groups",
+          "Customer Profiles",
+          "Customer Segments"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/customer-groups-api/what-it-does",
+          "https://developer.squareup.com/docs/customers-api/use-the-api/keep-records",
+          "https://developer.squareup.com/docs/customer-segments-api/what-it-does"
+        ]
+      },
+      {
+        "question_id": "S023-Q07",
+        "text": "What is the primary technical distinction in how gift card redemption and gift card reloading are processed through Square's APIs?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Gift Cards"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/gift-cards/redeem-gift-cards",
+          "https://developer.squareup.com/docs/gift-cards/reload-gift-cards"
+        ]
+      },
+      {
+        "question_id": "S023-Q08",
+        "text": "How do the requirements for App Marketplace listings differ between applications using gift cards versus those using the Inventory API?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "App Marketplace Requirements"
+        ],
+        "source_urls": [
+          "https://developer.squareup.com/docs/app-marketplace/requirements/gift-cards-api",
+          "https://developer.squareup.com/docs/app-marketplace/requirements/inventory-api"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S024",
+    "domain": "www.notion.so",
+    "questions": [
+      {
+        "question_id": "S024-Q01",
+        "text": "What are the five distinct core product categories that Notion organizes its functionality into?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Products"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/ai",
+          "https://www.notion.com/product/docs",
+          "https://www.notion.com/product/projects",
+          "https://www.notion.com/product/wikis",
+          "https://www.notion.com/product/forms"
+        ]
+      },
+      {
+        "question_id": "S024-Q02",
+        "text": "Which organizational types does Notion explicitly target with dedicated solutions, and what distinguishes them?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Solutions By Team Types"
+        ],
+        "source_urls": [
+          "https://www.notion.com/startups",
+          "https://www.notion.com/teams",
+          "https://www.notion.com/enterprise",
+          "https://www.notion.com/nonprofits"
+        ]
+      },
+      {
+        "question_id": "S024-Q03",
+        "text": "How does the Notion offering for engineering teams differ from the offering designed for product teams in terms of intended functionality?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Solutions By Role"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-engineering",
+          "https://www.notion.com/product/notion-for-product"
+        ]
+      },
+      {
+        "question_id": "S024-Q04",
+        "text": "What relationship exists between Notion's AI capabilities and its automation and form-building features in the platform architecture?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Core Products",
+          "AI",
+          "Automations",
+          "Forms"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/ai",
+          "https://www.notion.com/md/automations",
+          "https://www.notion.com/product/forms"
+        ]
+      },
+      {
+        "question_id": "S024-Q05",
+        "text": "How do the manager-specific tools within Notion integrate with the broader project management and calendar features?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Solutions By Role",
+          "Core Products"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-managers",
+          "https://www.notion.com/product/calendar",
+          "https://www.notion.com/product/projects"
+        ]
+      },
+      {
+        "question_id": "S024-Q06",
+        "text": "What unique positioning does Notion's sites feature have compared to its wikis feature for knowledge organization?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Products"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/sites",
+          "https://www.notion.com/product/wikis"
+        ]
+      },
+      {
+        "question_id": "S024-Q07",
+        "text": "How does Notion's approach to serving education and students complement its enterprise solution offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Solutions By Role",
+          "Solutions By Team Types"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/notion-for-education",
+          "https://www.notion.com/enterprise"
+        ]
+      },
+      {
+        "question_id": "S024-Q08",
+        "text": "What is the functional distinction between Notion's mail product and its notes and docs product within the workspace?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Products"
+        ],
+        "source_urls": [
+          "https://www.notion.com/product/mail",
+          "https://www.notion.com/product/docs"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S025",
+    "domain": "www.coursera.org",
+    "questions": [
+      {
+        "question_id": "S025-Q01",
+        "text": "What are the primary career focus areas covered in Coursera's education hub, and how many of them relate to artificial intelligence?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "AI & Machine Learning Careers",
+          "Career Development & Planning"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/ai-engineer",
+          "https://www.coursera.org/articles/ai-research-scientist",
+          "https://www.coursera.org/articles/ai-data-trainer"
+        ]
+      },
+      {
+        "question_id": "S025-Q02",
+        "text": "According to Coursera's documentation, what specific credential types are covered in their certification resources?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Certifications & Credentials"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/aws-certification",
+          "https://www.coursera.org/articles/azure-certification",
+          "https://www.coursera.org/articles/a-guide-to-pmi-certifications"
+        ]
+      },
+      {
+        "question_id": "S025-Q03",
+        "text": "How does Coursera's coverage of data and analytics careers relate to its broader technology career offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Data & Analytics",
+          "Technology & Software Development"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/data-analyst",
+          "https://www.coursera.org/articles/big-data-engineer",
+          "https://www.coursera.org/articles/back-end-developer"
+        ]
+      },
+      {
+        "question_id": "S025-Q04",
+        "text": "What conceptual connection exists between the AI career paths Coursera highlights and traditional software development roles?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "AI & Machine Learning Careers",
+          "Technology & Software Development"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/ai-engineer",
+          "https://www.coursera.org/articles/algorithm-engineer",
+          "https://www.coursera.org/articles/application-developer"
+        ]
+      },
+      {
+        "question_id": "S025-Q05",
+        "text": "How do the business and finance careers documented on Coursera relate to the technical career paths in data and analytics?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Business & Finance",
+          "Data & Analytics"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/accountant",
+          "https://www.coursera.org/articles/account-manager-career-path-guide",
+          "https://www.coursera.org/articles/analytics-engineer"
+        ]
+      },
+      {
+        "question_id": "S025-Q06",
+        "text": "What is the primary focus of Coursera's 30-60-90 Day Plan resource, and how does it fit within career development guidance?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Career Development & Planning"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/30-60-90-day-plan"
+        ]
+      },
+      {
+        "question_id": "S025-Q07",
+        "text": "Which specialized career paths does Coursera offer in emerging technology domains, and how do they differ from traditional technical roles?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Technology & Software Development",
+          "AI & Machine Learning Careers"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/android-app-developer",
+          "https://www.coursera.org/articles/ai-architect",
+          "https://www.coursera.org/articles/ai-ethicist"
+        ]
+      },
+      {
+        "question_id": "S025-Q08",
+        "text": "How does Coursera structure guidance for job search strategies compared to its approach to career transition documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Career Development & Planning"
+        ],
+        "source_urls": [
+          "https://www.coursera.org/articles/announce-new-job-linkedin",
+          "https://www.coursera.org/articles"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S026",
+    "domain": "www.edx.org",
+    "questions": [
+      {
+        "question_id": "S026-Q01",
+        "text": "What are the five primary degree and credential program types that edX offers to learners?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Degree & Credential Programs"
+        ],
+        "source_urls": [
+          "https://www.edx.org/bachelors",
+          "https://www.edx.org/masters",
+          "https://www.edx.org/doctorate",
+          "https://www.edx.org/professional-certificate",
+          "https://www.edx.org/xseries"
+        ]
+      },
+      {
+        "question_id": "S026-Q02",
+        "text": "Which major universities are explicitly named as foundational partners in edX's platform architecture?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "University Partners"
+        ],
+        "source_urls": [
+          "https://www.edx.org/school/harvardx",
+          "https://www.edx.org/school/mitx",
+          "https://www.edx.org/school/berkeleyx"
+        ]
+      },
+      {
+        "question_id": "S026-Q03",
+        "text": "How does edX's offering of computer science courses relate to its broader business and engineering program categories?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Course Categories"
+        ],
+        "source_urls": [
+          "https://www.edx.org/learn/python",
+          "https://www.edx.org/learn/data-science",
+          "https://www.edx.org/learn/leadership",
+          "https://www.edx.org/learn/mechanical-engineering"
+        ]
+      },
+      {
+        "question_id": "S026-Q04",
+        "text": "What conceptual purpose does edX's CS50 course serve relative to other computer science offerings on the platform?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Course Categories",
+          "Computer Science"
+        ],
+        "source_urls": [
+          "https://www.edx.org/cs50",
+          "https://www.edx.org/learn/artificial-intelligence",
+          "https://www.edx.org/learn/data-science"
+        ]
+      },
+      {
+        "question_id": "S026-Q05",
+        "text": "How do edX's support resources and partner institutions work together to ensure learner success across degree programs?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Support & Policies",
+          "University Partners"
+        ],
+        "source_urls": [
+          "https://help.edx.org",
+          "https://www.edx.org/schools-partners",
+          "https://www.edx.org/school/stanfordonline"
+        ]
+      },
+      {
+        "question_id": "S026-Q06",
+        "text": "What accessibility and localization features does edX provide to serve its global learner population?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Support & Policies"
+        ],
+        "source_urls": [
+          "https://www.edx.org/about-us",
+          "https://help.edx.org"
+        ]
+      },
+      {
+        "question_id": "S026-Q07",
+        "text": "How does the instructor onboarding process at edX relate to the institutional partnerships that form its content foundation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Support & Policies",
+          "University Partners"
+        ],
+        "source_urls": [
+          "https://www.edx.org/become",
+          "https://www.edx.org/schools-partners"
+        ]
+      },
+      {
+        "question_id": "S026-Q08",
+        "text": "What distinct pathways does edX offer for learners seeking individual courses versus formal degree credentials?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Hubs",
+          "Degree & Credential Programs"
+        ],
+        "source_urls": [
+          "https://www.edx.org/courses",
+          "https://www.edx.org/learn",
+          "https://www.edx.org/bachelors"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S027",
+    "domain": "docs.ghost.org",
+    "questions": [
+      {
+        "question_id": "S027-Q01",
+        "text": "What is the primary functional distinction between Ghost's Admin API and Content API in terms of use cases?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core APIs"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/admin-api.md",
+          "https://docs.ghost.org/content-api.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q02",
+        "text": "Which static site generators are explicitly documented as compatible with Ghost's JAMstack integration approach?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "JAMstack & Headless CMS"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/jamstack/gatsby.md",
+          "https://docs.ghost.org/jamstack/next.md",
+          "https://docs.ghost.org/jamstack/eleventy.md",
+          "https://docs.ghost.org/jamstack/nuxt.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q03",
+        "text": "How do Ghost's theme development helpers and contextual routing systems work together to enable custom publication design?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Themes & Templating"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/themes/helpers.md",
+          "https://docs.ghost.org/themes/routing.md",
+          "https://docs.ghost.org/themes/structure.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q04",
+        "text": "What architectural relationship exists between Ghost's membership system and its newsletter delivery capabilities?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Publishing & Features",
+          "Admin API"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/members.md",
+          "https://docs.ghost.org/newsletters.md",
+          "https://docs.ghost.org/admin-api/newsletters/overview.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q05",
+        "text": "How do the migration guides for competing platforms differ in approach from Ghost's custom developer migration option?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Migration Guides"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/migration/wordpress.md",
+          "https://docs.ghost.org/migration/medium.md",
+          "https://docs.ghost.org/migration/custom.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q06",
+        "text": "What specific permissions structure does Ghost implement for user roles and team member invitations?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Admin API"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/users/roles.md",
+          "https://docs.ghost.org/admin-api/users/invites.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q07",
+        "text": "How do Ghost's webhook capabilities support the broader publishing and automation workflows described in the documentation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Admin API",
+          "Publishing & Features"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/webhooks/overview.md",
+          "https://docs.ghost.org/webhooks.md",
+          "https://docs.ghost.org/publishing.md"
+        ]
+      },
+      {
+        "question_id": "S027-Q08",
+        "text": "What are the functional differences between image handling in the Admin API versus theme asset management?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Admin API",
+          "Themes & Templating"
+        ],
+        "source_urls": [
+          "https://docs.ghost.org/admin-api/images/overview.md",
+          "https://docs.ghost.org/themes/assets.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S028",
+    "domain": "developer.mastercard.com",
+    "questions": [
+      {
+        "question_id": "S028-Q01",
+        "text": "What are the six primary service categories that organize Mastercard's API offerings?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Documentation Hub"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/account-to-account-commerce/",
+          "https://developer.mastercard.com/product/authentication-solutions/",
+          "https://developer.mastercard.com/product/ethoca-alerts-for-merchants/",
+          "https://developer.mastercard.com/product/click-to-pay/",
+          "https://developer.mastercard.com/product/mastercard-send/",
+          "https://developer.mastercard.com/product/carbon-calculator/"
+        ]
+      },
+      {
+        "question_id": "S028-Q02",
+        "text": "How does Mastercard's Automatic Billing Updater differ functionally from its Account Validation service?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Authentication & Security"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/automatic-billing-updater/documentation/index.md",
+          "https://developer.mastercard.com/account-validation/documentation/index.md"
+        ]
+      },
+      {
+        "question_id": "S028-Q03",
+        "text": "How do Mastercard's fraud prevention products like Ethoca Alerts integrate with its broader risk management ecosystem?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Fraud Prevention & Risk"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/ethoca-alerts-for-merchants/",
+          "https://developer.mastercard.com/product/first-party-trust/",
+          "https://developer.mastercard.com/product/riskrecon/"
+        ]
+      },
+      {
+        "question_id": "S028-Q04",
+        "text": "What conceptual relationship exists between Mastercard's benefits and loyalty services and its consumer experience offerings?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Benefits & Loyalty",
+          "Consumer Experience"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/mastercard-loyalty-management/",
+          "https://developer.mastercard.com/product/mastercard-pay-with-rewards/",
+          "https://developer.mastercard.com/product/personalized-offers/"
+        ]
+      },
+      {
+        "question_id": "S028-Q05",
+        "text": "How do Mastercard's open finance APIs differ between regional implementations, and what purpose does this distinction serve?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Specialized Services"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/open-finance-europe/",
+          "https://developer.mastercard.com/product/open-finance/"
+        ]
+      },
+      {
+        "question_id": "S028-Q06",
+        "text": "What are the two primary authentication mechanisms used across Mastercard's API services?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Documentation Hub"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/"
+        ]
+      },
+      {
+        "question_id": "S028-Q07",
+        "text": "How do Mastercard's domestic and cross-border payment solutions work together to support different financial service use cases?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Account & Payment Services",
+          "Cross-Border & Currency"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/mastercard-send/",
+          "https://developer.mastercard.com/cross-border-services/documentation/index.md"
+        ]
+      },
+      {
+        "question_id": "S028-Q08",
+        "text": "What sustainability-focused products does Mastercard offer, and what use cases do they enable?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Sustainability & Impact"
+        ],
+        "source_urls": [
+          "https://developer.mastercard.com/product/carbon-calculator/",
+          "https://developer.mastercard.com/donations/documentation/index.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S029",
+    "domain": "mintlify.com",
+    "questions": [
+      {
+        "question_id": "S029-Q01",
+        "text": "What are the primary capabilities of Mintlify's automated documentation agent?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Agent Capabilities"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/agent/index.md",
+          "https://www.mintlify.com/docs/agent/customize.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q02",
+        "text": "How many customizable components does Mintlify provide for documentation content creation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Components"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/components/index.md",
+          "https://www.mintlify.com/docs/components/accordions.md",
+          "https://www.mintlify.com/docs/components/cards.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q03",
+        "text": "How do Mintlify's deployment options across different platforms compare in terms of preview functionality?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Deployment"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/deploy/github.md",
+          "https://www.mintlify.com/docs/deploy/vercel.md",
+          "https://www.mintlify.com/docs/deploy/preview-deployments.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q04",
+        "text": "What conceptual role does Mintlify's llms.txt optimization play relative to its broader AI integration strategy?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "AI Features"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/ai/llmstxt.md",
+          "https://www.mintlify.com/docs/ai/assistant.md",
+          "https://www.mintlify.com/docs/ai-native.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q05",
+        "text": "How do Mintlify's role-based access control features integrate with its deployment and CI/CD workflows?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Dashboard & Team Management",
+          "Deployment"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/dashboard/roles.md",
+          "https://www.mintlify.com/docs/deploy/deployments.md",
+          "https://www.mintlify.com/docs/deploy/ci.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q06",
+        "text": "What specific API endpoints does Mintlify provide for managing agent jobs and analytics?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "API Endpoints"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/api/agent/create-agent-job.md",
+          "https://www.mintlify.com/docs/api/analytics/assistant-conversations.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q07",
+        "text": "How do Mintlify's OpenAPI and AsyncAPI setup capabilities work together to support complete API documentation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "API Playground"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/api-playground/openapi-setup.md",
+          "https://www.mintlify.com/docs/api-playground/asyncapi-setup.md",
+          "https://www.mintlify.com/docs/api-playground/overview.md"
+        ]
+      },
+      {
+        "question_id": "S029-Q08",
+        "text": "What analytics and feedback collection mechanisms does Mintlify offer to measure documentation effectiveness?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Dashboard & Team Management",
+          "Optimization"
+        ],
+        "source_urls": [
+          "https://www.mintlify.com/docs/optimize/analytics.md",
+          "https://www.mintlify.com/docs/optimize/feedback.md"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S030",
+    "domain": "sourceforge.net",
+    "questions": [
+      {
+        "question_id": "S030-Q01",
+        "text": "How many distinct B2B software categories does SourceForge claim to catalog in its comparison directory?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Functions"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q02",
+        "text": "What is SourceForge's approximate monthly user base according to its platform overview?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "User Base & Scale"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q03",
+        "text": "Who is credited with providing product information, pricing, reviews, and specifications on SourceForge?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Content Authority"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q04",
+        "text": "SourceForge includes both a B2B software comparison directory and what other type of software resource?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Functions"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q05",
+        "text": "List at least five filtering criteria that SourceForge's comparison tools allow users to apply when evaluating software products.",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Key Features",
+          "Core Functions"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q06",
+        "text": "How does SourceForge differentiate itself from competitors when positioning to B2B software buyers?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Core Functions",
+          "User Base & Scale",
+          "Content Authority"
+        ],
+        "source_urls": [
+          "https://sourceforge.net"
+        ]
+      },
+      {
+        "question_id": "S030-Q07",
+        "text": "What domains of software categories does SourceForge cover, and how would understanding this range help organizations in their software selection process?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Software Categories",
+          "Core Functions"
+        ],
+        "source_urls": [
+          "https://sourceforge.net/software/",
+          "https://sourceforge.net"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S031",
+    "domain": "yoast.com",
+    "questions": [
+      {
+        "question_id": "S031-Q01",
+        "text": "In what year did Yoast SEO originally launch its platform?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Offerings"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q02",
+        "text": "What is the discount code provided for purchasing Yoast Premium, and what percentage off does it provide?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Special Offer"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q03",
+        "text": "Name at least three platforms or systems that Yoast SEO products are compatible with according to their integrations documentation.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Offerings",
+          "Community Engagement"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q04",
+        "text": "What two e-commerce platforms does Yoast offer specialized SEO plugins for?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Offerings"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q05",
+        "text": "How does Yoast provide continuous learning to its users beyond their primary plugin offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Learning Resources",
+          "Community Engagement",
+          "Main Offerings"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q06",
+        "text": "What is Yoast's stated mission, and how do their educational initiatives and product portfolio work together to achieve it?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Main Offerings",
+          "Learning Resources",
+          "Community Engagement"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q07",
+        "text": "Compare Yoast's role as both a plugin provider and educational resource\u2014what advantages does this dual approach provide to users?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Main Offerings",
+          "Learning Resources",
+          "Developer Support"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      },
+      {
+        "question_id": "S031-Q08",
+        "text": "How does Yoast's Academy structure its courses, and what audience types are addressed by their course offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Learning Resources",
+          "Main Offerings"
+        ],
+        "source_urls": [
+          "https://yoast.com"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S032",
+    "domain": "students.ubc.ca",
+    "questions": [
+      {
+        "question_id": "S032-Q01",
+        "text": "What is the primary accessibility service referenced on the UBC student services page?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Accessibility Services"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q02",
+        "text": "Name two social media platforms through which UBC student services maintains regular engagement with students.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Key Services Include"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q03",
+        "text": "According to the page footer information, in what month and year was the student services page last updated?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Additional Features"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q04",
+        "text": "What portal system does UBC use for course enrollment and registration according to the listed login options?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Login Portals"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q05",
+        "text": "How does UBC student services address the needs of non-traditional student populations, and what examples are provided?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Specialized Support",
+          "Academic Support",
+          "Financial Resources"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q06",
+        "text": "What mental health resources are available to UBC students, and how do they integrate with the broader health and wellness offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Health & Wellness",
+          "Key Services Include"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca/health/crisis-support-services/",
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q07",
+        "text": "How does the structure of UBC's student services support the full student lifecycle from entry through to post-graduation success?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Academic Support",
+          "Career Development",
+          "Financial Resources",
+          "Specialized Support"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca"
+        ]
+      },
+      {
+        "question_id": "S032-Q08",
+        "text": "What role do peer mentorship and community involvement play in the comprehensive student experience model presented on this page?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Campus Life",
+          "Specialized Support"
+        ],
+        "source_urls": [
+          "https://students.ubc.ca/campus-life/",
+          "https://students.ubc.ca"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S033",
+    "domain": "www.uslanguageservices.com",
+    "questions": [
+      {
+        "question_id": "S033-Q01",
+        "text": "What is the stated price per page for U.S. Language Services' certified translation offering, and what guarantee is provided?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Primary Services"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/certified-translation/"
+        ]
+      },
+      {
+        "question_id": "S033-Q02",
+        "text": "How many professional translators work for U.S. Language Services, and what is their average years of experience?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Team Structure"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/meet-the-team/"
+        ]
+      },
+      {
+        "question_id": "S033-Q03",
+        "text": "What is U.S. Language Services' Better Business Bureau rating and their average Google review score?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Ratings & Reviews"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/reviews/"
+        ]
+      },
+      {
+        "question_id": "S033-Q04",
+        "text": "What are the standard business hours and contact methods available for U.S. Language Services customers?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Contact Information"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/contact-us/"
+        ]
+      },
+      {
+        "question_id": "S033-Q05",
+        "text": "How do U.S. Language Services' certified and standard translation offerings differ in pricing structure and turnaround time?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Primary Services"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/certified-translation/",
+          "https://www.uslanguageservices.com/standard-translation/"
+        ]
+      },
+      {
+        "question_id": "S033-Q06",
+        "text": "What types of institutions comprise U.S. Language Services' institutional client base, and how does this diversity support their market positioning?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Client Portfolio",
+          "Team Structure"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/clients/",
+          "https://www.uslanguageservices.com/clients/law-firms/"
+        ]
+      },
+      {
+        "question_id": "S033-Q07",
+        "text": "How does U.S. Language Services' social responsibility commitment relate to the client communities it serves through translation services?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Social Responsibility",
+          "Client Portfolio",
+          "Additional Resources"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/movements-we-support/"
+        ]
+      },
+      {
+        "question_id": "S033-Q08",
+        "text": "What is the relationship between the company's linguistic coverage (35+ languages) and the immigration/naturalization guidance they provide in their resources?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Supported Languages",
+          "Additional Resources"
+        ],
+        "source_urls": [
+          "https://www.uslanguageservices.com/guides-resources/what-is-naturalization/"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S034",
+    "domain": "www.manageengine.com",
+    "questions": [
+      {
+        "question_id": "S034-Q01",
+        "text": "What is the primary purpose and core function of ManageEngine ADAudit Plus according to its product documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Product Information"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ]
+      },
+      {
+        "question_id": "S034-Q02",
+        "text": "Name at least four compliance frameworks that ADAudit Plus provides specialized reporting for.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Compliance & Reporting"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/hipaa-compliance-reporting-tool.html"
+        ]
+      },
+      {
+        "question_id": "S034-Q03",
+        "text": "What real-time monitoring capabilities does ADAudit Plus provide for Active Directory environments?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Feature Documentation"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/features.html"
+        ]
+      },
+      {
+        "question_id": "S034-Q04",
+        "text": "How many how-to guides are documented in the ADAudit Plus knowledge base according to the llms.txt overview?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "How-to Guides"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ]
+      },
+      {
+        "question_id": "S034-Q05",
+        "text": "What administrative challenges can ADAudit Plus help solve, and what specific scenarios are mentioned in the documentation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Practical Guidance",
+          "Feature Documentation"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/features.html"
+        ]
+      },
+      {
+        "question_id": "S034-Q06",
+        "text": "How does ADAudit Plus combine real-time monitoring with compliance reporting to create a comprehensive Active Directory security solution?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Feature Documentation",
+          "Compliance & Reporting"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ]
+      },
+      {
+        "question_id": "S034-Q07",
+        "text": "What is the relationship between ADAudit Plus's educational resources (like Kerberos vs LDAP documentation) and its practical implementation guides?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Educational Resources",
+          "How-to Guides"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/kb/windows-event-log-id-list.html"
+        ]
+      },
+      {
+        "question_id": "S034-Q08",
+        "text": "How do ADAudit Plus's best practices and security recommendations inform the configuration options available for organizations implementing the tool?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Best Practices",
+          "Feature Documentation"
+        ],
+        "source_urls": [
+          "https://www.manageengine.com/products/active-directory-audit/"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S035",
+    "domain": "openvpn.net",
+    "questions": [
+      {
+        "question_id": "S035-Q01",
+        "text": "What are the two main product offerings that OpenVPN provides for business VPN solutions?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Products"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q02",
+        "text": "List at least four distinct industry sectors that OpenVPN highlights as target markets for its solutions.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Industries"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q03",
+        "text": "What architectural approach does OpenVPN emphasize in its positioning of its enterprise VPN platform?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Main Content Sections"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q04",
+        "text": "Name at least three use cases or solutions that OpenVPN's platform is designed to address.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Solutions"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q05",
+        "text": "How do Access Server and CloudConnexa differ in their deployment models and primary characteristics?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Products",
+          "Features"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q06",
+        "text": "What is the relationship between OpenVPN's industry-specific compliance requirements (HIPAA, NERC CIP) and its general platform features?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Industries",
+          "Features"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      },
+      {
+        "question_id": "S035-Q07",
+        "text": "How do OpenVPN's different use cases (remote access, site-to-site networking, SaaS protection) align with its two distinct product offerings?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Products",
+          "Solutions"
+        ],
+        "source_urls": [
+          "https://openvpn.net"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S036",
+    "domain": "docs.usebraintrust.com",
+    "questions": [
+      {
+        "question_id": "S036-Q01",
+        "text": "How does Braintrust describe itself in terms of its core business model and marketplace structure?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Resources"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q02",
+        "text": "What token does Braintrust use as its primary currency for network participation and incentives?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Network & Token Information"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q03",
+        "text": "When was the Professional Network Launch Contest held, and what were the token rewards available?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Programs & Initiatives"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q04",
+        "text": "What is the current status of the Ambassador, Builder, and Educator grants programs mentioned in the documentation?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Programs & Initiatives"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q05",
+        "text": "How can Braintrust users engage with the platform through community channels, and what mechanisms support governance participation?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Community Engagement",
+          "Network & Token Information"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q06",
+        "text": "What is the relationship between earning BTRST tokens and participating in Braintrust's decentralized governance structure?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Network & Token Information",
+          "Community Engagement"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q07",
+        "text": "How do Braintrust's grant programs and community engagement initiatives work together to incentivize network growth and participation?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Programs & Initiatives",
+          "Community Engagement"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      },
+      {
+        "question_id": "S036-Q08",
+        "text": "What practical guidance does Braintrust provide for users managing platform wallets and tokens, and how does this support broader Web3 adoption?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Wallet & Management",
+          "Core Resources"
+        ],
+        "source_urls": [
+          "https://docs.usebraintrust.com/communitydocs/"
+        ]
+      }
+    ]
+  },
+  {
+    "site_id": "S037",
+    "domain": "docs.zapier.com",
+    "questions": [
+      {
+        "question_id": "S037-Q01",
+        "text": "What two primary methods does Zapier platform documentation indicate for building integrations?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Platform Building"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com"
+        ]
+      },
+      {
+        "question_id": "S037-Q02",
+        "text": "Name at least four authentication methods that Zapier integrations can support according to the documentation.",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Authentication Methods"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com"
+        ]
+      },
+      {
+        "question_id": "S037-Q03",
+        "text": "What are the three primary types of operations that Zapier integrations can perform as documented in the core features?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Core Features"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com"
+        ]
+      },
+      {
+        "question_id": "S037-Q04",
+        "text": "According to recent updates, what version of Node.js is now supported by Zapier's platform tooling?",
+        "complexity": "single-fact",
+        "source_sections": [
+          "Recent Updates"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com/platform/news/2025/"
+        ]
+      },
+      {
+        "question_id": "S037-Q05",
+        "text": "How do Zapier's trigger mechanisms differ in their real-time capabilities, and what are the two main trigger types documented?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "Core Features"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com/platform/build/"
+        ]
+      },
+      {
+        "question_id": "S037-Q06",
+        "text": "What is the relationship between Zapier's Platform UI and CLI approaches, and how do they enable different developer workflows?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Platform Building"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com/platform/quickstart/"
+        ]
+      },
+      {
+        "question_id": "S037-Q07",
+        "text": "How do Zapier's embedding solutions (Workflow Element and pre-built components) differ from traditional integration approaches, and what problems do they solve?",
+        "complexity": "conceptual-relationship",
+        "source_sections": [
+          "Embedding Solutions",
+          "API Integration"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com"
+        ]
+      },
+      {
+        "question_id": "S037-Q08",
+        "text": "What is the purpose of the Zapier Workflow API, and how does it enable developers to integrate automation capabilities into their own products?",
+        "complexity": "multi-section-synthesis",
+        "source_sections": [
+          "API Integration",
+          "Platform Building"
+        ],
+        "source_urls": [
+          "https://docs.zapier.com/powered-by-zapier/api-reference/"
+        ]
+      }
+    ]
+  }
+]

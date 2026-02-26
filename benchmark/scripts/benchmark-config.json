@@ -1,0 +1,198 @@
+{
+  "$schema": "./benchmark-config-schema.json",
+  "_comment": "Benchmark configuration for the Context Collapse Mitigation study. All values trace to methodology.md sections noted in field comments. This file is immutable after data collection begins — changes during a run invalidate prior results.",
+
+  "version": "1.0.0",
+  "created": "2026-02-26",
+  "methodology_commit": null,
+
+  "inference_endpoint": {
+    "_comment": "Configurable base URL per methodology.md §4.1. Supports Ollama (default port 11434) or LM Studio (configurable port). Both expose OpenAI-compatible /v1/chat/completions.",
+    "base_url": "http://localhost:11434",
+    "api_path": "/v1/chat/completions",
+    "engine": "ollama",
+    "request_timeout_seconds": 300,
+    "warmup_prompt_count": 3
+  },
+
+  "inference_parameters": {
+    "_comment": "Global inference parameters from methodology.md §4.6. Identical for all models. Special cases (Qwen 3 thinking mode) handled in runner code, not here (Decision 4A).",
+    "temperature": 0.0,
+    "seed": 42,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repeat_penalty": 1.0,
+    "num_predict": 512,
+    "num_ctx_overhead": 128
+  },
+
+  "prompt_template": {
+    "_comment": "Standardized prompt from methodology.md §2.4. Inline per Decision 1A. Placeholders: {assembled_content} and {question_text} are substituted by the runner at runtime.",
+    "system_prompt": "You are a factual question-answering system. Answer the following question using only the provided documentation content. If the content does not contain enough information to answer the question, say so explicitly.",
+    "user_prompt": "Content:\n{assembled_content}\n\nQuestion: {question_text}"
+  },
+
+  "models": [
+    {
+      "model_id": "llama-3.3-8b-q8_0",
+      "family": "llama",
+      "parameters_b": 8,
+      "tier": "small",
+      "ollama_tag": "llama3.3:8b-instruct-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": true,
+      "notes": "Reference tokenizer family (§2.6)"
+    },
+    {
+      "model_id": "llama-3.3-70b-q8_0",
+      "family": "llama",
+      "parameters_b": 70,
+      "tier": "large",
+      "ollama_tag": "llama3.3:70b-instruct-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": true,
+      "notes": "Largest dense Llama; GQA architecture"
+    },
+    {
+      "model_id": "qwen3-8b-q8_0",
+      "family": "qwen3",
+      "parameters_b": 8,
+      "tier": "small",
+      "ollama_tag": "qwen3:8b-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Strong for size; thinking mode disabled by runner"
+    },
+    {
+      "model_id": "qwen3-14b-q8_0",
+      "family": "qwen3",
+      "parameters_b": 14,
+      "tier": "medium",
+      "ollama_tag": "qwen3:14b-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Mid-range dense Qwen"
+    },
+    {
+      "model_id": "qwen3-32b-q8_0",
+      "family": "qwen3",
+      "parameters_b": 32,
+      "tier": "large",
+      "ollama_tag": "qwen3:32b-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Top dense Qwen; strong reasoning"
+    },
+    {
+      "model_id": "gemma3-4b-q8_0",
+      "family": "gemma3",
+      "parameters_b": 4,
+      "tier": "small",
+      "ollama_tag": "gemma3:4b-it-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Smallest multimodal Gemma; 256K vocab tokenizer"
+    },
+    {
+      "model_id": "gemma3-12b-q8_0",
+      "family": "gemma3",
+      "parameters_b": 12,
+      "tier": "medium",
+      "ollama_tag": "gemma3:12b-it-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Mid-range Gemma"
+    },
+    {
+      "model_id": "gemma3-27b-q8_0",
+      "family": "gemma3",
+      "parameters_b": 27,
+      "tier": "large",
+      "ollama_tag": "gemma3:27b-it-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Largest Gemma 3"
+    },
+    {
+      "model_id": "mistral-small-3.1-24b-q8_0",
+      "family": "mistral",
+      "parameters_b": 24,
+      "tier": "medium",
+      "ollama_tag": "mistral-small3.1:24b-instruct-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Apache 2.0; 128K context"
+    },
+    {
+      "model_id": "mistral-large-123b-q8_0",
+      "family": "mistral",
+      "parameters_b": 123,
+      "tier": "large",
+      "ollama_tag": "mistral-large:123b-instruct-q8_0",
+      "max_context_length": 131072,
+      "quantization": "Q8_0",
+      "is_reference_tokenizer_family": false,
+      "notes": "Largest dense model in benchmark"
+    }
+  ],
+
+  "extraction": {
+    "_comment": "Content extraction settings from methodology.md §2.2 and §2.5.",
+    "html_extractor": "SmartReader",
+    "min_content_length_chars": 50,
+    "markdown_preprocessing": {
+      "strip_html_comments": true,
+      "strip_base64_images": true,
+      "max_consecutive_blank_lines": 2,
+      "normalize_line_endings": "LF"
+    }
+  },
+
+  "paths": {
+    "_comment": "All paths relative to this config file's directory (Decision 2A). Resolved by the runner at startup.",
+    "questions": "../corpus/questions.json",
+    "gold_answers": "../corpus/gold-answers.json",
+    "site_list": "../corpus/site-list.csv",
+    "scoring_rubric": "../corpus/scoring-rubric.md",
+    "archive_dir": "../archive",
+    "archive_manifest": "../archive/manifest.json",
+    "results_dir": "../results",
+    "raw_data_csv": "../results/raw-data.csv",
+    "checkpoint_file": "../results/checkpoint.json"
+  },
+
+  "run_protocol": {
+    "_comment": "Run ordering and checkpoint strategy from methodology.md §4.7. Models processed sequentially; conditions interleaved within each model's run (A then B for each question before moving to the next question). Checkpoint file is separate from config (Decision 3A).",
+    "model_order": "sequential",
+    "condition_order_per_question": ["A", "B"],
+    "conditions": {
+      "A": {
+        "label": "HTML readability extraction",
+        "description": "SmartReader readability extraction from archived HTML (§2.2)"
+      },
+      "B": {
+        "label": "llms.txt Markdown",
+        "description": "Reference implementation create_ctx() replication with XML wrapping (§2.3)"
+      }
+    },
+    "checkpoint_granularity": "per_question",
+    "resume_from_checkpoint": true
+  },
+
+  "archive_protocol": {
+    "_comment": "Content archiving settings from methodology.md §2.1. The archive is immutable after creation.",
+    "fetch_timeout_seconds": 30,
+    "user_agent": "LlmsTxtBenchmark/1.0 (academic research; see github.com/your-repo)",
+    "respect_robots_txt": true,
+    "rate_limit_ms": 1000
+  }
+}
