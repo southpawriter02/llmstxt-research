@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target .NET 9 to match LlmsTxtKit.Core. See runner-design-spec.md §2.1. -->
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RunBenchmark</RootNamespace>
+
+    <!-- Enable XML docs so inline documentation is compiler-checked. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- ===================================================================
+       NuGet Dependencies — per runner-design-spec.md §2.1
+       =================================================================== -->
+  <ItemGroup>
+    <!-- SmartReader: HTML readability extraction for Condition A (methodology §2.2) -->
+    <PackageReference Include="SmartReader" Version="0.9.*" />
+
+    <!-- CsvHelper: RFC 4180-compliant CSV writing for raw-data.csv (design spec §9) -->
+    <PackageReference Include="CsvHelper" Version="33.*" />
+
+    <!-- Structured logging for long-running operations (design spec §10) -->
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.*" />
+
+    <!-- HttpClientFactory for inference API calls (design spec §2.1) -->
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.*" />
+  </ItemGroup>
+
+  <!-- ===================================================================
+       Project Reference — LlmsTxtKit.Core for llms.txt parsing + context
+       assembly (design spec §2.3, methodology §2.3)
+       =================================================================== -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\LlmsTxtKit\src\LlmsTxtKit.Core\LlmsTxtKit.Core.csproj" />
+  </ItemGroup>
+
+</Project>

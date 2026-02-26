@@ -23,7 +23,8 @@ For the full methodology, experimental design, and analysis plan, see the projec
 | Question sets | `corpus/questions.json` | ✅ All 37 sites complete (286 questions) |
 | Gold-standard answers | `corpus/gold-answers.json` | ✅ All 37 sites complete (286 answers) |
 | Scoring rubric | `corpus/scoring-rubric.md` | ✅ Refined (v2) — corpus-calibrated examples, 10 edge cases |
-| Data collection runner (C#) | `scripts/run-benchmark.cs` | 🔲 Not started |
+| Runner design spec | `runner-design-spec.md` | ✅ Complete (architecture-level, reader-tested) |
+| Data collection runner (C#) | `scripts/RunBenchmark/` | ✅ Complete (8 components, all spec checks verified) |
 | Benchmark configuration | `scripts/benchmark-config.json` | ✅ Complete (schema doc: `scripts/benchmark-config-schema.md`) |
 | Detailed methodology | `methodology.md` | ✅ All 7 sections complete |
 | Reproducibility instructions | `REPRODUCING.md` | 🔲 Not started |
@@ -71,7 +72,13 @@ benchmark/
 │   ├── gold-answers.json  # Researcher-authored correct answers
 │   └── scoring-rubric.md  # Detailed scoring criteria with examples
 ├── scripts/
-│   ├── run-benchmark.cs           # C# data collection orchestrator
+│   ├── RunBenchmark/              # C# data collection runner (.NET 9 console app)
+│   │   ├── RunBenchmark.csproj    #   Project file with NuGet deps + LlmsTxtKit ref
+│   │   ├── Program.cs             #   CLI entry point (phases, options, Ctrl+C)
+│   │   ├── Models/                #   Strongly-typed config + corpus data models
+│   │   └── Components/            #   ConfigLoader, Orchestrator, ContentAssembler,
+│   │                              #     InferenceClient, ResultWriter, CheckpointManager,
+│   │                              #     PreflightValidator
 │   ├── benchmark-config.json      # Model specs, parameters, paths, run protocol
 │   └── benchmark-config-schema.md # Config schema documentation with field definitions
 └── results/
