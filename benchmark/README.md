@@ -26,7 +26,9 @@ For the full methodology, experimental design, and analysis plan, see the projec
 | Runner design spec | `runner-design-spec.md` | ✅ Complete (architecture-level, reader-tested) |
 | Data collection runner (C#) | `scripts/RunBenchmark/` | ✅ Complete (8 components, all spec checks verified) |
 | Benchmark configuration | `scripts/benchmark-config.json` | ✅ Complete (schema doc: `scripts/benchmark-config-schema.md`) |
+| Content archive script (Python) | `scripts/build-archive.py` | ✅ Complete (robots.txt, JS_ONLY detection, coverage validation) |
 | Detailed methodology | `methodology.md` | ✅ All 7 sections complete |
+| Content archive | `archive/` | 🔲 Not started (run `build-archive.py` to populate) |
 | Reproducibility instructions | `REPRODUCING.md` | 🔲 Not started |
 | Raw experimental data | `results/raw-data.csv` | 🔲 Not started |
 | Analysis notebook (Jupyter) | `results/analysis.ipynb` | 🔲 Not started |
@@ -71,7 +73,14 @@ benchmark/
 │   ├── questions.json     # Question sets per site with complexity ratings
 │   ├── gold-answers.json  # Researcher-authored correct answers
 │   └── scoring-rubric.md  # Detailed scoring criteria with examples
+├── archive/                       # Content archive (populated by build-archive.py)
+│   ├── manifest.json              #   Fetch metadata for every archived page
+│   ├── html/                      #   Raw HTML content, per site_id subdirectory
+│   │   └── {site_id}/{hash}.html
+│   └── markdown/                  #   Raw Markdown content, per site_id subdirectory
+│       └── {site_id}/{hash}.md
 ├── scripts/
+│   ├── build-archive.py           # Python content archival script (pre-processing)
 │   ├── RunBenchmark/              # C# data collection runner (.NET 9 console app)
 │   │   ├── RunBenchmark.csproj    #   Project file with NuGet deps + LlmsTxtKit ref
 │   │   ├── Program.cs             #   CLI entry point (phases, options, Ctrl+C)

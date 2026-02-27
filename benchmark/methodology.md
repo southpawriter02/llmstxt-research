@@ -194,6 +194,8 @@ Each entry in the manifest records the outcome of a single page fetch:
 
 **Timing:** The archival phase runs once, ideally within a single 24-hour window, to minimize the chance that site content changes between fetches of different pages on the same site. The archive is immutable after creation — no subsequent fetches update it.
 
+**Implementation:** `scripts/build-archive.py` — a standalone Python script that reads `benchmark-config.json`, `site-list.csv`, and `questions.json`, fetches all content, and writes the archive directory and `manifest.json`. Supports `--resume` for crash recovery, `--dry-run` for planning, and `--site` for single-site debugging. Respects `robots.txt` per the `archive_protocol.respect_robots_txt` config setting and detects JavaScript-only pages (`JS_ONLY` status) via content heuristics.
+
 ### 2.2 Condition A: HTML Content Extraction
 
 Condition A represents the control — how an AI system would typically ingest web documentation today. The pipeline uses **readability-style content extraction** to isolate the main documentation body from navigation chrome, sidebars, footers, cookie banners, and other boilerplate. This reflects the current state of production RAG pipelines and AI search backends, which generally apply some form of content extraction rather than feeding raw HTML to models.
